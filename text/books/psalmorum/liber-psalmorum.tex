@@ -1,0 +1,81 @@
+\input{env-printer}
+
+%\setmainfont[
+  %Path = ./fonts/,
+  %Extension = .ttf,
+  %UprightFont = *-Regular,
+  %BoldFont = *-Regular,
+  %ItalicFont = *-Regular,
+  %BoldItalicFont = *-Regular,
+  %Ligatures = {NoCommon, NoDiscretionary},
+%]{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FUNCTIONS
+
+\newcommand{\verseFirstLetter}[1]
+  {{\sizeVerseFirstLetter #1}}
+
+\newcommand{\verseNum}[1]
+  {\noindent{{\textup{\textsuperscript{\sizeVerseNumber #1.}}}}}
+
+\newcommand{\psalmTitle}[1]{%
+  \begin{nscenter}
+  \bfseries\sizePsalmTitle PSALMUS #1.
+  \end{nscenter}
+}
+
+\newcommand{\psalmBody}[1]{%
+  \setlength{\parindent}{0cm}
+  \textsc{\sizePsalmBody #1}
+}
+
+% PUBLIC - - - - - - - - - - - - -
+\newcommand{\psalmChapter}[2]{%
+  \needspace{7\baselineskip}
+  \psalmTitle{#1}
+
+  \smallskip
+
+  \psalmBody{#2}
+}
+
+% PUBLIC - - - - - - - - - - - - - - - - - - - -
+\newcommand{\psalmChapterWithInscription}[3]{%
+  \needspace{7\baselineskip}
+  \psalmTitle{#1}
+
+  %\smallskip
+
+  %\begin{nscenter}
+  %\textsc{\sizePsalmInscription #2} % Chapter inscription
+  %\end{nscenter}
+
+  \noindent\makebox[\textwidth][c]{
+    \begin{minipage}{0.75\textwidth}
+    \begin{nscenter}
+    \textsc{\sizePsalmInscription #2}
+    \end{nscenter}
+    \end{minipage}
+  }
+
+  \medskip
+
+  \psalmBody{#3}
+}
+
+% PUBLIC - - - - - - - - -
+\newcommand{\prayer}[2]{%
+  \psalmChapter{#1}{#2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+\setlength{\emergencystretch}{3em}
+\begin{document}
+
+\include{psalms/003-la}
+
+\end{document}
+
+

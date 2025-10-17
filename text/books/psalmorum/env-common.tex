@@ -1,0 +1,26 @@
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FORMAT
+
+\newenvironment{nscenter}
+ {\parskip=0pt\par\nopagebreak\centering}
+ {\par\noindent\ignorespacesafterend}
+
+\newenvironment{nsflushleft}
+ {\parskip=0pt\par\nopagebreak\RaggedRight}
+ {\par\noindent\ignorespacesafterend}
+ 
+\newcommand{\verseJustiy}{%
+  \justifying
+  \fontdimen2\font=0.4em % interword space
+  \fontdimen3\font=0.4em % interword stretch
+  \fontdimen4\font=0.4em % interword shrink
+  \fontdimen7\font=0.4em % extra space
+}
