@@ -1,14 +1,14 @@
 \input{env-printer}
 
-%\setmainfont[
-  %Path = ./fonts/,
-  %Extension = .ttf,
-  %UprightFont = *-Regular,
-  %BoldFont = *-Regular,
-  %ItalicFont = *-Regular,
-  %BoldItalicFont = *-Regular,
-  %Ligatures = {NoCommon, NoDiscretionary},
-%]{}
+\setmainfont[
+  Path = ./fonts/dueblo/,
+  Extension = .otf,
+  UprightFont = *-MED,
+  BoldFont = *-BOL,
+  ItalicFont = *-REG,
+  BoldItalicFont = *-BOL,
+  Ligatures = {NoCommon, NoDiscretionary},
+]{Dueblo-SEMI-EXT}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FUNCTIONS
@@ -17,17 +17,22 @@
   {{\sizeVerseFirstLetter #1}}
 
 \newcommand{\verseNum}[1]
-  {\noindent{{\textup{\textsuperscript{\sizeVerseNumber #1.}}}}}
+  {\noindent{{\textup{\textsuperscript{\itshape\sizeVerseNumber #1.}}}}}
+
+\newcommand{\verseNumInscription}[1]
+  {\noindent{{\textup{\textsuperscript{\itshape\sizeVerseNumberInscription #1.}}}}}
 
 \newcommand{\psalmTitle}[1]{%
   \begin{nscenter}
-  \bfseries\sizePsalmTitle PSALMUS #1.
+  {\bfseries\sizePsalmTitle PSALMUS \RomanNumeralCaps{#1}.}
   \end{nscenter}
 }
 
 \newcommand{\psalmBody}[1]{%
   \setlength{\parindent}{0cm}
   \textsc{\sizePsalmBody #1}
+
+  \skipAfterPsalm
 }
 
 % PUBLIC - - - - - - - - - - - - -
@@ -35,7 +40,7 @@
   \needspace{7\baselineskip}
   \psalmTitle{#1}
 
-  \smallskip
+  %\smallskip
 
   \psalmBody{#2}
 }
@@ -51,15 +56,16 @@
   %\textsc{\sizePsalmInscription #2} % Chapter inscription
   %\end{nscenter}
 
+  \vspace{-0.5em}
   \noindent\makebox[\textwidth][c]{
     \begin{minipage}{0.75\textwidth}
     \begin{nscenter}
-    \textsc{\sizePsalmInscription #2}
+    \textsc{\itshape\sizePsalmInscription #2}
     \end{nscenter}
     \end{minipage}
   }
 
-  \medskip
+  %\medskip
 
   \psalmBody{#3}
 }
@@ -74,7 +80,128 @@
 \setlength{\emergencystretch}{3em}
 \begin{document}
 
-\include{psalms/003-la}
+\input{psalms/001-la}
+
+\input{psalms/002-la}
+
+\input{psalms/003-la}
+
+\input{psalms/004-la}
+
+\input{psalms/005-la}
+
+\input{psalms/006-la}
+
+\input{psalms/007-la}
+
+\input{psalms/008-la}
+
+\input{psalms/009-la}
+
+\input{psalms/010-la}
+
+\input{psalms/011-la}
+
+\input{psalms/012-la}
+
+\input{psalms/013-la}
+
+\input{psalms/014-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
+%\input{psalms/000-la}
+
 
 \end{document}
 
