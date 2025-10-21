@@ -10,8 +10,18 @@
   Ligatures = {NoCommon, NoDiscretionary},
 ]{Dueblo-SEMI-EXT}
 
+\newfontfamily{\liturgy}[
+  Path = ./fonts/liturgy/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+]{Liturgy}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FUNCTIONS
+
+\newcommand{\symbolCross}{{\liturgy +}}
+\newcommand{\symbolResponse}{{\liturgy R}}
+\newcommand{\symbolVersicle}{{\liturgy V}}
 
 \newcommand{\verseFirstLetter}[1]
   {{\sizeVerseFirstLetter #1}}
@@ -22,25 +32,41 @@
 \newcommand{\verseNumInscription}[1]
   {\noindent{{\textup{\textsuperscript{\itshape\sizeVerseNumberInscription #1.}}}}}
 
-\newcommand{\psalmTitle}[1]{%
+\newcommand{\psalmDivision}[2]{%
+  %{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
+  %{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
+
   \begin{nscenter}
-  {\bfseries\sizePsalmTitle PSALMUS \RomanNumeralCaps{#1}.}
+  \parbox{\textwidth}{%
+    \raisebox{0.9ex}{\rule{2em}{1pt}}~~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~~\raisebox{0.9ex}{\rule{20em}{1pt}}
+  }
   \end{nscenter}
+}
+
+\newcommand{\psalmTitle}[1]{%
+  %\begin{nscenter}
+  %{\bfseries\sizePsalmTitle PSALMUS \RomanNumeralCaps{#1}.}
+  %\end{nscenter}
+  {\bfseries\sizePsalmTitle \textsc{Psalmus} {\Large\addfontfeature{LetterSpace=10.0} \RomanNumeralCaps{#1}.}}
 }
 
 \newcommand{\psalmBody}[1]{%
   \setlength{\parindent}{0cm}
   \textsc{\sizePsalmBody #1}
-
-  \skipAfterPsalm
 }
 
 % PUBLIC - - - - - - - - - - - - -
 \newcommand{\psalmChapter}[2]{%
-  \needspace{1\baselineskip}
-  \psalmTitle{#1}
+  \needspace{2\baselineskip}
+  \begin{nscenter}
+  \parbox{0.78\textwidth}{%
+    \begin{spacing}{1.25}
+    \psalmTitle{#1}
+    \end{spacing}
+  }
+  \end{nscenter}
 
-  %\smallskip
+  \medskip
 
   \psalmBody{#2}
 }
@@ -48,17 +74,11 @@
 % PUBLIC - - - - - - - - - - - - - - - - - - - -
 \newcommand{\psalmChapterWithInscription}[3]{%
   \needspace{2\baselineskip}
-  %\psalmTitle{#1}
-
-  %\smallskip
-
   \begin{nscenter}
-  \parbox{0.8\textwidth}{%
-    %\begin{nscenter}
+  \parbox{0.78\textwidth}{%
     \begin{spacing}{1.25}
-    {\bfseries\sizePsalmTitle \textsc{Psalmus} {\large\addfontfeature{LetterSpace=10.0} \RomanNumeralCaps{#1}.}}~~~\textsc{\itshape\sizePsalmInscription #2}
+    \psalmTitle{#1}~~~\textsc{\itshape\sizePsalmInscription #2}
     \end{spacing}
-    %\end{nscenter}
   }
   \end{nscenter}
 
@@ -86,309 +106,631 @@
 %\tolerance=6000
 %\emergencystretch=6em
 
+\psalmDivision{1}{1}
+
+\smallskip
+
 \input{psalms/001-la}
+
+\skipAfterPsalm
 
 \input{psalms/002-la}
 
+\skipAfterPsalm
+
 \input{psalms/003-la}
+
+\skipAfterPsalm
+
+\psalmDivision{1}{2}
+
+\smallskip
 
 \input{psalms/004-la}
 
+\skipAfterPsalm
+
 \input{psalms/005-la}
+
+\skipAfterPsalm
 
 \input{psalms/006-la}
 
+\skipAfterPsalm
+
+\psalmDivision{1}{3}
+
+\smallskip
+
 \input{psalms/007-la}
+
+\skipAfterPsalm
 
 \input{psalms/008-la}
 
+\skipAfterPsalm
+
 \input{psalms/009-la}
+
+\skipAfterPsalm
 
 \input{psalms/010-la}
 
+\skipAfterPsalm
+
 \input{psalms/011-la}
+
+\skipAfterPsalm
 
 \input{psalms/012-la}
 
+\skipAfterPsalm
+
 \input{psalms/013-la}
+
+\skipAfterPsalm
 
 \input{psalms/014-la}
 
+\skipAfterPsalm
+
 \input{psalms/015-la}
+
+\skipAfterPsalm
 
 \input{psalms/016-la}
 
+\skipAfterPsalm
+
 \input{psalms/017-la}
+
+\skipAfterPsalm
 
 \input{psalms/018-la}
 
+\skipAfterPsalm
+
 \input{psalms/019-la}
+
+\skipAfterPsalm
 
 \input{psalms/020-la}
 
+\skipAfterPsalm
+
 \input{psalms/021-la}
+
+\skipAfterPsalm
 
 \input{psalms/022-la}
 
+\skipAfterPsalm
+
 \input{psalms/023-la}
+
+\skipAfterPsalm
 
 \input{psalms/024-la}
 
+\skipAfterPsalm
+
 \input{psalms/025-la}
+
+\skipAfterPsalm
 
 \input{psalms/026-la}
 
+\skipAfterPsalm
+
 \input{psalms/027-la}
+
+\skipAfterPsalm
 
 \input{psalms/028-la}
 
+\skipAfterPsalm
+
 \input{psalms/029-la}
+
+\skipAfterPsalm
 
 \input{psalms/030-la}
 
+\skipAfterPsalm
+
 \input{psalms/031-la}
+
+\skipAfterPsalm
 
 \input{psalms/032-la}
 
+\skipAfterPsalm
+
 \input{psalms/033-la}
+
+\skipAfterPsalm
 
 \input{psalms/034-la}
 
+\skipAfterPsalm
+
 \input{psalms/035-la}
+
+\skipAfterPsalm
 
 \input{psalms/036-la}
 
+\skipAfterPsalm
+
 \input{psalms/037-la}
+
+\skipAfterPsalm
 
 \input{psalms/038-la}
 
+\skipAfterPsalm
+
 \input{psalms/039-la}
+
+\skipAfterPsalm
 
 \input{psalms/040-la}
 
+\skipAfterPsalm
+
 \input{psalms/041-la}
+
+\skipAfterPsalm
 
 \input{psalms/042-la}
 
+\skipAfterPsalm
+
 \input{psalms/043-la}
+
+\skipAfterPsalm
 
 \input{psalms/044-la}
 
+\skipAfterPsalm
+
 \input{psalms/045-la}
+
+\skipAfterPsalm
 
 \input{psalms/046-la}
 
+\skipAfterPsalm
+
 \input{psalms/047-la}
+
+\skipAfterPsalm
 
 \input{psalms/048-la}
 
+\skipAfterPsalm
+
 \input{psalms/049-la}
+
+\skipAfterPsalm
 
 \input{psalms/050-la}
 
+\skipAfterPsalm
+
 \input{psalms/051-la}
+
+\skipAfterPsalm
 
 \input{psalms/052-la}
 
+\skipAfterPsalm
+
 \input{psalms/053-la}
+
+\skipAfterPsalm
 
 \input{psalms/054-la}
 
+\skipAfterPsalm
+
 \input{psalms/055-la}
+
+\skipAfterPsalm
 
 \input{psalms/056-la}
 
+\skipAfterPsalm
+
 \input{psalms/057-la}
+
+\skipAfterPsalm
 
 \input{psalms/058-la}
 
+\skipAfterPsalm
+
 \input{psalms/059-la}
+
+\skipAfterPsalm
 
 \input{psalms/060-la}
 
+\skipAfterPsalm
+
 \input{psalms/061-la}
+
+\skipAfterPsalm
 
 \input{psalms/062-la}
 
+\skipAfterPsalm
+
 \input{psalms/063-la}
+
+\skipAfterPsalm
 
 \input{psalms/064-la}
 
+\skipAfterPsalm
+
 \input{psalms/065-la}
+
+\skipAfterPsalm
 
 \input{psalms/066-la}
 
+\skipAfterPsalm
+
 \input{psalms/067-la}
+
+\skipAfterPsalm
 
 \input{psalms/068-la}
 
+\skipAfterPsalm
+
 \input{psalms/069-la}
+
+\skipAfterPsalm
 
 \input{psalms/070-la}
 
+\skipAfterPsalm
+
 \input{psalms/071-la}
+
+\skipAfterPsalm
 
 \input{psalms/072-la}
 
+\skipAfterPsalm
+
 \input{psalms/073-la}
+
+\skipAfterPsalm
 
 \input{psalms/074-la}
 
+\skipAfterPsalm
+
 \input{psalms/075-la}
+
+\skipAfterPsalm
 
 \input{psalms/076-la}
 
+\skipAfterPsalm
+
 \input{psalms/077-la}
+
+\skipAfterPsalm
 
 \input{psalms/078-la}
 
+\skipAfterPsalm
+
 \input{psalms/079-la}
+
+\skipAfterPsalm
 
 \input{psalms/080-la}
 
+\skipAfterPsalm
+
 \input{psalms/081-la}
+
+\skipAfterPsalm
 
 \input{psalms/082-la}
 
+\skipAfterPsalm
+
 \input{psalms/083-la}
+
+\skipAfterPsalm
 
 \input{psalms/084-la}
 
+\skipAfterPsalm
+
 \input{psalms/085-la}
+
+\skipAfterPsalm
 
 \input{psalms/086-la}
 
+\skipAfterPsalm
+
 \input{psalms/087-la}
+
+\skipAfterPsalm
 
 \input{psalms/088-la}
 
+\skipAfterPsalm
+
 \input{psalms/089-la}
+
+\skipAfterPsalm
 
 \input{psalms/090-la}
 
+\skipAfterPsalm
+
 \input{psalms/091-la}
+
+\skipAfterPsalm
 
 \input{psalms/092-la}
 
+\skipAfterPsalm
+
 \input{psalms/093-la}
+
+\skipAfterPsalm
 
 \input{psalms/094-la}
 
+\skipAfterPsalm
+
 \input{psalms/095-la}
+
+\skipAfterPsalm
 
 \input{psalms/096-la}
 
+\skipAfterPsalm
+
 \input{psalms/097-la}
+
+\skipAfterPsalm
 
 \input{psalms/098-la}
 
+\skipAfterPsalm
+
 \input{psalms/099-la}
+
+\skipAfterPsalm
 
 \input{psalms/100-la}
 
+\skipAfterPsalm
+
 \input{psalms/101-la}
+
+\skipAfterPsalm
 
 \input{psalms/102-la}
 
+\skipAfterPsalm
+
 \input{psalms/103-la}
+
+\skipAfterPsalm
 
 \input{psalms/104-la}
 
+\skipAfterPsalm
+
 \input{psalms/105-la}
+
+\skipAfterPsalm
 
 \input{psalms/106-la}
 
+\skipAfterPsalm
+
 \input{psalms/107-la}
+
+\skipAfterPsalm
 
 \input{psalms/108-la}
 
+\skipAfterPsalm
+
 \input{psalms/109-la}
+
+\skipAfterPsalm
 
 \input{psalms/110-la}
 
+\skipAfterPsalm
+
 \input{psalms/111-la}
+
+\skipAfterPsalm
 
 \input{psalms/112-la}
 
+\skipAfterPsalm
+
 \input{psalms/113-la}
+
+\skipAfterPsalm
 
 \input{psalms/114-la}
 
+\skipAfterPsalm
+
 \input{psalms/115-la}
+
+\skipAfterPsalm
 
 \input{psalms/116-la}
 
+\skipAfterPsalm
+
 \input{psalms/117-la}
+
+\skipAfterPsalm
+
+\psalmDivision{17}{1}
 
 \input{psalms/118a-la}
 
+\skipAfterPsalmContinue
+
+\psalmDivision{17}{2}
+
 \input{psalms/118b-la}
+
+\skipAfterPsalmContinue
+
+\psalmDivision{17}{3}
 
 \input{psalms/118c-la}
 
+\skipAfterPsalm
+
 \input{psalms/119-la}
+
+\skipAfterPsalm
 
 \input{psalms/120-la}
 
+\skipAfterPsalm
+
 \input{psalms/121-la}
+
+\skipAfterPsalm
 
 \input{psalms/122-la}
 
+\skipAfterPsalm
+
 \input{psalms/123-la}
+
+\skipAfterPsalm
 
 \input{psalms/124-la}
 
+\skipAfterPsalm
+
 \input{psalms/125-la}
+
+\skipAfterPsalm
 
 \input{psalms/126-la}
 
+\skipAfterPsalm
+
 \input{psalms/127-la}
+
+\skipAfterPsalm
 
 \input{psalms/128-la}
 
+\skipAfterPsalm
+
 \input{psalms/129-la}
+
+\skipAfterPsalm
 
 \input{psalms/130-la}
 
+\skipAfterPsalm
+
 \input{psalms/131-la}
+
+\skipAfterPsalm
 
 \input{psalms/132-la}
 
+\skipAfterPsalm
+
 \input{psalms/133-la}
+
+\skipAfterPsalm
 
 \input{psalms/134-la}
 
+\skipAfterPsalm
+
 \input{psalms/135-la}
+
+\skipAfterPsalm
 
 \input{psalms/136-la}
 
+\skipAfterPsalm
+
 \input{psalms/137-la}
+
+\skipAfterPsalm
 
 \input{psalms/138-la}
 
+\skipAfterPsalm
+
 \input{psalms/139-la}
+
+\skipAfterPsalm
 
 \input{psalms/140-la}
 
+\skipAfterPsalm
+
 \input{psalms/141-la}
+
+\skipAfterPsalm
 
 \input{psalms/142-la}
 
+\skipAfterPsalm
+
 \input{psalms/143-la}
+
+\skipAfterPsalm
 
 \input{psalms/144-la}
 
+\skipAfterPsalm
+
 \input{psalms/145-la}
+
+\skipAfterPsalm
 
 \input{psalms/146-la}
 
+\skipAfterPsalm
+
 \input{psalms/147-la}
+
+\skipAfterPsalm
 
 \input{psalms/148-la}
 
+\skipAfterPsalm
+
 \input{psalms/149-la}
 
+\skipAfterPsalm
+
 \input{psalms/150-la}
+
+\skipAfterPsalm
 
 \end{document}
 
