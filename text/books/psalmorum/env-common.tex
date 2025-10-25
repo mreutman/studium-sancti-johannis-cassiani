@@ -23,11 +23,11 @@
  {\parskip=0pt\par}
  {\par\noindent\ignorespacesafterend}
 
-\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist 
+\def\tinyskip{\vspace\tinyskipamount}
+\newskip\tinyskipamount \tinyskipamount=1pt plus 1pt minus 0pt
 
 \newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
 
-\newcommand{\psalmChapterNeedSpace}{\needspace{1\baselineskip}}
-\newcommand{\psalmChapterDivisionNeedSpace}{\needspace{2\baselineskip}}
-\newcommand{\psalmChapterTitleBodySkip}{\smallskip}
+\newcommand{\psalmChapterNeedSpace}{\needspace{2\baselineskip}}
+\newcommand{\psalmChapterDivisionNeedSpace}{\needspace{3\baselineskip}}
+\newcommand{\psalmChapterTitleBodySkip}{\tinyskip}

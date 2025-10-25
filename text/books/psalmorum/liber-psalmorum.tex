@@ -32,17 +32,6 @@
 \newcommand{\verseNumInscription}[1]
   {\noindent{{\textup{\textsuperscript{\itshape\sizeVerseNumberInscription #1.}}}}}
 
-%\newcommand{\psalmDivision}[2]{%
-  %%{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
-  %%{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
-
-  %\needspace{2\baselineskip}
-  %\begin{center}
-  %%{\noindent\raisebox{0.9ex}{\rule{2em}{1pt}}~~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~~\raisebox{0.9ex}{\rule{28em}{1pt}}}
-  %\raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}
-  %\end{center}
-%}
-
 \newcommand{\psalmChapterNumberTitle}[1]{%
   {%
     \bfseries\psalmTitleFormat \textsc{Psalmus} {%
@@ -53,6 +42,7 @@
 
 \newcommand{\psalmBody}[1]{%
   \noindent\textsc{\psalmBodyFormat #1}\\
+  \vspace{-1em}
 }
 
 \newcommand{\psalmChapterNumberBegin}{%
@@ -85,8 +75,12 @@
   }
 }
 
-\newcommand{\decorateL}{\raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}}
-\newcommand{\decorateR}{{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}}
+\newcommand{\psalmDivisionLeft}{%
+  \raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}
+}
+\newcommand{\psalmDivisionRight}{%
+  {\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}
+}
 
 \newcommand{\psalmDivision}[2]{%
   {%
@@ -100,7 +94,7 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \decorateL~~\psalmDivision{#2}{#3}~~\decorateR
+    \psalmDivisionLeft~~\psalmDivision{#2}{#3}~~\psalmDivisionRight
   }
 
   \psalmChapterTitleBodySkip
@@ -112,15 +106,13 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \decorateL~~\psalmDivision{#3}{#4}~~\decorateR
+    \psalmDivisionLeft~~\psalmDivision{#3}{#4}~~\psalmDivisionRight
 
     {%
       \psalmChapterNumber{#1}
     }
   }
-
   \psalmChapterTitleBodySkip
-
   \psalmBody{#2}
 }
 
@@ -129,9 +121,7 @@
   {%
     \psalmChapterNumber{#1}
   }
-
   \psalmChapterTitleBodySkip
-
   \psalmBody{#2}
 }
 
@@ -139,15 +129,13 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \decorateL~~\psalmDivision{#4}{#5}~~\decorateR
+    \psalmDivisionLeft~~\psalmDivision{#4}{#5}~~\psalmDivisionRight
 
     {%
       \psalmChapterNumberInscription{#1}{#2}
     }
   }
-
   \psalmChapterTitleBodySkip
-
   \psalmBody{#3}
 }
 
@@ -156,40 +144,7 @@
   {%
     \psalmChapterNumberInscription{#1}{#2}
   }
-
   \psalmChapterTitleBodySkip
-
-  \psalmBody{#3}
-}
-
-%\newcommand{\psalmChapter}[2]{%
-  %\needspace{1\baselineskip}
-  %\begin{nscenter}
-  %\parbox{0.78\textwidth}{%
-    %\begin{spacing}{1.25}
-    %\psalmChapterNumberTitle{#1}
-    %\end{spacing}
-  %}
-  %\end{nscenter}
-
-  %\medskip
-
-  %\psalmBody{#2}
-%}
-
-% PUBLIC - - - - - - - - - - - - - - - - - - - -
-\newcommand{\psalmChapterWithInscription}[3]{%
-  \needspace{1\baselineskip}
-  \begin{nscenter}
-  \parbox{0.78\textwidth}{%
-    \begin{spacing}{1.25}
-    \psalmChapterNumberTitle{#1}~~~\textsc{\itshape\sizePsalmInscription #2}
-    \end{spacing}
-  }
-  \end{nscenter}
-
-  \medskip
-
   \psalmBody{#3}
 }
 
@@ -213,9 +168,9 @@
 %\emergencystretch=6em
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\input{psalms/001-la}%\skipAfterPsalm
-\input{psalms/002-la}%\skipAfterPsalm
-\input{psalms/003-la}%\skipAfterPsalm
+\input{psalms/001-la}\skipAfterPsalm
+\input{psalms/002-la}\skipAfterPsalm
+\input{psalms/003-la}\skipAfterPsalm
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/004-la}\skipAfterPsalm
