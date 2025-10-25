@@ -1,4 +1,5 @@
-\input{env-printer}
+%\input{env-printer}
+\input{env-ustrade}
 
 \setmainfont[
   Path = ./fonts/dueblo/,
@@ -47,7 +48,7 @@
 
 \newcommand{\psalmChapterNumberBegin}{%
   \begingroup
-  \raggedright
+  \justifying
   \leftskip=\psalmChapterNumberIndent
   \advance\csname @rightskip\endcsname \leftskip \advance\rightskip \leftskip
   \psalmChapterNumberFormat
@@ -70,22 +71,18 @@
 \newcommand{\psalmChapterNumberInscription}[2]{
   {%
     \psalmChapterNumberBegin
-    \noindent\psalmChapterNumberTitle{#1}~\textsc{\psalmInscriptionFormat #2}
+    \noindent\psalmChapterNumberTitle{#1}\textsc{\psalmInscriptionFormat #2}
     \psalmChapterNumberEnd
   }
 }
 
-\newcommand{\psalmDivisionLeft}{%
-  \raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}
-}
-\newcommand{\psalmDivisionRight}{%
-  {\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}
-}
-
 \newcommand{\psalmDivision}[2]{%
+  \markboth
+    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
+    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
   {%
     \psalmDivisionFormat
-    \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.
+    \textsc{Divizio} \RomanNumeralCaps{#1},\RomanNumeralCaps{#2}.
   }
 }
 
@@ -94,7 +91,7 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \psalmDivisionLeft~~\psalmDivision{#2}{#3}~~\psalmDivisionRight
+    \psalmDivisionLeft~~\psalmDivision{#2}{#3}~\psalmDivisionRight
   }
 
   \psalmChapterTitleBodySkip
@@ -108,18 +105,10 @@
     \centering
     \psalmDivisionLeft~~\psalmDivision{#3}{#4}~~\psalmDivisionRight
 
+    \psalmChapterDivionNumberSkip
     {%
       \psalmChapterNumber{#1}
     }
-  }
-  \psalmChapterTitleBodySkip
-  \psalmBody{#2}
-}
-
-\newcommand{\psalmChapter}[2]{%
-  \psalmChapterNeedSpace
-  {%
-    \psalmChapterNumber{#1}
   }
   \psalmChapterTitleBodySkip
   \psalmBody{#2}
@@ -131,12 +120,22 @@
     \centering
     \psalmDivisionLeft~~\psalmDivision{#4}{#5}~~\psalmDivisionRight
 
+    \psalmChapterDivionNumberSkip
     {%
       \psalmChapterNumberInscription{#1}{#2}
     }
   }
   \psalmChapterTitleBodySkip
   \psalmBody{#3}
+}
+
+\newcommand{\psalmChapter}[2]{%
+  \psalmChapterNeedSpace
+  {%
+    \psalmChapterNumber{#1}
+  }
+  \psalmChapterTitleBodySkip
+  \psalmBody{#2}
 }
 
 \newcommand{\psalmChapterInscription}[3]{%
@@ -163,9 +162,15 @@
 %\fontdimen7\font=0.5em% extra space
 }
 
+\widowpenalty=10000
+\clubpenalty=10000
+
+\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
+
 \begin{document}
-%\tolerance=6000
-%\emergencystretch=6em
+
+\pagestyle{myheadings}
+\setcounter{page}{1}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/001-la}\skipAfterPsalm

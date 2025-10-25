@@ -1,0 +1,53 @@
+\documentclass[twoside,12pt]{book}
+
+\usepackage[
+  papersize={6.25in,9.25in},
+  right=0.8in,
+  left=0.8in,
+  top=1.0in,
+  bottom=0.8in,
+]{geometry}
+\renewcommand{\baselinestretch}{1.5} % text line spacing
+
+\input{env-common}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FORMAT
+
+\def\psalmskip{\vspace\psalmskipamount}
+\newskip\psalmskipamount \psalmskipamount=2pt plus 2pt minus 1pt
+
+\def\divisionskip{\vspace\divisionskipamount}
+\newskip\divisionskipamount \divisionskipamount=2pt plus 0pt minus 1pt
+
+\newcommand{\pageHeaderFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}\fontdimen2\font=2em}
+\newcommand{\pageNumberFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}}
+\newcommand{\heightVerseNumber}{0.5ex}
+\newcommand{\psalmBodyFormat}{\large}
+\newcommand{\psalmChapterDivisionNeedSpace}{\needspace{3\baselineskip}}
+\newcommand{\psalmChapterNeedSpace}{\needspace{1\baselineskip}}
+\newcommand{\psalmChapterNumberFormat}{\normalsize}
+\newcommand{\psalmChapterNumberSpacing}{1.0}
+\newcommand{\psalmChapterNumberIndent}{3.2em}
+\newcommand{\psalmChapterDivionNumberSkip}{\vspace{0.5em}}
+\newcommand{\psalmChapterTitleBodySkip}{\vspace{0.25em}}
+\newcommand{\psalmDivisionFormat}{\bfseries\small\addfontfeature{LetterSpace=20.0}\fontdimen2\font=1em}
+\newcommand{\psalmInscriptionFormat}{\itshape\small\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+\newcommand{\psalmTitleFormat}{\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+\newcommand{\psalmTitleNumberFormat}{\Large\addfontfeature{LetterSpace=10.0}}
+
+\newcommand{\sizeVerseFirstLetter}{\huge}
+\newcommand{\sizeVerseNumber}{\scriptsize}
+\newcommand{\sizeVerseNumberInscription}{\small}
+
+\newcommand{\skipAfterPsalm}{\psalmskip}
+\newcommand{\skipAfterPsalmContinue}{\psalmskip}
+
+\newcommand{\decorateRaise}{0.70ex}
+
+\newcommand{\psalmDivisionLeft}{%
+  \raisebox{\decorateRaise}{\rule{7em}{1pt}}~~{\scriptsize \raisebox{\decorateRaise}{\symbolCross}}
+}
+\newcommand{\psalmDivisionRight}{%
+  {\scriptsize \raisebox{\decorateRaise}{\symbolCross}}~~\raisebox{\decorateRaise}{\rule{7em}{1pt}}
+}
