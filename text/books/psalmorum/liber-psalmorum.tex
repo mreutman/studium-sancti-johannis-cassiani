@@ -32,43 +32,150 @@
 \newcommand{\verseNumInscription}[1]
   {\noindent{{\textup{\textsuperscript{\itshape\sizeVerseNumberInscription #1.}}}}}
 
-\newcommand{\psalmDivision}[2]{%
-  %{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
-  %{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
+%\newcommand{\psalmDivision}[2]{%
+  %%{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
+  %%{\hfill \fmtSectionTextHeader DIVISIO #1,#2 \hfill}
 
+  %\needspace{2\baselineskip}
+  %\begin{center}
+  %%{\noindent\raisebox{0.9ex}{\rule{2em}{1pt}}~~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~~\raisebox{0.9ex}{\rule{28em}{1pt}}}
+  %\raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}
+  %\end{center}
+%}
 
-  \begin{center}
-  %{\noindent\raisebox{0.9ex}{\rule{2em}{1pt}}~~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~{\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~~\raisebox{0.9ex}{\rule{28em}{1pt}}}
-  {\bfseries\large\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.}
-  \end{center}
-
-}
-
-\newcommand{\psalmTitle}[1]{%
-  {\bfseries\sizePsalmTitle \textsc{Psalmus} {\Large\addfontfeature{LetterSpace=10.0} \RomanNumeralCaps{#1}.}}
+\newcommand{\psalmChapterNumberTitle}[1]{%
+  {%
+    \bfseries\psalmTitleFormat \textsc{Psalmus} {%
+      \psalmTitleNumberFormat\RomanNumeralCaps{#1}.
+    }
+  }
 }
 
 \newcommand{\psalmBody}[1]{%
-  \setlength{\parindent}{0cm}
-  \textsc{\sizePsalmBody #1}
+  \noindent\textsc{\psalmBodyFormat #1}\\
+}
 
+\newcommand{\psalmChapterNumberBegin}{%
+  \begingroup
+  \raggedright
+  \leftskip=\psalmChapterNumberIndent
+  \advance\csname @rightskip\endcsname \leftskip \advance\rightskip \leftskip
+  \psalmChapterNumberFormat
+  \setstretch{\psalmChapterNumberSpacing}
+}
+
+\newcommand{\psalmChapterNumberEnd}{%
+  \par
+  \endgroup
+}
+
+\newcommand{\psalmChapterNumber}[1]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\psalmChapterNumberInscription}[2]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}~\textsc{\psalmInscriptionFormat #2}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\decorateL}{\raisebox{0.9ex}{\rule{13em}{1pt}}~~{\scriptsize \raisebox{0.9ex}{\symbolCross}}}
+\newcommand{\decorateR}{{\scriptsize \raisebox{0.9ex}{\symbolCross}}~~\raisebox{0.9ex}{\rule{13em}{1pt}}}
+
+\newcommand{\psalmDivision}[2]{%
+  {%
+    \psalmDivisionFormat
+    \textsc{Divizio} \RomanNumeralCaps{#1},~\RomanNumeralCaps{#2}.
+  }
 }
 
 % PUBLIC - - - - - - - - - - - - -
-\newcommand{\psalmChapter}[2]{%
-  \needspace{1\baselineskip}
-  \begin{nscenter}
-  \parbox{0.78\textwidth}{%
-    \begin{spacing}{1.25}
-    \psalmTitle{#1}
-    \end{spacing}
+\newcommand{\psalmBeginDivision}[3]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    \centering
+    \decorateL~~\psalmDivision{#2}{#3}~~\decorateR
   }
-  \end{nscenter}
 
-  \medskip
+  \psalmChapterTitleBodySkip
+
+  \psalmBody{#1}
+}
+
+\newcommand{\psalmChapterBeginDivision}[4]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    \centering
+    \decorateL~~\psalmDivision{#3}{#4}~~\decorateR
+
+    {%
+      \psalmChapterNumber{#1}
+    }
+  }
+
+  \psalmChapterTitleBodySkip
 
   \psalmBody{#2}
 }
+
+\newcommand{\psalmChapter}[2]{%
+  \psalmChapterNeedSpace
+  {%
+    \psalmChapterNumber{#1}
+  }
+
+  \psalmChapterTitleBodySkip
+
+  \psalmBody{#2}
+}
+
+\newcommand{\psalmChapterInscriptionBeginDivision}[5]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    \centering
+    \decorateL~~\psalmDivision{#4}{#5}~~\decorateR
+
+    {%
+      \psalmChapterNumberInscription{#1}{#2}
+    }
+  }
+
+  \psalmChapterTitleBodySkip
+
+  \psalmBody{#3}
+}
+
+\newcommand{\psalmChapterInscription}[3]{%
+  \psalmChapterNeedSpace
+  {%
+    \psalmChapterNumberInscription{#1}{#2}
+  }
+
+  \psalmChapterTitleBodySkip
+
+  \psalmBody{#3}
+}
+
+%\newcommand{\psalmChapter}[2]{%
+  %\needspace{1\baselineskip}
+  %\begin{nscenter}
+  %\parbox{0.78\textwidth}{%
+    %\begin{spacing}{1.25}
+    %\psalmChapterNumberTitle{#1}
+    %\end{spacing}
+  %}
+  %\end{nscenter}
+
+  %\medskip
+
+  %\psalmBody{#2}
+%}
 
 % PUBLIC - - - - - - - - - - - - - - - - - - - -
 \newcommand{\psalmChapterWithInscription}[3]{%
@@ -76,7 +183,7 @@
   \begin{nscenter}
   \parbox{0.78\textwidth}{%
     \begin{spacing}{1.25}
-    \psalmTitle{#1}~~~\textsc{\itshape\sizePsalmInscription #2}
+    \psalmChapterNumberTitle{#1}~~~\textsc{\itshape\sizePsalmInscription #2}
     \end{spacing}
   }
   \end{nscenter}
@@ -105,275 +212,274 @@
 %\tolerance=6000
 %\emergencystretch=6em
 
-\psalmDivision{1}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\input{psalms/001-la}\skipAfterPsalm
-\input{psalms/002-la}\skipAfterPsalm
-\input{psalms/003-la}\skipAfterPsalm
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\input{psalms/001-la}%\skipAfterPsalm
+\input{psalms/002-la}%\skipAfterPsalm
+\input{psalms/003-la}%\skipAfterPsalm
 
-\psalmDivision{1}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/004-la}\skipAfterPsalm
 \input{psalms/005-la}\skipAfterPsalm
 \input{psalms/006-la}\skipAfterPsalm
 
-\psalmDivision{1}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/007-la}\skipAfterPsalm
 \input{psalms/008-la}\skipAfterPsalm
 
-\psalmDivision{2}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/009-la}\skipAfterPsalm
 \input{psalms/010-la}\skipAfterPsalm
 
-\psalmDivision{2}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/011-la}\skipAfterPsalm
 \input{psalms/012-la}\skipAfterPsalm
 \input{psalms/013-la}\skipAfterPsalm
 
-\psalmDivision{2}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/014-la}\skipAfterPsalm
 \input{psalms/015-la}\skipAfterPsalm
 \input{psalms/016-la}\skipAfterPsalm
 
-\psalmDivision{3}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/017-la}\skipAfterPsalm
 
-\psalmDivision{3}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/018-la}\skipAfterPsalm
 \input{psalms/019-la}\skipAfterPsalm
 \input{psalms/020-la}\skipAfterPsalm
 
-\psalmDivision{3}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/021-la}\skipAfterPsalm
 \input{psalms/022-la}\skipAfterPsalm
 \input{psalms/023-la}\skipAfterPsalm
 
-\psalmDivision{4}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/024-la}\skipAfterPsalm
 \input{psalms/025-la}\skipAfterPsalm
 \input{psalms/026-la}\skipAfterPsalm
 
-\psalmDivision{4}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/027-la}\skipAfterPsalm
 \input{psalms/028-la}\skipAfterPsalm
 \input{psalms/029-la}\skipAfterPsalm
 
-\psalmDivision{4}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/030-la}\skipAfterPsalm
 \input{psalms/031-la}\skipAfterPsalm
 
-\psalmDivision{5}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/032-la}\skipAfterPsalm
 \input{psalms/033-la}\skipAfterPsalm
 
-\psalmDivision{5}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/034-la}\skipAfterPsalm
 \input{psalms/035-la}\skipAfterPsalm
 
-\psalmDivision{5}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/036-la}\skipAfterPsalm
 
-\psalmDivision{6}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/037-la}\skipAfterPsalm
 \input{psalms/038-la}\skipAfterPsalm
 \input{psalms/039-la}\skipAfterPsalm
 
-\psalmDivision{6}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/040-la}\skipAfterPsalm
 \input{psalms/041-la}\skipAfterPsalm
 \input{psalms/042-la}\skipAfterPsalm
 
-\psalmDivision{6}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/043-la}\skipAfterPsalm
 \input{psalms/044-la}\skipAfterPsalm
 \input{psalms/045-la}\skipAfterPsalm
 
-\psalmDivision{7}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/046-la}\skipAfterPsalm
 \input{psalms/047-la}\skipAfterPsalm
 \input{psalms/048-la}\skipAfterPsalm
 
-\psalmDivision{7}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/049-la}\skipAfterPsalm
 \input{psalms/050-la}\skipAfterPsalm
 
-\psalmDivision{7}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/051-la}\skipAfterPsalm
 \input{psalms/052-la}\skipAfterPsalm
 \input{psalms/053-la}\skipAfterPsalm
 \input{psalms/054-la}\skipAfterPsalm
 
-\psalmDivision{8}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/055-la}\skipAfterPsalm
 \input{psalms/056-la}\skipAfterPsalm
 \input{psalms/057-la}\skipAfterPsalm
 
-\psalmDivision{8}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/058-la}\skipAfterPsalm
 \input{psalms/059-la}\skipAfterPsalm
 \input{psalms/060-la}\skipAfterPsalm
 
-\psalmDivision{8}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/061-la}\skipAfterPsalm
 \input{psalms/062-la}\skipAfterPsalm
 \input{psalms/063-la}\skipAfterPsalm
 
-\psalmDivision{9}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/064-la}\skipAfterPsalm
 \input{psalms/065-la}\skipAfterPsalm
 \input{psalms/066-la}\skipAfterPsalm
 
-\psalmDivision{9}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/067-la}\skipAfterPsalm
 
-\psalmDivision{9}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/068-la}\skipAfterPsalm
 \input{psalms/069-la}\skipAfterPsalm
 
-\psalmDivision{10}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/070-la}\skipAfterPsalm
 \input{psalms/071-la}\skipAfterPsalm
 
-\psalmDivision{10}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/072-la}\skipAfterPsalm
 \input{psalms/073-la}\skipAfterPsalm
 
-\psalmDivision{10}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/074-la}\skipAfterPsalm
 \input{psalms/075-la}\skipAfterPsalm
 \input{psalms/076-la}\skipAfterPsalm
 
-\psalmDivision{11}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/077-la}\skipAfterPsalm
 
-\psalmDivision{11}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/078-la}\skipAfterPsalm
 \input{psalms/079-la}\skipAfterPsalm
 \input{psalms/080-la}\skipAfterPsalm
 
-\psalmDivision{11}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/081-la}\skipAfterPsalm
 \input{psalms/082-la}\skipAfterPsalm
 \input{psalms/083-la}\skipAfterPsalm
 \input{psalms/084-la}\skipAfterPsalm
 
-\psalmDivision{12}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/085-la}\skipAfterPsalm
 \input{psalms/086-la}\skipAfterPsalm
 \input{psalms/087-la}\skipAfterPsalm
 
-\psalmDivision{12}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/088-la}\skipAfterPsalm
 
-\psalmDivision{12}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/089-la}\skipAfterPsalm
 \input{psalms/090-la}\skipAfterPsalm
 
-\psalmDivision{13}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/091-la}\skipAfterPsalm
 \input{psalms/092-la}\skipAfterPsalm
 \input{psalms/093-la}\skipAfterPsalm
 
-\psalmDivision{13}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/094-la}\skipAfterPsalm
 \input{psalms/095-la}\skipAfterPsalm
 \input{psalms/096-la}\skipAfterPsalm
 
-\psalmDivision{13}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/097-la}\skipAfterPsalm
 \input{psalms/098-la}\skipAfterPsalm
 \input{psalms/099-la}\skipAfterPsalm
 \input{psalms/100-la}\skipAfterPsalm
 
-\psalmDivision{14}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/101-la}\skipAfterPsalm
 \input{psalms/102-la}\skipAfterPsalm
 
-\psalmDivision{14}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/103-la}\skipAfterPsalm
 
-\psalmDivision{14}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/104-la}\skipAfterPsalm
 
-\psalmDivision{15}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/105-la}\skipAfterPsalm
 
-\psalmDivision{15}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/106-la}\skipAfterPsalm
 
-\psalmDivision{15}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/107-la}\skipAfterPsalm
 \input{psalms/108-la}\skipAfterPsalm
 
-\psalmDivision{16}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/109-la}\skipAfterPsalm
 \input{psalms/110-la}\skipAfterPsalm
 \input{psalms/111-la}\skipAfterPsalm
 
-\psalmDivision{16}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/112-la}\skipAfterPsalm
 \input{psalms/113-la}\skipAfterPsalm
 \input{psalms/114-la}\skipAfterPsalm
 
-\psalmDivision{16}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/115-la}\skipAfterPsalm
 \input{psalms/116-la}\skipAfterPsalm
 \input{psalms/117-la}\skipAfterPsalm
 
-\psalmDivision{17}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/118a-la}\skipAfterPsalmContinue
 
-\psalmDivision{17}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/118b-la}\skipAfterPsalmContinue
 
-\psalmDivision{17}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/118c-la}\skipAfterPsalm
 
-\psalmDivision{18}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/119-la}\skipAfterPsalm
 \input{psalms/120-la}\skipAfterPsalm
 \input{psalms/121-la}\skipAfterPsalm
 \input{psalms/122-la}\skipAfterPsalm
 \input{psalms/123-la}\skipAfterPsalm
 
-\psalmDivision{18}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/124-la}\skipAfterPsalm
 \input{psalms/125-la}\skipAfterPsalm
 \input{psalms/126-la}\skipAfterPsalm
 \input{psalms/127-la}\skipAfterPsalm
 \input{psalms/128-la}\skipAfterPsalm
 
-\psalmDivision{18}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/129-la}\skipAfterPsalm
 \input{psalms/130-la}\skipAfterPsalm
 \input{psalms/131-la}\skipAfterPsalm
 \input{psalms/132-la}\skipAfterPsalm
 \input{psalms/133-la}\skipAfterPsalm
 
-\psalmDivision{19}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/134-la}\skipAfterPsalm
 \input{psalms/135-la}\skipAfterPsalm
 \input{psalms/136-la}\skipAfterPsalm
 
-\psalmDivision{19}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/137-la}\skipAfterPsalm
 \input{psalms/138-la}\skipAfterPsalm
 \input{psalms/139-la}\skipAfterPsalm
 
-\psalmDivision{19}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/140-la}\skipAfterPsalm
 \input{psalms/141-la}\skipAfterPsalm
 \input{psalms/142-la}\skipAfterPsalm
 
-\psalmDivision{20}{1} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/143-la}\skipAfterPsalm
 \input{psalms/144-la}\skipAfterPsalm
 
-\psalmDivision{20}{2} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/145-la}\skipAfterPsalm
 \input{psalms/146-la}\skipAfterPsalm
 \input{psalms/147-la}\skipAfterPsalm
 
-\psalmDivision{20}{3} % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \input{psalms/148-la}\skipAfterPsalm
 \input{psalms/149-la}\skipAfterPsalm
 \input{psalms/150-la}\skipAfterPsalm

@@ -1,4 +1,5 @@
 \usepackage[none]{hyphenat}
+\usepackage{changepage}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \usepackage{ifthen}
@@ -22,4 +23,11 @@
  {\parskip=0pt\par}
  {\par\noindent\ignorespacesafterend}
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
 \newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+
+\newcommand{\psalmChapterNeedSpace}{\needspace{1\baselineskip}}
+\newcommand{\psalmChapterDivisionNeedSpace}{\needspace{2\baselineskip}}
+\newcommand{\psalmChapterTitleBodySkip}{\smallskip}
