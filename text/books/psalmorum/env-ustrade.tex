@@ -41,49 +41,59 @@
 \newcommand{\skipAfterPsalm}{\psalmskip}
 \newcommand{\skipAfterPsalmContinue}{\psalmskip}
 
-\newcommand{\decorateRaise}{0.70ex}
+\newcommand{\decorateRaise}{0.3em}
 
 \newcommand{\psalmDivisionLeft}{%
-  \raisebox{\decorateRaise}{\rule{7em}{1pt}}~~{\scriptsize \raisebox{\decorateRaise}{\symbolCross}}
+  \raisebox{\decorateRaise}{\rule{7em}{1pt}}~~~{\scriptsize \raisebox{\decorateRaise}{\symbolCross}}
 }
 \newcommand{\psalmDivisionRight}{%
-  {\scriptsize \raisebox{\decorateRaise}{\symbolCross}}~~\raisebox{\decorateRaise}{\rule{7em}{1pt}}
+  {\scriptsize \raisebox{\decorateRaise}{\symbolCross}}~~~\raisebox{\decorateRaise}{\rule{7em}{1pt}}
+}
+
+\newcommand{\decorator}{
+
+  {\hfill\raisebox{0.5em}{\rule{3em}{1pt}}~~~~{\raisebox{\decorateRaise}{\symbolCross}}~~~~\raisebox{0.5em}{\rule{3em}{1pt}}\hfill}
+}
+
+\newcommand{\decoratorSmall}{
+
+  {\hfill{\raisebox{\decorateRaise}{\footnotesize\symbolCross}}\hfill}
 }
 
 \newcommand{\vspaceDivision}{\vspace{1.0em}}
-\newcommand{\vspaceChapterTitle}{\vspace{0.5em}}
+\newcommand{\vspaceChapterTitle}{\vspace{1.0em}}
 \newcommand{\vspacePsalmI}{\vspace{2em}}
-\newcommand{\vspacePsalmII}{\vspace{3em}}
-\newcommand{\vspacePsalmIII}{\newpage} %{\vspace{1.5em}}
-\newcommand{\vspacePsalmIV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmVI}{\vspace{2em}}
+\newcommand{\vspacePsalmII}{\vspace{2em}}
+\newcommand{\vspacePsalmIII}{\vspace{1.5em}\decorator\newpage} %{\vspace{1.5em}}
+\newcommand{\vspacePsalmIV}{\vspace{2.0em}}
+\newcommand{\vspacePsalmV}{\vspace{2em}}
+\newcommand{\vspacePsalmVI}{\vspace{2.0em}}
 \newcommand{\vspacePsalmVII}{\vspace{2.5em}}
-\newcommand{\vspacePsalmVIII}{\vspace{2.5em}}
-\newcommand{\vspacePsalmIX}{\vspace{3em}}
-\newcommand{\vspacePsalmX}{\newpage} %{\vspace{1.5em}}
-\newcommand{\vspacePsalmXI}{\vspace{2em}}
-\newcommand{\vspacePsalmXII}{\vspace{3em}}
-\newcommand{\vspacePsalmXIII}{\newpage} %{\vspace{1.5em}}
-\newcommand{\vspacePsalmXIV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXVI}{\vspace{2em}}
-\newcommand{\vspacePsalmXVII}{\newpage} %{\vspace{2.5em}}
+\newcommand{\vspacePsalmVIII}{\vspace{3.5em}}
+\newcommand{\vspacePsalmIX}{\vspace{2.5em}}
+\newcommand{\vspacePsalmX}{\vspace{2.5em}\decorator\newpage} %{\vspace{1.5em}}
+\newcommand{\vspacePsalmXI}{\vspace{2.0em}}
+\newcommand{\vspacePsalmXII}{\vspace{2.0em}}
+\newcommand{\vspacePsalmXIII}{\vspace{1.0em}\decorator\newpage} %{\vspace{1.5em}}
+\newcommand{\vspacePsalmXIV}{\vspace{2.0em}}
+\newcommand{\vspacePsalmXV}{\vspace{2.0em}}
+\newcommand{\vspacePsalmXVI}{\vspace{2.0em}\decoratorSmall\vspace{1.0em}}
+\newcommand{\vspacePsalmXVII}{\vspace{2em}\decorator\newpage} %{\vspace{2.5em}}
 \newcommand{\vspacePsalmXVIII}{\vspace{2em}}
 \newcommand{\vspacePsalmXIX}{\vspace{2em}}
 \newcommand{\vspacePsalmXX}{\vspace{2em}}
-\newcommand{\vspacePsalmXXI}{\vspace{2em}}
-\newcommand{\vspacePsalmXXII}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXXIII}{\vspace{1.5em}}
-\newcommand{\vspacePsalmXXIV}{\vspace{2em}}
+\newcommand{\vspacePsalmXXI}{\vspace{1.5em}}
+\newcommand{\vspacePsalmXXII}{\vspace{2.25em}}
+\newcommand{\vspacePsalmXXIII}{\newpage} %{\vspace{1.5em}}
+\newcommand{\vspacePsalmXXIV}{\vspace{1.5em}}
 \newcommand{\vspacePsalmXXV}{\vspace{1.5em}}
-\newcommand{\vspacePsalmXXVI}{\vspace{1.5em}}
-\newcommand{\vspacePsalmXXVII}{\vspace{2em}}
-\newcommand{\vspacePsalmXXVIII}{\vspace{2em}}
-\newcommand{\vspacePsalmXXIX}{\vspace{2em}}
-\newcommand{\vspacePsalmXXX}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXXXI}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXXXII}{\vspace{1.5em}}
+\newcommand{\vspacePsalmXXVI}{\vspace{2.5em}}
+\newcommand{\vspacePsalmXXVII}{\vspace{2.5em}}
+\newcommand{\vspacePsalmXXVIII}{\vspace{2.0em}} %{\vspace{2em}}
+\newcommand{\vspacePsalmXXIX}{\vspace{1.0em}\decorator\newpage} %{\vspace{2em}}
+\newcommand{\vspacePsalmXXX}{\newpage}
+\newcommand{\vspacePsalmXXXI}{\vspace{1.5em}\decorator\newpage} %{\vspace{2.5em}}
+\newcommand{\vspacePsalmXXXII}{\vspace{1.5em}} % START HERE -------------------
 \newcommand{\vspacePsalmXXXIII}{\vspace{1.5em}}%
 \newcommand{\vspacePsalmXXXIV}{\vspace{1.5em}}
 \newcommand{\vspacePsalmXXXV}{\vspace{2.5em}}
@@ -112,7 +122,7 @@
 \newcommand{\vspacePsalmLVIII}{\vspace{1.0em}}
 \newcommand{\vspacePsalmLIX}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLX}{\newpage} %{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXI}{\newpage} %{\vspace{1.5em}} % START HERE
+\newcommand{\vspacePsalmLXI}{\newpage} %{\vspace{1.5em}}
 \newcommand{\vspacePsalmLXII}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLXIII}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLXIV}{\vspace{1.5em}}
