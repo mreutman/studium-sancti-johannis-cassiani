@@ -81,16 +81,16 @@
     {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
   {%
     \psalmDivisionFormat
-    \textsc{Divizio} \RomanNumeralCaps{#1},\RomanNumeralCaps{#2}.
+    \textsc{Divizio} \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.
   }
 }
 
 % PUBLIC - - - - - - - - - - - - -
 \newcommand{\psalmBeginDivision}[3]{%
   \psalmChapterDivisionNeedSpace
-  {%
+  {% 
     \centering
-    \psalmDivisionLeft~~\psalmDivision{#2}{#3}~\psalmDivisionRight
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#2}{#3}~{\large›}~~\psalmDivisionRight
   }
 
   \vspaceChapterTitle
@@ -102,7 +102,7 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \psalmDivisionLeft~~\psalmDivision{#3}{#4}~~\psalmDivisionRight
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#3}{#4}~{\large›}~~\psalmDivisionRight
 
     \vspaceDivision
     {%
@@ -117,7 +117,7 @@
   \psalmChapterDivisionNeedSpace
   {%
     \centering
-    \psalmDivisionLeft~~\psalmDivision{#4}{#5}~~\psalmDivisionRight
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#4}{#5}~{\large›}~~\psalmDivisionRight
 
     \vspaceDivision
     {%
