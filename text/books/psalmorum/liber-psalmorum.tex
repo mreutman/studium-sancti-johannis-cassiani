@@ -139,10 +139,10 @@
 
 \newcommand{\psalmChapterInscription}[3]{%
   \psalmChapterNeedSpace
-  {%
-    \psalmChapterNumberInscription{#1}{#2}
-  }
+  \psalmChapterNumberInscription{#1}{#2}
+
   \vspaceChapterTitle
+
   \psalmBody{#3}
 }
 
@@ -161,8 +161,8 @@
 %\fontdimen7\font=0.5em% extra space
 }
 
-\widowpenalty=10000
-\clubpenalty=10000
+%\widowpenalty=10000
+%\clubpenalty=10000
 
 \renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
 

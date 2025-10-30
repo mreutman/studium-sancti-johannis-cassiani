@@ -14,21 +14,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FORMAT
 
-\def\psalmskip{\vspace\psalmskipamount}
-\newskip\psalmskipamount \psalmskipamount=10pt plus 2pt minus 5pt
-
-\def\divisionskip{\vspace\divisionskipamount}
-\newskip\divisionskipamount \divisionskipamount=2pt plus 0pt minus 1pt
-
 \newcommand{\pageHeaderFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}\fontdimen2\font=2em}
 \newcommand{\pageNumberFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}}
 \newcommand{\heightVerseNumber}{0.5ex}
 \newcommand{\psalmBodyFormat}{\large}
 \newcommand{\psalmChapterDivisionNeedSpace}{\needspace{.075\baselineskip}}
-\newcommand{\psalmChapterNeedSpace}{\needspace{0.75\baselineskip}}
+\newcommand{\psalmChapterNeedSpace}{\needspace{0.075\baselineskip}}
 \newcommand{\psalmChapterNumberFormat}{\normalsize}
 \newcommand{\psalmChapterNumberSpacing}{1.0}
-\newcommand{\psalmChapterNumberIndent}{3.2em}
+\newcommand{\psalmChapterNumberIndent}{3.0em}
 \newcommand{\psalmDivisionFormat}{\bfseries\small\addfontfeature{LetterSpace=20.0}\fontdimen2\font=1em}
 \newcommand{\psalmInscriptionFormat}{\itshape\small\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
 \newcommand{\psalmTitleFormat}{\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
@@ -37,9 +31,6 @@
 \newcommand{\sizeVerseFirstLetter}{\huge}
 \newcommand{\sizeVerseNumber}{\scriptsize}
 \newcommand{\sizeVerseNumberInscription}{\small}
-
-\newcommand{\skipAfterPsalm}{\psalmskip}
-\newcommand{\skipAfterPsalmContinue}{\psalmskip}
 
 \newcommand{\decorateRaise}{0.275em}
 
@@ -54,12 +45,12 @@
 
 \newcommand{\decorator}{
 
-  {\hfill\raisebox{0.15em}{\rule{3em}{0.75pt}}~~~~~~~{\small\symbolCross}~~~~~~~\raisebox{0.15em}{\rule{3em}{0.75pt}}\hfill}
+  {\hfill\raisebox{0.15em}{\rule{3em}{0.75pt}}~~~~~~~{\small\symbolCross~~~~~~~~~~\symbolCross~~~~~~~~~~\symbolCross}~~~~~~~\raisebox{0.15em}{\rule{3em}{0.75pt}}\hfill}
 }
 
 \newcommand{\decoratorSmall}{
 
-  {\hfill{\raisebox{\decorateRaise}{\itshape\footnotesize\symbolCross}}\hfill}
+  {\hfill{\raisebox{\decorateRaise}{\small\symbolCross~~~~~~~~~~~~~~~\symbolCross~~~~~~~~~~~~~~~\symbolCross}}\hfill}
 }
 
 \newcommand{\decoratorLarge}{
@@ -72,24 +63,24 @@
 }
 
 \newcommand{\vspaceDivision}{\vspace{1.0em}}
-\newcommand{\vspaceChapterTitle}{\vspace{1.0em}}
+\newcommand{\vspaceChapterTitle}{\vspace{0.75em}}
 \newcommand{\vspacePsalmI}{\vspace{2em}}
 \newcommand{\vspacePsalmII}{\vspace{2em}}
-\newcommand{\vspacePsalmIII}{\vspace{1.5em}\decorator\newpage}
+\newcommand{\vspacePsalmIII}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmIV}{\vspace{2.0em}}
 \newcommand{\vspacePsalmV}{\vspace{2em}}
 \newcommand{\vspacePsalmVI}{\vspace{2.0em}}
 \newcommand{\vspacePsalmVII}{\vspace{2.5em}}
 \newcommand{\vspacePsalmVIII}{\vspace{3.5em}}
 \newcommand{\vspacePsalmIX}{\vspace{2.5em}}
-\newcommand{\vspacePsalmX}{\vspace{3.0em}\decorator\newpage}
+\newcommand{\vspacePsalmX}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXI}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXII}{\vspace{2.0em}}
-\newcommand{\vspacePsalmXIII}{\vspace{1.0em}\decorator\newpage}
+\newcommand{\vspacePsalmXIII}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXIV}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXV}{\vspace{2.0em}}
-\newcommand{\vspacePsalmXVI}{\vspace{2.0em}\decoratorSmall\vspace{1.0em}}
-\newcommand{\vspacePsalmXVII}{\vspace{2em}\decorator\newpage}
+\newcommand{\vspacePsalmXVI}{\vspace{1.5em}\decoratorSmall\vspace{1.5em}}
+\newcommand{\vspacePsalmXVII}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXVIII}{\vspace{2em}}
 \newcommand{\vspacePsalmXIX}{\vspace{2em}}
 \newcommand{\vspacePsalmXX}{\vspace{2em}}
@@ -101,9 +92,9 @@
 \newcommand{\vspacePsalmXXVI}{\vspace{1.0em}\decoratorSmall\vspace{1.0em}}
 \newcommand{\vspacePsalmXXVII}{\vspace{2.5em}}
 \newcommand{\vspacePsalmXXVIII}{\vspace{2.0em}}
-\newcommand{\vspacePsalmXXIX}{\vspace{1.0em}\decorator\newpage}
+\newcommand{\vspacePsalmXXIX}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXXX}{\newpage}
-\newcommand{\vspacePsalmXXXI}{\vspace{1.5em}\decorator\newpage}
+\newcommand{\vspacePsalmXXXI}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXXXII}{\vspace{2.0em}} 
 \newcommand{\vspacePsalmXXXIII}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXXXIV}{\vspace{1.5em}}
@@ -111,16 +102,16 @@
 \newcommand{\vspacePsalmXXXVI}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXXXVII}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXXXVIII}{\vspace{1.5em}}
-\newcommand{\vspacePsalmXXXIX}{\vspace{0.5em}\decoratorSmall\vspace{0.75em}}
-\newcommand{\vspacePsalmXL}{\vspace{2.0em}}
-\newcommand{\vspacePsalmXLI}{\vspace{2.5em}}
+\newcommand{\vspacePsalmXXXIX}{\vspace{0.75em}\decoratorSmall\vspace{0.75em}}
+\newcommand{\vspacePsalmXL}{\vspace{2.5em}}
+\newcommand{\vspacePsalmXLI}{\vspace{3.0em}}
 \newcommand{\vspacePsalmXLII}{\newpage}
 \newcommand{\vspacePsalmXLIII}{\vspace{1.5em}}
 \newcommand{\vspacePsalmXLIV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXLV}{\vspace{1.5em}\decorator\newpage}
+\newcommand{\vspacePsalmXLV}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXLVI}{\vspace{2.0em}}
 \newcommand{\vspacePsalmXLVII}{\vspace{2.5em}}
-\newcommand{\vspacePsalmXLVIII}{\vspace{1.5em}\decorator\newpage}
+\newcommand{\vspacePsalmXLVIII}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmXLIX}{\vspace{1.5em}}
 \newcommand{\vspacePsalmL}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLI}{\vspace{2.5em}}
@@ -138,26 +129,26 @@
 \newcommand{\vspacePsalmLXIII}{\vspace{2.5em}}
 \newcommand{\vspacePsalmLXIV}{\vspace{1.0em}}
 \newcommand{\vspacePsalmLXV}{\vspace{2.5em}}
-\newcommand{\vspacePsalmLXVI}{\vspace{1.5em}\decoratorSmall\vspace{1.0em}}
-\newcommand{\vspacePsalmLXVII}{\vspace{4.5em}\decorator\newpage}
+\newcommand{\vspacePsalmLXVI}{\vspace{1.25em}\decoratorSmall\vspace{1.25em}}
+\newcommand{\vspacePsalmLXVII}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmLXVIII}{\vspace{2.5em}}
 \newcommand{\vspacePsalmLXIX}{\newpage}
 \newcommand{\vspacePsalmLXX}{\vspace{2.5em}}
-\newcommand{\vspacePsalmLXXI}{\vspace{1.5em}\decorator\newpage}
+\newcommand{\vspacePsalmLXXI}{\vfill\decorator\vfill\newpage}
 \newcommand{\vspacePsalmLXXII}{\vspace{2.5em}}
-\newcommand{\vspacePsalmLXXIII}{\vspace{2.0em}}
-\newcommand{\vspacePsalmLXXIV}{\newpage}
-\newcommand{\vspacePsalmLXXV}{\vspace{3.5em}}
-\newcommand{\vspacePsalmLXXVI}{\vspace{1.5em}\decoratorSmall\vspace{1.0em}}
+\newcommand{\vspacePsalmLXXIII}{\vspace{1.0em}\decoratorSmall\vspace{1.0em}}
+\newcommand{\vspacePsalmLXXIV}{\newpage\phantom{blank}}
+\newcommand{\vspacePsalmLXXV}{\vspace{3.0em}}
+\newcommand{\vspacePsalmLXXVI}{\vspace{1.25em}\decoratorSmall\vspace{1.25em}}
 \newcommand{\vspacePsalmLXXVII}{\vspace{1.25em}\decoratorSmall\vspace{1.25em}}
-\newcommand{\vspacePsalmLXXVIII}{\newpage} % HERE ---------------------------
-\newcommand{\vspacePsalmLXXIX}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXX}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXXI}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXXII}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXXIII}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXXIV}{\vspace{1.5em}}
-\newcommand{\vspacePsalmLXXXV}{\vspace{1.5em}}
+\newcommand{\vspacePsalmLXXVIII}{\newpage\phantom{blank}}
+\newcommand{\vspacePsalmLXXIX}{\vspace{3.0em}}
+\newcommand{\vspacePsalmLXXX}{\vspace{3.25em}\decoratorSmall\vspace{3.25em}}
+\newcommand{\vspacePsalmLXXXI}{\newpage}
+\newcommand{\vspacePsalmLXXXII}{\newpage\phantom{text}\vspace{1em}}
+\newcommand{\vspacePsalmLXXXIII}{\newpage\phantom{text}}
+\newcommand{\vspacePsalmLXXXIV}{\vfill\decorator\vfill\newpage}
+\newcommand{\vspacePsalmLXXXV}{\vspace{1.5em}} % HERE ---------------------------
 \newcommand{\vspacePsalmLXXXVI}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLXXXVII}{\vspace{1.5em}}
 \newcommand{\vspacePsalmLXXXVIII}{\vspace{1.5em}}
