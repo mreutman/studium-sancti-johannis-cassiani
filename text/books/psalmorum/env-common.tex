@@ -9,6 +9,35 @@
 \usepackage{titlesec}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+
+\setmainfont[
+  Path = ./fonts/dueblo/,
+  Extension = .otf,
+  UprightFont = *-MED,
+  BoldFont = *-BOL,
+  ItalicFont = *-REG,
+  BoldItalicFont = *-BOL,
+  Ligatures = {NoCommon, NoDiscretionary},
+]{Dueblo-SEMI-EXT}
+
+\newfontfamily{\liturgy}[
+  Path = ./fonts/liturgy/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+]{Liturgy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SYMBOLS
+
+\newcommand{\symbolCross}{{\liturgy +}}
+\newcommand{\symbolResponse}{{\liturgy R}}
+\newcommand{\symbolVersicle}{{\liturgy V}}
+\newcommand{\symbolPoint}{𝄪}
+\newcommand{\symbolBreak}{\raisebox{-0.10em}{\itshape /}}
+\newcommand{\symbolFinal}{\raisebox{-0.10em}{\itshape //}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FORMAT
 
 \newenvironment{nscenter}
@@ -27,3 +56,212 @@
 \newskip\tinyskipamount \tinyskipamount=1pt plus 1pt minus 0pt
 
 \newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+
+\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FUNCTIONS
+
+\newcommand{\verseFirstLetter}[1]
+  {{\sizeVerseFirstLetter #1}}
+
+\newcommand{\verseNum}[1]
+  {\textup{\textsuperscript{\itshape\sizeVerseNumber #1.}}}
+
+\newcommand{\verseNumInscription}[1]
+  {\textsuperscript{\textup{\itshape\sizeVerseNumberInscription #1.}}}
+
+\newcommand{\psalmChapterNumberTitle}[1]{%
+  {%
+    \bfseries\psalmTitleFormat \textsc{Psalmus} {%
+      \psalmTitleNumberFormat\RomanNumeralCaps{#1}.
+    }
+  }
+}
+
+\newcommand{\psalmBody}[1]{%
+  \noindent\textsc{\psalmBodyFormat #1}
+}
+
+\newcommand{\psalmChapterNumberBegin}{%
+  \begingroup
+  \justifying
+  \leftskip=\psalmChapterNumberIndent
+  \advance\csname @rightskip\endcsname \leftskip \advance\rightskip \leftskip
+  \psalmChapterNumberFormat
+  \setstretch{\psalmChapterNumberSpacing}
+}
+
+\newcommand{\psalmChapterNumberEnd}{%
+  \par
+  \endgroup
+}
+
+\newcommand{\psalmChapterNumber}[1]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\psalmChapterNumberInscription}[2]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}\textsc{\psalmInscriptionFormat #2}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\psalmDivision}[2]{%
+  \markboth
+    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
+    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
+  {%
+    \psalmDivisionFormat
+    \textsc{Divizio} \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.
+  }
+}
+
+% PUBLIC - - - - - - - - - - - - -
+\newcommand{\psalmBeginDivision}[3]{%
+  \psalmChapterDivisionNeedSpace
+  {% 
+    \centering
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#2}{#3}~{\large›}~~\psalmDivisionRight
+  }
+
+  \vspaceChapterTitle
+
+  \psalmBody{#1}
+}
+
+\newcommand{\psalmChapterBeginDivision}[4]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    \centering
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#3}{#4}~{\large›}~~\psalmDivisionRight
+
+    \vspaceDivision
+    {%
+      \psalmChapterNumber{#1}
+    }
+  }
+  \vspaceChapterTitle
+  \psalmBody{#2}
+}
+
+\newcommand{\psalmChapterInscriptionBeginDivision}[5]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    \centering
+    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#4}{#5}~{\large›}~~\psalmDivisionRight
+
+    \vspaceDivision
+    {%
+      \psalmChapterNumberInscription{#1}{#2}
+    }
+  }
+  \vspaceChapterTitle
+  \psalmBody{#3}
+}
+
+\newcommand{\psalmChapter}[2]{%
+  \psalmChapterNeedSpace
+  {%
+    \psalmChapterNumber{#1}
+  }
+  \vspaceChapterTitle
+  \psalmBody{#2}
+}
+
+\newcommand{\psalmChapterInscription}[3]{%
+  \psalmChapterNeedSpace
+  \psalmChapterNumberInscription{#1}{#2}
+
+  \vspaceChapterTitle
+
+  \psalmBody{#3}
+}
+
+% PUBLIC - - - - - - - - -
+\newcommand{\prayer}[2]{%
+  \psalmChapter{#1}{#2}
+}
+
+\newcommand{\decoratorI}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorII}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorIII}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIIINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorBegin}{%
+  \decoratorI{0.5em}
+}
+
+\newcommand{\decoratorEnd}{%
+
+  \vfill
+  {\hfill {\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule} \hfill}
+  \vfill
+  {\hfill \psalmEndFormat \textsc{Finis psalmorum} \hfill}
+  \vfill
+}
+
+\newcommand{\decoratorPoint}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorPointNewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  \vfill
+  \newpage
+}

@@ -1,170 +1,8 @@
 %\input{env-printer}
 \input{env-ustrade}
 
-\setmainfont[
-  Path = ./fonts/dueblo/,
-  Extension = .otf,
-  UprightFont = *-MED,
-  BoldFont = *-BOL,
-  ItalicFont = *-REG,
-  BoldItalicFont = *-BOL,
-  Ligatures = {NoCommon, NoDiscretionary},
-]{Dueblo-SEMI-EXT}
-
-\newfontfamily{\liturgy}[
-  Path = ./fonts/liturgy/,
-  Extension = .ttf,
-  UprightFont = *-Regular,
-]{Liturgy}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FUNCTIONS
-
-\newcommand{\symbolCross}{{\liturgy +}}
-\newcommand{\symbolResponse}{{\liturgy R}}
-\newcommand{\symbolVersicle}{{\liturgy V}}
-
-\newcommand{\verseFirstLetter}[1]
-  {{\sizeVerseFirstLetter #1}}
-
-\newcommand{\verseNum}[1]
-  {\textup{\textsuperscript{\itshape\sizeVerseNumber #1.}}}
-
-\newcommand{\verseNumInscription}[1]
-  {\textsuperscript{\textup{\itshape\sizeVerseNumberInscription #1.}}}
-
-\newcommand{\psalmChapterNumberTitle}[1]{%
-  {%
-    \bfseries\psalmTitleFormat \textsc{Psalmus} {%
-      \psalmTitleNumberFormat\RomanNumeralCaps{#1}.
-    }
-  }
-}
-
-\newcommand{\psalmBody}[1]{%
-  \noindent\textsc{\psalmBodyFormat #1}
-}
-
-\newcommand{\psalmChapterNumberBegin}{%
-  \begingroup
-  \justifying
-  \leftskip=\psalmChapterNumberIndent
-  \advance\csname @rightskip\endcsname \leftskip \advance\rightskip \leftskip
-  \psalmChapterNumberFormat
-  \setstretch{\psalmChapterNumberSpacing}
-}
-
-\newcommand{\psalmChapterNumberEnd}{%
-  \par
-  \endgroup
-}
-
-\newcommand{\psalmChapterNumber}[1]{
-  {%
-    \psalmChapterNumberBegin
-    \noindent\psalmChapterNumberTitle{#1}
-    \psalmChapterNumberEnd
-  }
-}
-
-\newcommand{\psalmChapterNumberInscription}[2]{
-  {%
-    \psalmChapterNumberBegin
-    \noindent\psalmChapterNumberTitle{#1}\textsc{\psalmInscriptionFormat #2}
-    \psalmChapterNumberEnd
-  }
-}
-
-\newcommand{\psalmDivision}[2]{%
-  \markboth
-    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
-    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
-  {%
-    \psalmDivisionFormat
-    \textsc{Divizio} \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.
-  }
-}
-
-% PUBLIC - - - - - - - - - - - - -
-\newcommand{\psalmBeginDivision}[3]{%
-  \psalmChapterDivisionNeedSpace
-  {% 
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#2}{#3}~{\large›}~~\psalmDivisionRight
-  }
-
-  \vspaceChapterTitle
-
-  \psalmBody{#1}
-}
-
-\newcommand{\psalmChapterBeginDivision}[4]{%
-  \psalmChapterDivisionNeedSpace
-  {%
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#3}{#4}~{\large›}~~\psalmDivisionRight
-
-    \vspaceDivision
-    {%
-      \psalmChapterNumber{#1}
-    }
-  }
-  \vspaceChapterTitle
-  \psalmBody{#2}
-}
-
-\newcommand{\psalmChapterInscriptionBeginDivision}[5]{%
-  \psalmChapterDivisionNeedSpace
-  {%
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#4}{#5}~{\large›}~~\psalmDivisionRight
-
-    \vspaceDivision
-    {%
-      \psalmChapterNumberInscription{#1}{#2}
-    }
-  }
-  \vspaceChapterTitle
-  \psalmBody{#3}
-}
-
-\newcommand{\psalmChapter}[2]{%
-  \psalmChapterNeedSpace
-  {%
-    \psalmChapterNumber{#1}
-  }
-  \vspaceChapterTitle
-  \psalmBody{#2}
-}
-
-\newcommand{\psalmChapterInscription}[3]{%
-  \psalmChapterNeedSpace
-  \psalmChapterNumberInscription{#1}{#2}
-
-  \vspaceChapterTitle
-
-  \psalmBody{#3}
-}
-
-% PUBLIC - - - - - - - - -
-\newcommand{\prayer}[2]{%
-  \psalmChapter{#1}{#2}
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT
-\setlength{\emergencystretch}{6em}
-\EverySelectfont{%
-%\fontdimen2\font=1em% interword space
-\fontdimen3\font=2em% interword stretch
-%\fontdimen4\font=0.1em% interword shrink
-%\fontdimen7\font=0.5em% extra space
-}
-
-%\widowpenalty=10000
-%\clubpenalty=10000
-
-\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
 
 \begin{document}
 
@@ -172,7 +10,7 @@
 \setcounter{page}{1}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\decoratorI{0.5em}
+\decoratorBegin
 \input{psalms/001-la}\vspacePsalmI
 \input{psalms/002-la}\vspacePsalmII
 \input{psalms/003-la}\vspacePsalmIII
@@ -443,6 +281,7 @@
 \input{psalms/148-la}\vspacePsalmCXLVIII
 \input{psalms/149-la}\vspacePsalmCXLIX
 \input{psalms/150-la}\vspacePsalmCL
+\decoratorEnd
 
 \end{document}
 
