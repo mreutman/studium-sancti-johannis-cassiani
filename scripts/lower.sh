@@ -1,0 +1,316 @@
+Himnus Stante Graecus Mātrī Deī ^ Akathist to the Mother of God
+
+Prōpugnātrix magistra victōriārum, ^ To the champion leader of victories,
+nōs servī tuīs, sīcut redēmptī ā dīrīs, grātiārum cantica ^ we thy servants, as ones rescued from perils, songs of thanks
+laudāmus tibī, Cīvitās tua, Deī Genetrīx. ^ we sing to thee, our city, mother of God.
+Sed sīcut habens imperium inexpugnābile, ^ But as one having unconquerable power, 
+dē omnibīs perīculīs līberā nōs ^ from every danger rescue us,
+ut clāmēmus tibī, « Āve, sponsa insponsāta ». ^ that we may cry to thee, "Hail, O Unwedded Bride."
+
+Α ^ Alpha
+
+Prīnceps angelōrum dē caelō missus est dīcere Deī Genetrīcī, « Āve », ^ A prince of the angels was sent from heaven to say to the Mother of God, "Hail",
+et cum incorporeā vōce incorporantem tē videns, Domine, pavēscēbat et stābat clamans ad eam tālia: ^ and seeing thee, O Lord, take form at the sound of his bodiless voice, he was alarmed and stood crying aloud to her such things:
+
+Āve, per quam gaudium splendēbit. ^ Hail, through whom joy shall shine forth.
+Āve, per quam maledictiō dēficiet. ^ Hail, through whom the curse shall cease.
+Āve, lāpsī Ādāmis resurrectiō. ^ Hail, resurrection of fallen Adam.
+Āve, lacrimārum Ēvae redēmptiō. ^ Hail, redemption of the tears of Eve.
+Āve, altitūdō inascensibilis cōgitātiōnibus hūmānī. ^ Hail, height inaccessible of the thougts of man.
+Āve, prōfunditās invisibilis etiam angelōrum oculīs. ^ Hail, depth hard to see even for the eyes of angels.
+Āve, quae es imperātōris solium. ^ Hail, thou who art the throne of the king.
+Āve, quae portās portantem omnia. ^ Hail, thou who carries him who carries all things.
+Āve, stella dēmonstrans sōlem. ^ Hail, star showing forth the sun.
+Āve, uterus dīvīnae incarnationis. ^ Hail, womb of the divine incarnation.
+Āve, per quam renovātur creātūra. ^ Hail, through whom creation is restored.
+Āve, cum quā adōrātur plasmātor. ^ Hail, with whom the creator is adored.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Β ^ Beta
+
+Videns Sancta seipsam in castitāte inquīvit Gabriēlī fīdūciāliter, ^ The holy woman, seeing herself in purity, boldly said to Gabriel,
+« Mīrāculum tuae vōcī insusceptibile animae meae appāret; ^ "The wonder of thy speech appears incapable for my soul to receive; 
+absque enim semine conceptiōnis praedīcis partum, clāmans: Allēlūja. » ^ for without the seed of conception you speak of birth, crying: Hallelujah."
+
+Γ ^ Gamma
+
+Nōtitiam ignōtam nōscere virgō quaerens clāmāvit ad ministrantem: ^ The virgin, seeking to know knowledge that cannot be known, cried to the ministering one,
+« ¿Ex lumbīs castīs fīlium nāscī quōmodō est possibile? Dīc mihī. » ^ "How is it possible for a son to be born from pure loins? Tell me."
+Ad quam ille locutus est sīcut consequēbātur in timōre, clamans: ^ To whom that minister spake as one having accompanied in fear, saying:
+
+Āve, consiliī arcanī initiātrīx. ^ Hail, initiate of arcane council.
+Āve, honōra superior omnī. ^ Hail, honorable one higher than all things.
+Āve, mīrābilium Chrīstī prīmitiae. ^ Hail, firstfruits of the wonderous things of Christ.
+Āve, dogmātum ejus capitulum. ^ Hail, crown of his dogmas.
+Āve, scāla caelestis per quam dēscenduit Deus. ^ Hail, heavenly ladder by which God came down.
+Āve, pons trādūcens terrēnōs in caelum. ^ Hail, bridge leading those from earth to heaven.
+Āve, angelōrum fāmōsum mīrāculum. ^ Hail, wonder renowned of angels.
+Āve, vulnus lāmentātur ā daemoniīs. ^ Hail, wound lamented by demons.
+Āve, lūcem arcanē generans. ^ Hail, thou indescribably producing the light.
+Āve, quōmodō neminem docens. ^ Hail, thou teaching how this occured to no one.
+Āve, sapientium suprascandēns scientiam. ^ Hail, thou surmounting the knowledge of the wise.
+Āve, fidēlium splendens prūdentia. ^ Hail, thou shining wisdom of the faithful.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Δ ^ Delta
+
+Virtūs altissimi obumbrāvit tunc ad conceptiōnem innūptam ^ Then the power of the most high overshadowed the unwedded woman for conception,
+et frūctiferum ejus ventrem sicut agrum ostendit dulcem omnibus volentibus metere salūtem in psallendō sīc: Allēlūja. ^ and showed her fruitful womb to be as a sweet field to all those wishing to reap salvation, thus singing: Hallelujah.
+
+Ε ^ Epsilon
+
+Habens in mātrīce Deum Maria cucurrit ad Elisabētam, ^ Having God in the womb, Mary ran to Elizabeth,
+et infans illīus continuō cognōscens ipsīus salūtātiōnem gaudēbat, ^ and the infant of hers immediately knowing of his own salvation rejoiced,
+et ex saltātiōnibus, sicut canticis, clamābat ad Deī Genetrīcem: ^ and from leaping, as if in song, cried out to the Mother of God:
+
+Āve, germinis immarcēscibilis vītis. ^ Hail, vine of the unfading sprout.
+Āve, frūctūs immortālis possessiō. ^ Hail, possession of the immortal fruit.
+Āve, agricolans hūmānum. ^ Hail, thou cultivating mankind.
+Āve, plantātōrem vītae nostrae germinans. ^ Hail, thou sprouting the planter of our life.
+Āve, arvum pullulans abundantiam miserātiōnum. ^ Hail, field, bearing an abundance of compassions.
+Āve, mensa gestans cōpiam prōpitiātiōnum. ^ Hail, table holding a wealth of propitiations.
+Āve, prāta dēliciārum flōrēre faciens. ^ Hail, thou making to flourish fields of delight.
+Āve, portum animārum praeparans. ^ Hail, thou preparing a refuge for souls.
+Āve, acceptabilis incēnsus intercessiōnis. ^ Hail, acceptable incense of intercession.
+Āve, omnis orbis prōpitiātiō. ^ Hail, propitiation of the whole world.
+Āve, Deī ad mortālēs bona voluntās. ^ Hail, good will of God to mortals.
+Āve, mortālium ad Deum fidūcia. ^ Hail, boldness of mortals to God.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Ζ ^ Zeta
+
+Aestum mentis habens cōgitātiōnibus dubiīs, castus Joseph turbātus est, ^ Having a wavering mind with doubting thoughts, the pure Joseph was troubled,
+ante innūptam tē videns, et fūrtō tē nūptam suspicans, Impollūta! ^ observing before you were unwedded, and by thievery suspecting you wedded, O Unstained One.
+Discens autem conceptiōnem ex Spīritū Sanctō dīxit: Allēlūja. ^ Learning however the conception came from the Holy Spirit, he cried: Hallelujah
+
+Η ^ Eta
+
+Audiērunt pāstōrēs, angelīs hymnīzāntibus, carnālem Chrīstī praesentiam, ^ The shepherds heard, while the Angels were singing, of the fleshly presentation of Christ, 
+et currentēs vēlōciter sīcut ad pastōrem, vidērunt illum tamquam agnum immaculātum in uterō Marīae pāstum et, laudantēs dīxērunt: ^ and running swiftly as to a shepherd, they beheld him as a spotless lamb nourished in the womb of Mary, and praising they said:
+
+Āve, Agni et Pastoris mater. ^ Hail, mother of the Lamb and Shepherd.
+Āve, aula ratiōnābilium ovium. ^ Hail, court of the rational sheep.
+Āve, adversa invisībilium bēstiārum ultiō. ^ Hail, vengence against invisible foes.
+Āve, paradīsī ōstiōrum apertiō. ^ Hail, opening of the gates of paradise.
+Āve, quia celestia coexultant cum terrā. ^ Hail, for heavenly things rejoice together with the earth.
+Āve, quia terrestria collaetāntur cum caelīs. ^ Hail, for earthly things are made joyful with the heavens.
+Āve, Apostolōrum ōs intacibile. ^ Hail, never silent mouth of the apostles.
+Āve, martirum invicta fīdūcia. ^ Hail, unconquered boldness of martyrs.
+Āve, firma fideī stabilitiō. ^ Hail, firm support of faith.
+Āve, splendida gratiae cognitiō. ^ Hail, splendid cognition of grace.
+Āve, per quam nūdātus est infernus. ^ Hail, through whom Hades was stripped bare.
+Āve, per quam indūtī sumus glōriā. ^ Hail, through whom we are clothed with glory.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Θ ^ Theta
+
+Dīvīnam accurrentem stellam videntēs Magī ipsīus secūtī sunt splendōrem, ^ Seeing the divinly rushing star, the Magi followed the splendor of it,
+et sīcut lucernam tenentes eam per ipsam scrutabantur rēgem potentem, ^ and holding it as a lamp, by it they sought for a mighty king, 
+et cōnsequentēs Inconsequibilem clāmāvērunt mātrī ejus: Allēlūja. ^ and reaching the Unreachable one they cried out to the mother of him: Hallelujah.
+
+Ι ^ Iota
+
+Vidērunt puerī Caldaeōrum illum in manibus Virginis qui plasmāvit manibus hominēs, ^ The sons of the Chaldeans saw in the hands of the Virgin him who formed mankind with his hands,
+et esse Dominum intelligentēs eum, et sī acceptus formam servī, ^ and discerning him to be the Lord, though he took the form of a servant, 
+festīnāvērunt muneribus famulari eī, et clāmāvērunt Benedictae: ^ they hurried to serve him with gifts, and cried to her the blessed one:
+
+Āve, māter inoccidentis stellae. ^ Hail, mother of the unsetting star.
+Āve, misticī diēī oriens. ^ Hail, thou rising of the mystical day.
+Āve, errōris camīnum dēsinens. ^ Hail, thou ceasing the furnace of error.
+Āve, Trīnitātī initiātōs custōdiens. ^ Hail, thou guarding the intiates of the trinity.
+Āve, tirannī inhumanī prīncipātum ējiciens. ^ Hail, thou expelling the principality of the inhuman tyrant.
+Āve, amātōrem hūmānōrum ostendens Chrīstum. ^ Hail, showing the lover of humanity, Christ.
+Āve, barbarīs religiōnibus redimens. ^ Hail, thou redeeming from barbaric religions.
+Āve, ā caenī operibus ēruens. ^ Hail, thou drawing out from the works of mire.
+Āve, ignis adōrātiōnem extinguens. ^ Hail, thou extinguishing of the worship of fire.
+Āve, flammā vitiōrum ēripiens. ^ Hail, thou delivering from the flames of vice.
+Āve, fidēlium dūx pudīcitiae. ^ Hail, guide of the faithful to chastity.
+Āve, omnium generātiōnum laetitia. ^ Hail, joy of all generations.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Κ ^ Kappa
+
+Praedicātōrēs Deī factī Magi reversī sunt in Babilōnem, ^ The Magi, being made proclaimers of God, returned to Babylon,
+perficientes tuam profētīam et praedicantes tē Christum omnibus, ^ having completed your prophecy and proclaiming thee as Christ to all,
+sinentēs Hērōdem tamquam irrīsum nescientem psallere: Allēlūja. ^ letting Herod be as a fool not knowing how to sing: Hallelujah.
+
+Λ ^ Lambda
+
+Splendens in Aegiptō illuminationem veritatis, ējēcistī tenebrās falsitatis; ^ Shining in Egpyt the illumination of truth, thou cast out the shadow of darkness;
+simulacra enim ejus corruxērunt, nōn ferentia tuam potentiam, Salvātor; ^ for the idols of it fell, not suffering thy power, O Savior;
+līberātī autem hōrum exclāmāvērunt ad Deī Genetrīcem: ^ those freed from them however cried out to the Mother of God:
+
+Āve, ērēctiō hominum. ^ Hail, uplifting of men.
+Āve, ruīna daemonum. ^ Hail, ruin of demons.
+Āve, quae potentiam errōris conculcāvistī. ^ Hail, thou who trampled the power of error.
+Āve, īdōlōrum dolum arguens. ^ Hail, thou making clear the deception of idols.
+Āve, mare quae mersistī Faraōnem invīsibilem. ^ Hail, thou sea that drowned the invisible Pharaoh.
+Āve, petra quae saturāvistī sitientes vitam. ^ Hail, thou rock that has satisfied those thirsting for life.
+Āve, ignea columna dūcens eōs quī sunt in tenebrīs. ^ Hail, fiery pillar leading those who are in darkness.
+Āve, tegumentum mundī amplius quam nūbis. ^ Hail, covering of the world greater than the cloud. 
+Āve, ēsca mannae succedens. ^ Hail, food succeeding of manna.
+Āve, gaudiī sanctī ministra. ^ Hail, minister of sacred joy.
+Āve, casta terra prōmissiōnis. ^ Hail, pure land of promise.
+Āve, ex quā fluit mel et lac. ^ Hail, thou from who milk and honey flows.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Μ ^ Mu
+
+Debitum Simeōnī discessūrō dē praesentī vītā ac saeculō errōris redditum est sīcut infans in bracchiīs ejus, ^ The debt to Simeon is repaid as an infant in his arms when he was about to depart this present life and age of wandering,
+sed etiam cognitus illī esse Deum perfectum; ideō obstupuit sapientiā tuā, clāmans: Allēlūja. ^ but also known to him to be perfect God; therefore he was amazed by thy wisdom, crying: Hallelujah.
+
+Ν ^ Nu
+
+Novam ostetendit creātūram manifēstans Creātor nōbīs ab ipsō factīs, ^ The Creator has shown a new creation, manifesting himself to us who are made by him,
+sine sēmine germinans frūctus et conservans ventrem sīcut erat incorruptum; ^ a fruit grown without seed and preserving the womb incorruput as it was,
+ut miraculum videntēs eam laudēmus, dīcentēs: ^ that seeing the miracle we may praise her, saying:
+
+Āve, flōs incorruptiōnis. ^ Hail, flower of incorruptibility.
+Āve, corōna continentiae. ^ Hail, crown of chastity.
+Āve, resurrēctiōnis figūram persplendens. ^ Hail, thou shining through the figure of the resurrection.
+Āve, angelōrum vītam demonstrans. ^ Hail, thou showing the life of the angels.
+Āve, arbor splendida frūctifera ex quā nūtriuntur fidēlēs. ^ Hail, splendid fruit-bearing tree from which the faithful are nourished.
+Āve, folium suāvis umbrōsum quō teguntur multī. ^ Hail, sweet shady branch by which many are covered.
+Āve, pariens redemptiōnem captīvōrum. ^ Hail, thou giving birth to the redemption of captives.
+Āve, generans ductōrem errantium. ^ Hail, thou birthing the guide of those astray. 
+Āve, ante jūdicem omnium exōrātiō. ^ Hail, petition before the judge of all.
+Āve, dēlictōrum indulgentia. ^ Hail, pardon of offenses.
+Āve, stola nūdōrum fīdissima. ^ Hail, most faithful robe of the naked.
+Āve, affectiō omnem amōrem vincens. ^ Hail, affection winning all love.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Ξ ^ Xi
+
+Peregrīnam nātīvitātem videntēs peregrīnēmur ā mundō, mentem in caelum traspōnentēs; ^ Seeing this strange nativity let us be strangers from the world, transporting the mind to heaven;
+ideō enim Altissimus in terrā nōbīs ostentus est ipse sīcut humilis homō, ^ for this truly the Most High has shown himself as a lowly man,
+volens attrahere ad altitūdinem caelōrum fidēliter clāmantēs: Allēlūja. ^ wishing to draw to the height of the heavens those who faithfully cry: Hallelujah.
+
+Ο ^ Omicron
+
+Tōtus praesens infrā et suprā, nullō modō aberat incircumscrīptus sermō; ^ Totally present below and above; in no way was the uncircumscribed word absent;
+dispēnsātiō enim dīvīna erat, nōn translātiō autem locālis facta est, ^ this was divine dispensation, and no change of place was made,
+et ipse nātus ex virgine ēlēctā Deī quae tālia audiens: ^ and he was born from a virgin chosen of God, who heard such things:
+
+Āve, Dei immensī regiō. ^ Hail, region of the immeasurable God.
+Āve, venerandī mistēriī līmen. ^ Hail, threshold of venerable mystery.
+Āve, infidēlium dubitāta audītiō. ^ Hail, doubted hearing of the unfaithful.
+Āve, fidēlium indubitāta glōriātiō. ^ Hail, undoubted boast of the faithful.
+Āve, currus sanctissimus ejus quī Cherubīmēs vehitur. ^ Hail, most holy chariot of him who rides the cherubim
+Āve, domus glōriōsissima ejus quī Serafīmēs ascendit. ^ Hail, most glorious dwelling of him who mounts the seraphim.
+Āve, contrāria ad concordiam dūcens. ^ Hail, thou leading contrary things to union.
+Āve, puerperium et virginitātem jungens. ^ Hail, thou joining childbirth and virginity.
+Āve, per quam absolūta est transgressiō. ^ Hail, through whom transgression is absolved. 
+Āve, per quam apertus est paradīsus. ^ Hail, through whom paradise is revealed.
+Āve, clāvis Chrīstī rēgnī. Hail, key of Christ's kingdom.
+Āve, spes bonōrum aeternōrum. ^ Hail, hope of eternal good things.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Π ^ Pi
+
+Omnis nātūra angelōrum stupuit magnum tuae incarnātiōnis opus; ^ All angelic nature was amazed at the great deed of thine incarnation;
+inaccessibilem enim vidērunt sīcut accessibilem, ^ for they saw the inaccesible as accessible,
+hominem nōbīscum quidem commorantem et audientem ab omnibus: Allēlūja. ^ a man in fact remaining with us and hearing from all: Hallelujah.
+
+Ρ ^ Rho
+
+Rhētorēs multisonos, sīcut pisces insonos, vidēmus cōram tē, Deī Genitrīx; ^ The many sounding rhetoricians we see as mute fish before thee, O Mother of God;
+incertant enim dīcere quōmodō et virgō manens et parere potuistī. ^ for they were uncertain how to say one both remains a virgin and has given birth.
+Nōs autem, mistērium admīrantēs, fidēliter clāmāmus: ^ We however, marveling at the mystery, faithfully cry out:
+
+Āve, sapientiae Deī receptāculum. ^ Hail, receptacle of the wisdom of God.
+Āve, prōvidentiae ejus signum. ^ Hail, sign of his providence.
+Āve, filosofōs insipientēs ostendens. ^ Hail, thou showing philosophers to be senseless.
+Āve, artificēs irratiōnālēs arguens. ^ Hail, thou exposing the artificers to be irrational.
+Āve, quia stultī factī sunt dīrī conquīsītōrēs. ^ Hail, for dreadful disputants are made foolish.
+Āve, quia ēvānuērunt fābulārum scrīptōrēs. ^ Hail, for the composers of fables have faded away.
+Āve, Atēniensium nexūs dīvellens. ^ Hail, thou rending the binds of the Athenians.
+Āve, piscātōrum sagēnās replens. ^ Hail, thou refilling the nets of fishermen.
+Āve, dē prōfunditāte ignōrantiae extrahens. ^ Hail, thou drawing out from the depth of ignorance.
+Āve, multōs scientiā illūminans. ^ Hail, thou enlightening many with knowledge.
+Āve, nāvis volentium salvārī. ^ Hail, ship of those wishing to be saved.
+Āve, portus nautārum vītae. ^ Hail, harbor of the seafarers of life.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Σ ^ Sigma
+
+Salvāre volens mundum Ōrnātor omnium in hoc ipse praenuntiatus venit; ^ Wishing to save the world, the fashioner of all came to it himself as foretold,
+et quom esset Pastor et Deus, prō nōbīs appāruit ergā nōs sīcut homō, ^ and while he was Shepherd and God, for us he appeared in relation to us as a man,
+similī autem per similem clamans ut voluit audīre: Allēlūja. ^ while calling out to like by like as he desired to hear: Hallelujah.
+
+Τ ^ Tau
+
+Mūrus es virginum, Deī Genetrix Virgō, et omnium ad tē currentium: ^ Thou art the bulwark of virgins, O Virgin Mother of God, and of all that flee to thee;
+caelī enim et terrae condidit tē Creātor, Immaculāta, ^ for the creator of heaven and earth formed thee, O Immaculate One,
+habitans in uterō tuō, et omnēs tibī acclāmāre docens: ^ dwelling in thy womb, and teaching all to cry out to thee:
+
+Āve, columna virginitātis. ^ Hail, column of virginity.
+Āve, porta salūtis. ^ Hail, port of salvation.
+Āve, princeps redēmptae plasmātiōnis. ^ Hail, first of the redeemed formation.
+Āve, tribūtrix dīvīnae benignitātis. ^ Hail, giver of divine kindness.
+Āve, quia regenerāstī conceptōs in peccātīs. ^ Hail, for thou has given new life to those conceived in sins.
+Āve, quia dedistī intellēctum errantibus in mente. ^ Hail, for thou has given intellect to those erring in mind.
+Āve, quae corruptōrem ratiōnis confundīs. ^ Hail, thou who confounded the corruptor of reason.
+Āve, quae sēminātōrem castitātis genuistī.^ Hail, thou who gave birth to the sower of purity.
+Āve, talamus nūptiārum sine sēmine. ^ Hail, bridechamber of a marriage without seed
+Āve, fidelēs Dominō conjugens. ^ Hail, thou joining the faithfur to the Lord.
+Āve, bona nūtrix virginum Dominī. ^ Hail, thou good nourisher of virgins of the Lord.
+Āve, veneranda sponsālis stola sanctōrum. ^ Hail, venerable wedding garmet of the holy.
+Āve sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Υ ^ Upsilon
+
+Himnus omnis et laus est incapax memorāre multitūdinem miserātiōnum tuārum ^ Every hymn and praise is incapable of recalling the multitude of thy mercies,
+nam et sī offerāmus tibī psalmōs et cantica numerōsius quam harēnam, Rex benigne, nōn factī sumus dignī dē quibus dedistī nōbīs clāmantibus: Allēlūja. ^ for even if we should offer unto thee psalms and songs more numerous than sand, O beneficient King, we would not be made worthy of that which thou has given to us who cry, Hallelujah.
+
+Φ ^ Phi
+
+Lūminis susceptrīcem, lampadem illīs in tenebrīs ostentam, vīdimus sanctam Virginem; ^ Protector of light, a lamp shown to those in darkness, we have beheld the Holy Virgin;
+immāteriālem autem accendens ignem, dūcit ad iter scientiae dīvīnae, ^ while kindling the immaterial fire, she guideth to the path of divine knowledge,
+splendōre mentem illūminans, honōrificāta autem hīs laudibus: ^ illuminating the mind with splendor, and honored by these praises:
+
+Āve, radius intellegibilis sōlis. ^ Hail, ray of the intelligible sun.
+Āve, splendor increatī lūminis. ^ Hail, splendor of the uncreated light
+Āve, fulgur animās illūstrans. ^ Hail, lightning illuminating souls
+Āve, tonitrus inimīcōs perterrens. ^ Hail, thunder that terrifies enemies
+Āve, quae facis aurōram plēnam lūce orīrī ^ Hail, thou who makest the dawn full of light to rise.
+Āve, quae facis flūmen multārum aquārum fluere ^ Hail, thou who makest the river of many waters to flow. 
+Āve, praefigūrans fontem baptismatis. ^ Hail, thou prefiguring the font of baptism.
+Āve, tollens maculam peccātī orīginālis. ^ Hail, thou taking away the stain of original sin. 
+Āve, lūtēr ēmundans conscientiam. ^ Hail, laver thoroughly cleansing the conscience.
+Āve, crātēr fidēlium exultātiōnem replētus. ^ Hail, basin of the faithful filled with joy.
+Āve, odor odōris dulcis Chrīstī. ^ Hail, aroma, of the sweet fragrence of Christ.
+Āve, vīta misticae epulātiōnis. ^ Hail, life of the mystial feast.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Χ ^ Chi
+
+Volens grātiam remissiōnis dare in antīqua dēbita, ^ Wishing to grant grace of release for ancient debts,
+Absolūtor hominum aliēnātīs grātiae advēnit secundum voluntātem suam, ^ the Absolver of mankind came acording to his own will to those estranged from grace,
+et rumpens registrum peccātōrum audit ab omnibus: Allēlūja. ^ and tearing apart the record of sins, he heareth from all: Hallelujah.
+
+Ψ ^ Psi
+
+Psallentēs tuam genitūram, omnēs laudāmus tē sīcut animātum templum, Deī Genetrix; ^ Singing of thy birthgiving, we all praise thee as a living temple, O Mother of God;
+in tuō enim habitans uterō, quī continet omnia manū, ^ for dwelling in thy womb, him who contains all with his hand,
+Dominus sanctificāvit et glōrificāvit tē, et docuit clāmāre tibī omnēs: ^ the Lord sanctified and glorified thee, and taught all to cry to thee:
+
+Āve, tabernāculum Deī et Sermōnis. ^ Hail, tabernacle of God and the Word.
+Āve, sancta major sanctīs. ^ Hail, saint greater than the saints. 
+Āve, arca dēaurāta Spīritū. ^ Hail, ark gilded by the Spirit.
+Āve, tēsaurus inconsummābilis vitae. ^ Hail, inexaustable treasury of life 
+Āve, honōrificum diadēma imperātōrum piōrum. ^ Hail, honorific diadem of pious rulers.
+Āve, glōrificātiō colenda sacerdōtum reverentium. ^ Hail, glorification worthy to be served of revering priests.
+Āve, ecclēsiae columna immōbilis. ^ Hail, unmovable pillar of the church.
+Āve, imperiī mūrus inexpugnābilis. ^ Hail, unconquerable wall of the empire.
+Āve, per quam tropaea victōriae surexērunt. ^ Hail, through whom trophies of victory are raised.
+Āve, per quam hostēs sunt victī. ^ Hail through whom enemies are conquered.
+Āve, corporis meī sānātiō. ^ Hail, healing of my body.
+Āve, animae meae salvātiō. ^ Hail, salvation of my soul.
+Āve, sponsa insponsāta. ^ Hail, O Unwedded Bride.
+
+Ω ^ Omega
+
+Omnilauda māter, quae Sermōnem genuistī, sanctissimum omnium sanctōrum, ^ O all lauded mother, who bore the Word, the most holy of all holies,
+dum suscipiens oblātiōnem nostram nunc, ab omnī calamitāte ērue omnes, et dē futūrā pūnītiōne līberā, quī sīc clāmant: Allēlūja ^ while receiving now our offering, deliver all from every calamity, and deliver from future punishment, those that cry thus: Hallelujah
+
+
