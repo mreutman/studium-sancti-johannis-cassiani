@@ -32,6 +32,7 @@
 % SYMBOLS
 
 \newcommand{\symbolCross}{{\liturgy +}}
+\newcommand{\symbolDagger}{†}
 \newcommand{\symbolResponse}{{\liturgy R}}
 \newcommand{\symbolVersicle}{{\liturgy V}}
 \newcommand{\symbolPoint}{𝄪}
@@ -63,8 +64,86 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FUNCTIONS
 
-\newcommand{\verseFirstLetter}[1]
+\newcommand{\firstLetter}[1]
   {{\sizeVerseFirstLetter #1}}
+
+
+\newcommand{\decoratorI}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorII}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorIII}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIIINewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorFormat \decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule} \hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorBegin}{%
+  \decoratorI{0.5em}
+}
+
+\newcommand{\decoratorEnd}{%
+
+  \vfill
+  {\hfill {\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule} \hfill}
+  \vfill
+  {\hfill \psalmEndFormat \textsc{Finis psalmorum} \hfill}
+  \vfill
+}
+
+\newcommand{\decoratorPoint}[1]{%
+
+  \vspace{#1}
+  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorPointNewPage}{%
+
+  \vfill\vfill
+  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  \vfill
+  \newpage
+}
 
 \newcommand{\verseNum}[1]
   {\textup{\textsuperscript{\itshape\sizeVerseNumber #1.}}}
@@ -74,7 +153,7 @@
 
 \newcommand{\psalmChapterNumberTitle}[1]{%
   {%
-    \bfseries\psalmTitleFormat \textsc{Psalmus} {%
+    \psalmTitleFormat \textsc{Psalmus} {%
       \psalmTitleNumberFormat\RomanNumeralCaps{#1}.
     }
   }
@@ -185,84 +264,26 @@
   \psalmBody{#3}
 }
 
-% PUBLIC - - - - - - - - -
-\newcommand{\prayer}[2]{%
-  \psalmChapter{#1}{#2}
+\newcommand{\prayerPageTitle}{%
+  \phantom{text}
+
+  {\bfseries\large\hfill \decoratorEndRule \decoratorRuleHSpace \textsc{Oraçio} \decoratorRuleHSpace \decoratorEndRule \hfill}
 }
 
-\newcommand{\decoratorI}[1]{%
+\newcommand{\prayerText}[2]{%
+  \psalmChapterNeedSpace
+  {
+    \psalmChapterNumberBegin
+    \psalmTitleFormat \textsc{#1}
+    \psalmChapterNumberEnd
+  }
 
-  \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross} \hfill}
-  \vspace{#1}
-
+  \vspaceChapterTitle
+  \psalmBody{#2}
 }
 
-\newcommand{\decoratorII}[1]{%
+\newcommand{\prayerTextContinue}[1]{%
 
-  \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross} \hfill}
-  \vspace{#1}
-
-}
-
-\newcommand{\decoratorIII}[1]{%
-
-  \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross} \hfill}
-  \vspace{#1}
-
-}
-
-\newcommand{\decoratorINewPage}{%
-
-  \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule} \hfill}
-  \vfill
-  \newpage
-}
-
-\newcommand{\decoratorIINewPage}{%
-
-  \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule} \hfill}
-  \vfill
-  \newpage
-}
-
-\newcommand{\decoratorIIINewPage}{%
-
-  \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule} \hfill}
-  \vfill
-  \newpage
-}
-
-\newcommand{\decoratorBegin}{%
-  \decoratorI{0.5em}
-}
-
-\newcommand{\decoratorEnd}{%
-
-  \vfill
-  {\hfill {\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule} \hfill}
-  \vfill
-  {\hfill \psalmEndFormat \textsc{Finis psalmorum} \hfill}
-  \vfill
-}
-
-\newcommand{\decoratorPoint}[1]{%
-
-  \vspace{#1}
-  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
-  \vspace{#1}
-
-}
-
-\newcommand{\decoratorPointNewPage}{%
-
-  \vfill\vfill
-  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
-  \vfill
-  \newpage
+  \vspacePrayerContinue
+  \psalmBody{#1}
 }

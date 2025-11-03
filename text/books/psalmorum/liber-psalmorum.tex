@@ -12,11 +12,17 @@
 
 \vspace*{12em}
 
-{\bfseries\Huge\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em \uppercase{liber psalmorum}}
+{
+  \titleFormat
+  {\hfill\uppercase{liber psalmorum}\hfill}
+}
 
 \vspace*{4em}
 
-{\bfseries\Large\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em \uppercase{secundum usum graecum}}
+{
+  \subTitleFormat
+  {\hfill\uppercase{secundum usum graecum}\hfill}
+}
 
 \newpage
 
@@ -28,6 +34,19 @@
 
 \pagestyle{myheadings}
 \setcounter{page}{1}
+
+\prayerPageTitle
+
+\vspace{2.0em}
+
+\input{prayers/pater-noster}\vspacePaterNoster
+\input{prayers/ave-maria}\vspaceAveMaria
+\input{prayers/axion-estin}\vspaceAxionEstin
+\newpage
+
+\input{prayers/symbolum-fidei}
+
+\newpage
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \decoratorBegin
