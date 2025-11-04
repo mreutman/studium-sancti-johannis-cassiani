@@ -68,6 +68,14 @@
   {{\sizeVerseFirstLetter #1}}
 
 
+\newcommand{\decoratorCross}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\LARGE \symbolDagger}\hfill}
+  \vspace{#1}
+
+}
+
 \newcommand{\decoratorI}[1]{%
 
   \vspace{#1}
@@ -252,9 +260,9 @@
 }
 
 \newcommand{\prayerPageTitle}{%
-  \phantom{text}
+  \decoratorCross{0.25em}
 
-  {\bfseries\large\hfill \decoratorEndRule \decoratorRuleHSpace \textsc{Oraçio} \decoratorRuleHSpace \decoratorEndRule \hfill}
+  {\noindent\bfseries\large\hfill \prayerDivisionLeft \textsc{Oraçiones} \prayerDivisionRight \hfill}
 }
 
 \newcommand{\prayerText}[2]{%
