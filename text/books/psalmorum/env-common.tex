@@ -71,7 +71,7 @@
 \newcommand{\decoratorI}[1]{%
 
   \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross} \hfill}
+  {\noindent\hfill{\decoratorFormat \symbolCross}\hfill}
   \vspace{#1}
 
 }
@@ -79,7 +79,7 @@
 \newcommand{\decoratorII}[1]{%
 
   \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  {\noindent\hfill{\decoratorFormat \symbolCross \decoratorHSpace \symbolCross}\hfill}
   \vspace{#1}
 
 }
@@ -87,7 +87,7 @@
 \newcommand{\decoratorIII}[1]{%
 
   \vspace{#1}
-  {\hfill {\decoratorFormat \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross} \hfill}
+  {\noindent\hfill{\decoratorFormat\symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross}\hfill}
   \vspace{#1}
 
 }
@@ -95,7 +95,7 @@
 \newcommand{\decoratorINewPage}{%
 
   \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule} \hfill}
+  {\noindent\hfill{\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule}\hfill}
   \vfill
   \newpage
 }
@@ -103,7 +103,7 @@
 \newcommand{\decoratorIINewPage}{%
 
   \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule} \hfill}
+  {\noindent\hfill{\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule}\hfill}
   \vfill
   \newpage
 }
@@ -111,28 +111,29 @@
 \newcommand{\decoratorIIINewPage}{%
 
   \vfill\vfill
-  {\hfill {\decoratorFormat \decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule} \hfill}
+  {\noindent\hfill{\decoratorFormat\decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule}\hfill}
   \vfill
   \newpage
 }
 
 \newcommand{\decoratorBegin}{%
-  \decoratorI{0.5em}
+  {\noindent\hfill{\decoratorFormat \symbolCross}\hfill}
+  \vspace{0.25em}
 }
 
 \newcommand{\decoratorEnd}{%
 
   \vfill
-  {\hfill {\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule} \hfill}
+  {\noindent\hfill{\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule}\hfill}
   \vfill
-  {\hfill \psalmEndFormat \textsc{Finis psalmorum} \hfill}
+  {\noindent\hfill\psalmEndFormat\textsc{Finis psalmorum} \hfill}
   \vfill
 }
 
 \newcommand{\decoratorPoint}[1]{%
 
   \vspace{#1}
-  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  {\noindent\hfill{\decoratorPointFormat \symbolPoint}\hfill}
   \vspace{#1}
 
 }
@@ -140,7 +141,7 @@
 \newcommand{\decoratorPointNewPage}{%
 
   \vfill\vfill
-  {\hfill {\decoratorPointFormat \symbolPoint} \hfill}
+  {\noindent\hfill{\decoratorPointFormat \symbolPoint}\hfill}
   \vfill
   \newpage
 }
@@ -194,22 +195,16 @@
 }
 
 \newcommand{\psalmDivision}[2]{%
-  \markboth
-    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
-    {\hfill \pageHeaderFormat DIVIZIO #1,#2 \hfill}
-  {%
-    \psalmDivisionFormat
-    \textsc{Divizio} \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.
-  }
+  \markboth%
+    {\pageHeaderFormat DIVIZIO \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.}%
+    {\pageHeaderFormat DIVIZIO \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.}%
+  {\psalmDivisionFormat \textsc{Divizio} \RomanNumeralCaps{#1}.\RomanNumeralCaps{#2}.}
 }
 
 % PUBLIC - - - - - - - - - - - - -
 \newcommand{\psalmBeginDivision}[3]{%
   \psalmChapterDivisionNeedSpace
-  {% 
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#2}{#3}~{\large›}~~\psalmDivisionRight
-  }
+  {\noindent\hfill\psalmDivisionLeft \psalmDivision{#2}{#3} \psalmDivisionRight\hfill}
 
   \vspaceChapterTitle
 
@@ -219,13 +214,10 @@
 \newcommand{\psalmChapterBeginDivision}[4]{%
   \psalmChapterDivisionNeedSpace
   {%
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#3}{#4}~{\large›}~~\psalmDivisionRight
+    {\noindent\hfill\psalmDivisionLeft \psalmDivision{#3}{#4} \psalmDivisionRight\hfill}
 
     \vspaceDivision
-    {%
-      \psalmChapterNumber{#1}
-    }
+    {\psalmChapterNumber{#1}}
   }
   \vspaceChapterTitle
   \psalmBody{#2}
@@ -234,13 +226,10 @@
 \newcommand{\psalmChapterInscriptionBeginDivision}[5]{%
   \psalmChapterDivisionNeedSpace
   {%
-    \centering
-    \psalmDivisionLeft~~{\large‹}~~~\psalmDivision{#4}{#5}~{\large›}~~\psalmDivisionRight
+    {\noindent\hfill\psalmDivisionLeft \psalmDivision{#4}{#5} \psalmDivisionRight\hfill}
 
     \vspaceDivision
-    {%
-      \psalmChapterNumberInscription{#1}{#2}
-    }
+    {\psalmChapterNumberInscription{#1}{#2}}
   }
   \vspaceChapterTitle
   \psalmBody{#3}
@@ -248,9 +237,7 @@
 
 \newcommand{\psalmChapter}[2]{%
   \psalmChapterNeedSpace
-  {%
-    \psalmChapterNumber{#1}
-  }
+  {\psalmChapterNumber{#1}}
   \vspaceChapterTitle
   \psalmBody{#2}
 }
