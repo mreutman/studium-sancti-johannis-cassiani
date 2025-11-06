@@ -9,9 +9,6 @@
 \usepackage{setspace}
 \usepackage{titlesec}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FONTS
-
 \setmainfont[
   Path = ./fonts/dueblo/,
   Extension = .otf,
@@ -28,9 +25,6 @@
   UprightFont = *-Regular,
 ]{Liturgy}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SYMBOLS
-
 \newcommand{\symbolCross}{{\liturgy +}}
 \newcommand{\symbolDagger}{†}
 \newcommand{\symbolResponse}{{\liturgy R}}
@@ -39,26 +33,7 @@
 \newcommand{\symbolBreak}{\raisebox{-0.10em}{\itshape /}}
 \newcommand{\symbolFinal}{\raisebox{-0.10em}{\itshape //}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FORMAT
-
-\newenvironment{nscenter}
- {\parskip=0pt\par\nopagebreak\centering}
- {\par\noindent\ignorespacesafterend}
-
-\newenvironment{nsflushleft}
- {\parskip=0pt\par\nopagebreak\RaggedRight}
- {\par\noindent\ignorespacesafterend}
-
-\newenvironment{nsflushtest}
- {\parskip=0pt\par}
- {\par\noindent\ignorespacesafterend}
+\newcommand{\romanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+\newcommand{\firstLetter}[1]{{\sizeFirstLetter #1}}
 
 \renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FUNCTIONS
-
-\newcommand{\romanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
-
-\newcommand{\firstLetter}[1]{{\sizeFirstLetter #1}}

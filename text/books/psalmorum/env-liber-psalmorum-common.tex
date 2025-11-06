@@ -1,0 +1,214 @@
+\newcommand{\decoratorCross}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\LARGE \symbolDagger}\hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorI}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\decoratorFormat \symbolCross}\hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorII}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\decoratorFormat \symbolCross \decoratorHSpace \symbolCross}\hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorIII}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\decoratorFormat\symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross}\hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorINewPage}{%
+
+  \vfill
+  {\noindent\hfill{\decoratorFormat \decoratorIRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorIRule}\hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIINewPage}{%
+
+  \vfill
+  {\noindent\hfill{\decoratorFormat \decoratorIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIRule}\hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorIIINewPage}{%
+
+  \vfill
+  {\noindent\hfill{\decoratorFormat\decoratorIIIRule \decoratorRuleHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorHSpace \symbolCross \decoratorRuleHSpace \decoratorIIIRule}\hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\decoratorBegin}{%
+  {\noindent\hfill{\decoratorFormat \symbolCross}\hfill}
+  \vspace{0.25em}
+}
+
+\newcommand{\decoratorEnd}{%
+
+  \vfill
+  {\noindent\hfill{\Large \decoratorEndRule \decoratorRuleHSpace \symbolCross \decoratorRuleHSpace \decoratorEndRule}\hfill}
+  \vfill
+  {\noindent\hfill\psalmEndFormat\textsc{Finis psalmorum} \hfill}
+  \vfill
+}
+
+\newcommand{\decoratorPoint}[1]{%
+
+  \vspace{#1}
+  {\noindent\hfill{\decoratorPointFormat \symbolPoint}\hfill}
+  \vspace{#1}
+
+}
+
+\newcommand{\decoratorPointNewPage}{%
+
+  \vfill
+  {\noindent\hfill{\decoratorPointFormat \symbolPoint}\hfill}
+  \vfill
+  \newpage
+}
+
+\newcommand{\verseNum}[1]
+  {\textup{\textsuperscript{\itshape\sizeVerseNumber #1.}}}
+
+\newcommand{\verseNumInscription}[1]
+  {\textsuperscript{\textup{\itshape\sizeVerseNumberInscription #1.}}}
+
+\newcommand{\psalmChapterNumberTitle}[1]{%
+  {%
+    \psalmTitleFormat \textsc{Psalmus} {%
+      \psalmTitleNumberFormat\romanNumeralCaps{#1}.
+    }
+  }
+}
+
+\newcommand{\psalmBody}[1]{%
+  \noindent\textsc{\psalmBodyFormat #1}
+}
+
+\newcommand{\psalmChapterNumberBegin}{%
+  \begingroup
+  \justifying
+  \leftskip=\psalmChapterNumberIndent
+  \advance\csname @rightskip\endcsname \leftskip \advance\rightskip \leftskip
+  \psalmChapterNumberFormat
+  \setstretch{\psalmChapterNumberSpacing}
+}
+
+\newcommand{\psalmChapterNumberEnd}{%
+  \par
+  \endgroup
+}
+
+\newcommand{\psalmChapterNumber}[1]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\psalmChapterNumberInscription}[2]{
+  {%
+    \psalmChapterNumberBegin
+    \noindent\psalmChapterNumberTitle{#1}\textsc{\psalmInscriptionFormat #2}
+    \psalmChapterNumberEnd
+  }
+}
+
+\newcommand{\psalmDivision}[2]{%
+  \markboth%
+    {\pageHeaderFormat DIVIZIO \romanNumeralCaps{#1}.\romanNumeralCaps{#2}.}%
+    {\pageHeaderFormat DIVIZIO \romanNumeralCaps{#1}.\romanNumeralCaps{#2}.}%
+  {\psalmDivisionFormat \textsc{Divizio} \romanNumeralCaps{#1}.\romanNumeralCaps{#2}.}
+}
+
+% PUBLIC - - - - - - - - - - - - -
+\newcommand{\psalmBeginDivision}[3]{%
+  \psalmChapterDivisionNeedSpace
+  {\noindent\hfill\psalmDivisionLeft \psalmDivision{#2}{#3} \psalmDivisionRight\hfill}
+
+  \vspaceChapterTitle
+
+  \psalmBody{#1}
+}
+
+\newcommand{\psalmChapterBeginDivision}[4]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    {\noindent\hfill\psalmDivisionLeft \psalmDivision{#3}{#4} \psalmDivisionRight\hfill}
+
+    \vspaceDivision
+    {\psalmChapterNumber{#1}}
+  }
+  \vspaceChapterTitle
+  \psalmBody{#2}
+}
+
+\newcommand{\psalmChapterInscriptionBeginDivision}[5]{%
+  \psalmChapterDivisionNeedSpace
+  {%
+    {\noindent\hfill\psalmDivisionLeft \psalmDivision{#4}{#5} \psalmDivisionRight\hfill}
+
+    \vspaceDivision
+    {\psalmChapterNumberInscription{#1}{#2}}
+  }
+  \vspaceChapterTitle
+  \psalmBody{#3}
+}
+
+\newcommand{\psalmChapter}[2]{%
+  \psalmChapterNeedSpace
+  {\psalmChapterNumber{#1}}
+  \vspaceChapterTitle
+  \psalmBody{#2}
+}
+
+\newcommand{\psalmChapterInscription}[3]{%
+  \psalmChapterNeedSpace
+  \psalmChapterNumberInscription{#1}{#2}
+
+  \vspaceChapterTitle
+
+  \psalmBody{#3}
+}
+
+\newcommand{\prayerPageTitle}{%
+  \decoratorCross{0.25em}
+
+  {\noindent\bfseries\large\hfill \prayerDivisionLeft \textsc{Oraçiones} \prayerDivisionRight \hfill}
+}
+
+\newcommand{\prayerText}[2]{%
+  \psalmChapterNeedSpace
+  {
+    \psalmChapterNumberBegin
+    \psalmTitleFormat \textsc{#1}
+    \psalmChapterNumberEnd
+  }
+
+  \vspaceChapterTitle
+  \psalmBody{#2}
+}
+
+\newcommand{\prayerTextContinue}[1]{%
+
+  \vspacePrayerContinue
+  \psalmBody{#1}
+}

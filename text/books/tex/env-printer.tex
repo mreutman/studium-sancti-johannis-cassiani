@@ -1,0 +1,24 @@
+\documentclass[twoside,12pt]{book}
+
+\usepackage[
+  papersize={8.5in,11in},
+  layout=letterpaper,
+  right=0.8in,
+  left=0.8in,
+  top=0.6in,
+  bottom=0.8in,
+]{geometry}
+
+\newcommand{\sizeFirstLetter}{\huge}
+
+\renewcommand{\baselinestretch}{1.5} % text line spacing
+
+\input{env-common}
+
+\setlength{\emergencystretch}{6em}
+\EverySelectfont{%
+%\fontdimen2\font=1em% interword space
+\fontdimen3\font=2em% interword stretch
+%\fontdimen4\font=0.1em% interword shrink
+%\fontdimen7\font=0.5em% extra space
+}
