@@ -195,7 +195,7 @@
   {\noindent\bfseries\large\hfill \prayerDivisionLeft \textsc{Oraçiones} \prayerDivisionRight \hfill}
 }
 
-\newcommand{\prayerText}[2]{%
+\newcommand{\extPrayer}[2]{%
   \psalmChapterNeedSpace
   {
     \psalmChapterNumberBegin
@@ -207,8 +207,11 @@
   \psalmBody{#2}
 }
 
-\newcommand{\prayerTextContinue}[1]{%
+\newcommand{\extPrayerContinue}[1]{%
 
   \vspacePrayerContinue
   \psalmBody{#1}
 }
+
+\renewcommand{\baselinestretch}{1.5} % text line spacing
+\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}

@@ -25,6 +25,14 @@
   UprightFont = *-Regular,
 ]{Liturgy}
 
+\setlength{\emergencystretch}{6em}
+\EverySelectfont{%
+%\fontdimen2\font=1em% interword space
+\fontdimen3\font=2em% interword stretch
+%\fontdimen4\font=0.1em% interword shrink
+%\fontdimen7\font=0.5em% extra space
+}
+
 \newcommand{\symbolCross}{{\liturgy +}}
 \newcommand{\symbolDagger}{†}
 \newcommand{\symbolResponse}{{\liturgy R}}
@@ -35,5 +43,3 @@
 
 \newcommand{\romanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
 \newcommand{\firstLetter}[1]{{\sizeFirstLetter #1}}
-
-\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
