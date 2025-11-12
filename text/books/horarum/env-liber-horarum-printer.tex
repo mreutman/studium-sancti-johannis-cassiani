@@ -1,6 +1,9 @@
 \newcommand{\vspaceSmall}{\vspace{0.5em}}
 \newcommand{\vspaceMedium}{\vspace{1.0em}}
 \newcommand{\vspaceLarge}{\vspace{1.5em}}
+\newcommand{\vspaceSymbolumI}{\vspaceSmall}
+\newcommand{\vspaceSymbolumII}{\vspaceMedium}
+\newcommand{\vspaceSymbolumIII}{\vspaceMedium}
 
 \newcommand{\pageNumberFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}}
 \newcommand{\prayerVersicle}[1]{{\scriptsize\symbolVersicle.} \textsc{#1}}
@@ -13,16 +16,13 @@
 }
 
 \newcommand{\psalmodyTitle}{%
-  \vspaceLarge
   \hspace{3em}
   {\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Inċipit Ordo Psalmodiae}}
   \hspace{1em}
   {\itshape\footnotesize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{ et post hunc. . .}}
-  \vspaceLarge
 }
 
 \newcommand{\shortReadingTitle}[1]{%
-  \vspaceLarge
   \hspace{3em}
   {\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Lecçio Brevis}}
   \hspace{1em}
@@ -30,13 +30,14 @@
 }
 
 \newcommand{\shortReading}[2]{%
+  \pagebreak[3]
   \shortReadingTitle{#1}
 
   \prayerText{#2}
 }
 
 \newcommand{\extPrayer}[2]{%
-  \vspaceLarge
+  \pagebreak[3]
   \hspace{3em}
   {\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{#1}}
   
@@ -44,7 +45,6 @@
 }
 
 \newcommand{\extPrayerContinue}[1]{%
-  \vspaceLarge
   \pagebreak[3]
   \prayerText{#1}
 }
