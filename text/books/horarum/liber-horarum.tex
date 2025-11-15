@@ -5,6 +5,36 @@
 \raggedbottom
 \setlength{\parindent}{0pt}
 
+% common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sectionBeginning}{%
+  \input{section-usual-beginning}\vspaceResponseEnd
+
+  \psalmodyTitle\vspacePsalmodyTitle
+
+  \input{section-kyrie}\vspaceResponseEnd
+}
+
+\newcommand{\sectionEnding}{%
+  \input{section-usual-ending}
+}
+
+\newcommand{\sectionMinorHoursCommon}{%
+  \input{prayers/pater-noster}\vspacePrayerText
+
+  \prayerVersicle{Per oraçiónes Sanctórum Patrum nostrórum, Dómine Jesu Christe, Deus noster, mizerére nostri et salva nos.}
+
+  \prayerResponse{Amen.}\vspaceResponseEnd
+
+  \input{prayers/ave-maria}\vspacePrayerText
+
+  \prayerVersicle{Ora pro nobïs, sancta Dei Gènetrix.}
+
+  \prayerResponse{Ut dìgni effiċiámur promissiónibus Christi.}\vspaceResponseBreakMedium
+
+  \prayerVersicle{Orémus.}\vspaceResponseEnd
+}
+
+% document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \pagestyle{empty}
@@ -12,11 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \sectionTitle{Ad Matutinum}
 
-\input{section-usual-beginning}\vspaceResponseEnd
-
-\psalmodyTitle\vspacePsalmodyTitle
-
-\input{section-kyrie}\vspaceResponseEnd
+\sectionBeginning
 
 \shortReading{Rom. 13:12-13}{\firstLetter{N}ox praecessit, dies autem appropinquavit. Abjiciamus ergo opera tenebrarum, et induamur arma lucis. Sicut in die honeste ambulemus.}\vspaceShortReading
 
@@ -74,6 +100,33 @@
 \prayerResponse{In saecula saeculórum laudábunt te.}\vspaceResponseBreakMedium
 
 \input{section-usual-ending}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionTitle{Ad Primam}
+
+\sectionBeginning
+
+\shortReading{1 Tim. 1:17}{\firstLetter{R}eġi saeculórum immortáli et invizìbili, soli Deo hònor et glória in sáecula saeculórum. Amen.}\vspaceShortReading
+
+\prayerResponse{Deo gráçias.}\vspaceResponseBreakSmall
+
+\prayerVersicle{Exsùrge, Christe, ádjuva nos.}
+
+\prayerResponse{Et líbera nos pròpter nomen tuum.}\vspaceResponseEnd
+
+\sectionMinorHoursCommon
+
+\prayerText{\firstLetter{C}hriste, Lux Vera, qui illúminas et sanctìficas òmnem hòminem venièntem in mundum, signátum sit super nos lumen vùltüs tui, ut in illo luċem inacċessìbilem videámur, et dírigas grèssüs nostros ad custódiam mandatórum tuórum; per preċes Matris tuae purìssimae et òmnium sanctórum tuórum.}
+
+\prayerResponse{Amen.}\vspaceResponseEnd
+
+\prayerVersicle{Dòmine, exáudi oraçiónem meam.}
+
+\prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
+
+
 
 \newpage
 
