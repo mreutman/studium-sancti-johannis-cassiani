@@ -1,6 +1,6 @@
-\newcommand{\vspaceSmall}{\vspace{0.5em}}
-\newcommand{\vspaceMedium}{\vspace{1.0em}}
-\newcommand{\vspaceLarge}{\vspace{1.5em}}
+\newcommand{\vspaceSmall}{\vspace{.5\baselineskip}}
+\newcommand{\vspaceMedium}{\vspace{1.0\baselineskip}}
+\newcommand{\vspaceLarge}{\vspace{1.5\baselineskip}}
 
 \newcommand{\vspacePrayerText}{\vspaceSmall}
 \newcommand{\vspacePsalmodyTitle}{\vspaceLarge}
@@ -12,6 +12,9 @@
 \newcommand{\vspaceSymbolumII}{\vspaceMedium}
 \newcommand{\vspaceSymbolumIII}{\vspaceMedium}
 
+\newcommand{\ruleSmall}{\rule[0.5ex]{4em}{0.50pt}}
+\newcommand{\ruleLarge}{\rule[0.5ex]{12em}{0.50pt}}
+
 \newcommand{\pageNumberFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}}
 \newcommand{\prayerVersicle}[1]{{\scriptsize\symbolVersicle.} \textsc{#1}}
 \newcommand{\prayerResponse}[1]{{\scriptsize\symbolResponse.} \textsc{#1}}
@@ -20,6 +23,16 @@
 }
 \newcommand{\prayerText}[1]{%
   \textsc{#1}
+}
+
+\newcommand{\descriptionTitle}[1]{%
+  \needspace{4\baselineskip}
+  {\hfill\itshape\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\ruleSmall~~\textsc{#1}~~\ruleSmall\hfill}
+}
+
+\newcommand{\descriptionEnd}{%
+  \needspace{4\baselineskip}
+  {\hfill\scriptsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\ruleSmall~~\symbolCross~~\ruleSmall\hfill}
 }
 
 \newcommand{\psalmodyTitle}{%
@@ -60,5 +73,4 @@
   \hfill
   {\bfseries\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em\uppercase{#1}}
   \hfill
-  \vspaceLarge
 }

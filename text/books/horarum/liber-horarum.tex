@@ -2,7 +2,7 @@
 \input{tex/env-common}
 \input{env-liber-horarum-printer}
 
-\raggedbottom
+%\raggedbottom
 \setlength{\parindent}{0pt}
 
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -18,7 +18,11 @@
   \input{section-usual-ending}
 }
 
-\newcommand{\sectionMinorHoursCommon}{%
+\newcommand{\sectionMinorHoursBeginning}{%
+  \input{section-usual-beginning}\vspaceResponseEnd
+
+  \input{section-kyrie}\vspaceResponseEnd
+
   \input{prayers/pater-noster}\vspacePrayerText
 
   \prayerVersicle{Per oraçiónes Sanctórum Patrum nostrórum, Dómine Jesu Christe, Deus noster, mizerére nostri et salva nos.}
@@ -32,6 +36,14 @@
   \prayerResponse{Ut dìgni effiċiámur promissiónibus Christi.}\vspaceResponseBreakMedium
 
   \prayerVersicle{Orémus.}\vspaceResponseEnd
+}
+
+\newcommand{\sectionPostPrayers}{%
+  \prayerResponse{Amen.}\vspaceResponseEnd
+
+  \prayerVersicle{Dòmine, exáudi oraçiónem meam.}
+
+  \prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
 }
 
 % document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,7 +82,7 @@
 
 \prayerVersicle{Orémus.}\vspaceResponseEnd
 
-\prayerText{\firstLetter{A}djuvet nos, quaesumus Domine, gloriosae tuae Genetricis semperque Virginis Mariae intercessio veneranda; ut quos perpetuis cumulavit beneficiis, a cunctis periculis absolutos, sua faciat pietate concordes: Qui vivis et regnas in saecula saeculorum.}\vspacePrayerText
+\prayerText{\firstLetter{À}djuvet nos, quáesumus Dòmine, gloriósae tuae Ġenetríċis sempèrque Vírġinis Maríae interċèssio venerànda; ut quos perpètuis cumulávit benefìciïs, a cunctïs perículis absolútos, sua fàċiat pietáte concórdes: Qui vivis et regnas in sáecula saeculórum.}\vspacePrayerText
 
 \prayerResponse{Amen.}\vspaceResponseEnd
 
@@ -91,7 +103,7 @@
 
 \prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
 
-\shortReading{1 Cor 16:13-14}{\firstLetter{V}iġiláte, state in fide, virìliter àgite, et confortámini. Òmnia vèstra in caritáte fiant.}\vspaceShortReading
+\shortReading{1 Cor. 16:13-14}{\firstLetter{V}iġiláte, state in fide, virìliter àgite, et confortámini. Òmnia vèstra in caritáte fiant.}\vspaceShortReading
 
 \prayerResponse{Deo grátias.}\vspaceResponseBreakSmall
 
@@ -104,29 +116,12 @@
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\sectionTitle{Ad Primam}
+\input{section-ad-primam}
 
-\sectionBeginning
+\newpage
 
-\shortReading{1 Tim. 1:17}{\firstLetter{R}eġi saeculórum immortáli et invizìbili, soli Deo hònor et glória in sáecula saeculórum. Amen.}\vspaceShortReading
-
-\prayerResponse{Deo gráçias.}\vspaceResponseBreakSmall
-
-\prayerVersicle{Exsùrge, Christe, ádjuva nos.}
-
-\prayerResponse{Et líbera nos pròpter nomen tuum.}\vspaceResponseEnd
-
-\sectionMinorHoursCommon
-
-\prayerText{\firstLetter{C}hriste, Lux Vera, qui illúminas et sanctìficas òmnem hòminem venièntem in mundum, signátum sit super nos lumen vùltüs tui, ut in illo luċem inacċessìbilem videámur, et dírigas grèssüs nostros ad custódiam mandatórum tuórum; per preċes Matris tuae purìssimae et òmnium sanctórum tuórum.}
-
-\prayerResponse{Amen.}\vspaceResponseEnd
-
-\prayerVersicle{Dòmine, exáudi oraçiónem meam.}
-
-\prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section-ad-terciam}
 
 \newpage
 
@@ -182,7 +177,7 @@
 
 \prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
 
-\shortReading{1 Pet 5:8-9}{\firstLetter{F}ratres: Sóbrii estóte, et viġiláte, quia adversárius vèster diábolus tàmquam leo rúġiens çírcumit, quaerens quem dévoret; cui resìstite fortes in fide.}\vspaceShortReading
+\shortReading{1 Pet. 5:8-9}{\firstLetter{F}ratres: Sóbrii estóte, et viġiláte, quia adversárius vèster diábolus tàmquam leo rúġiens çírcumit, quaerens quem dévoret; cui resìstite fortes in fide.}\vspaceShortReading
 
 \prayerVersicle{Tu autem, Dómine, mizerére nobis.}
 
