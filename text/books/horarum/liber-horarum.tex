@@ -8,44 +8,39 @@
 \setlength{\parindent}{0pt}
 
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\sectionBeginning}{%
-  \input{section-usual-beginning}\vspaceResponseEnd
 
-  \psalmodyTitle\vspacePsalmodyTitle
+\newcommand{\prayerDayofWeek}[4]{
+  \prayerTitleAndSubtitle{#1}{#2}\vspaceSmall
 
-  \input{section-kyrie}\vspaceResponseEnd
+  \prayerText{#3}\vspaceSmall
+
+  \prayerResponse{Amen.}\vspaceSmall
+
+  \prayerText{#4}
 }
 
-\newcommand{\sectionEnding}{%
-  \input{section-usual-ending}
+\newcommand{\prayerFeriaI}{
+  \prayerDayofWeek
+  {Feria Secunda}
+  {ad angelos}
+  {\firstLetter{D}eus, qui ineffábili providènçia sanctos ànġelos tuos ad nostram custódiam mìttere dignáris: larġíre supplìċibus tuïs, et eórum semper protecçióne defèndi, et aetèrna soċietáte gaudére. Per Dòminum nostrum Jesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.} 
+  {Sancti ànġeli, custódes nostri, defèndite nos in próelio, ut non pereámus in tremèndo judìċio.}
 }
 
-\newcommand{\sectionMinorHoursBeginning}{%
-  \input{section-usual-beginning}\vspaceResponseEnd
-
-  \input{section-kyrie}\vspaceResponseEnd
-
-  \input{prayers/pater-noster}\vspacePrayerText
-
-  \prayerVersicle{Per oraçiónes Sanctórum Patrum nostrórum, Dómine Jesu Christe, Deus noster, mizerére nostri et salva nos.}
-
-  \prayerResponse{Amen.}\vspaceResponseEnd
-
-  \input{prayers/ave-maria}\vspacePrayerText
-
-  \prayerVersicle{Ora pro nobïs, sancta Dei Gènetrix.}
-
-  \prayerResponse{Ut dìgni effiċiámur promissiónibus Christi.}\vspaceResponseBreakMedium
-
-  \prayerVersicle{Orémus.}\vspaceResponseEnd
+\newcommand{\prayerFeriaII}{
+  \prayerDayofWeek
+  {Feria Terçia}
+  {ad Johannem Baptistam}
+  {\firstLetter{P}raesta, quáesumus, omnípotens Deus: ut família tua per viam salútis inċédat; et beáti Johànnis Praecursóris hortamènta sectàndo, ad eum quem praedíxit, secúra pervèniat, Dòminum nostrum Jesum Christum, Fílium tuum.} 
+  {Ora pro nobïs, sancte Johànnes Baptìsta, ut dìgni effiċiámur promissiónibus Christi.}
 }
 
-\newcommand{\sectionPostPrayers}{%
-  \prayerResponse{Amen.}\vspaceResponseEnd
-
-  \prayerVersicle{Dòmine, exáudi oraçiónem meam.}
-
-  \prayerResponse{Et clamor meus ad te vèniat.}\vspaceResponseEnd
+\newcommand{\prayerFeriaIII}{
+  \prayerDayofWeek
+  {Feria Quarta}
+  {ad Mariam Virġinem}
+  {\firstLetter{D}eus, qui salútis aetèrnae, beátae Maríae virġinitáte fecùnda, humáno ġèneri práemia praestitìsti: tríbue, quáesumus, ut ìpsam pro nobïs interċédere sentiámus, per quam merúimus Fílium tuum auctórem vitae susċìpere, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.} 
+  {Ora pro nobïs, sancta Dei Ġènetrix, ut dìgni effiċiámur promissiónibus Christi.}
 }
 
 % document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,5 +49,9 @@
 \pagestyle{empty}
 
 \input{00-beginning}
+
+\newpage
+
+\input{03-first-hour}
 
 \end{document}
