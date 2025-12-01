@@ -21,8 +21,10 @@
 \newcommand{\prayerVersicle}[1]{{\scriptsize\symbolVersicle.} \textsc{#1}}
 \newcommand{\prayerResponse}[1]{{\scriptsize\symbolResponse.} \textsc{#1}}
 
-\newcommand{\prayerVersicleResponse}[3]{%
-  \prayerVersicle{#1} \hspace{#3} \prayerResponse{#2}
+\newcommand{\prayerVersicleResponse}[2]{%
+  \prayerVersicle{#1}
+
+  \prayerResponse{#2}
 }
 
 \newcommand{\prayerTitle}[1]{%

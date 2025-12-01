@@ -9,7 +9,7 @@
 
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\prayerDayofWeek}[4]{
+\newcommand{\prayerDayOfWeek}[4]{
   \prayerTitleAndSubtitle{#1}{#2}\vspaceSmall
 
   \prayerText{#3}\vspaceSmall
@@ -20,15 +20,15 @@
 }
 
 \newcommand{\prayerDominica}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Dominica}
   {ad Corpus Christi}
   {\firstLetter{D}eus, qui nobïs sub Sacramènto mirábili Passiónis tuae memóriam reliquìsti: trìbue, quáesumus, ita nos Córporis et Sàngüinis tui sàcra mystéria venerári, ut redempçiónis tuae fructum in nobïs júġiter sentiámus, qui vivis et regnas cum Deo Pàtre in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.}
-  {}
+  {Panis vive, Jesu Christi, qui de ċaelo desċendìsti, mizerére nostri et sàlva nos.}
 }
 
 \newcommand{\prayerFeriaII}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Feria Secunda}
   {ad angelos}
   {\firstLetter{D}eus, qui ineffábili providènçia sanctos ànġelos tuos ad nostram custódiam mìttere dignáris: larġíre supplìċibus tuïs, et eórum semper protecçióne defèndi, et aetèrna soċietáte gaudére. Per Dòminum nostrum Jesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.} 
@@ -36,7 +36,7 @@
 }
 
 \newcommand{\prayerFeriaIII}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Feria Terçia}
   {ad Johannem Baptistam}
   {\firstLetter{P}raesta, quáesumus, omnípotens Deus: ut família tua per viam salútis inċédat; et beáti Johànnis Praecursóris hortamènta sectàndo, ad eum quem praedíxit, secúra pervèniat, Dòminum nostrum Jesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.} 
@@ -44,7 +44,7 @@
 }
 
 \newcommand{\prayerFeriaIV}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Feria Quarta}
   {ad Mariam Virġinem}
   {\firstLetter{D}eus, qui salútis aetèrnae, beátae Maríae virġinitáte fecùnda, humáno ġèneri práemia praestitìsti: tríbue, quáesumus, ut ìpsam pro nobïs interċédere sentiámus, per quam merúimus Fílium tuum auctórem vitae susċìpere, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.} 
@@ -52,7 +52,7 @@
 }
 
 \newcommand{\prayerFeriaV}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Feria Quinta}
   {ad Apostolos}
   {\firstLetter{O}mnipotens Deus, qui ad testificàndam veritátem Apostólïs tuïs gráçiam ac fortitúdinem dedìsti: praesta nobïs, eórum fidéi triùmphum recolèntibus, ut et vita et morte nomen Dòmini nostri Jesu Christi glorificémus, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.}
@@ -60,7 +60,7 @@
 }
 
 \newcommand{\prayerFeriaVI}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Feria Sexta}
   {ad Cruċem}
   {\firstLetter{P}àter Omnípotens, cujus Fílius, Salvátor noster Jesus Christus, in cruċem exaltátus est ut universum mundum ad seìpsum tràheret: conċéde propìtius, ut nos, mystério redempçiónis nostrae gloriàntes, gráçiam consequámur cruċem nostram tollèndi eùmque sequèndi, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.}
@@ -68,11 +68,23 @@
 }
 
 \newcommand{\prayerSabbatum}{
-  \prayerDayofWeek
+  \prayerDayOfWeek
   {Sabbatum}
   {ad Sanctos}
   {\firstLetter{O}mnípotens sempitèrne Deus, qui hódie nos òmnium Sanctórum tuórum mèrita tribuìsti venerári: quáesumus, ut desiderátam nobïs tuae propiçiaçiónis abundànçiam, multiplicátïs interċessóribus larġiáris, per Dòminum nostrum Jesum Christum, Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per òmnia sáecula saeculórum.}
   {Oráte pro nobïs, òmnes Sancti, ut dìgni effiċiámur promissiónibus Christi.}
+}
+
+\newcommand{\prayerVersicleResponseDayOfWeek}[3]{
+  \prayerTitle{#1}\vspaceSmall
+
+  \prayerVersicleResponse{#1}{#2}
+}
+
+\newcommand{\prayerVersicleResponseGloriaPatri}{
+  \prayerVersicleResponse
+  {Glória Pàtri, et Fílio, et Spirìtui Sancto.}
+  {Et nunc et semper, et in sáecula saeculórum. Amen.}
 }
 
 % document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,6 +96,28 @@
 
 \newpage
 
-\input{03-first-hour}
+\input{07-vespers}
+
+\newpage
+
+\sectionTitle{ORAÇIONES DIEI}\vspaceLarge
+
+\prayerDominica\vspaceLarge\vspaceSmall
+
+\prayerFeriaII\vspaceLarge\vspaceSmall
+
+\prayerFeriaIII\vspaceLarge\vspaceSmall
+
+\prayerFeriaIV\vspaceLarge\vspaceSmall
+
+\newpage
+
+\prayerFeriaV\vspaceMedium\vspaceSmall
+
+\prayerFeriaVI\vspaceMedium\vspaceSmall
+
+\prayerSabbatum\vspaceMedium\vspaceSmall
+
+\input{09-ending}
 
 \end{document}
