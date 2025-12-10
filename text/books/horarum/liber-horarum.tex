@@ -81,10 +81,44 @@
   \prayerVersicleResponse{#1}{#2}
 }
 
+\newcommand{\prayerVersicleResponseDomineExaudi}{
+  \prayerVersicleResponse
+  {Dòmine, exáudi oraçiónem meam.}
+  {Et clamor meus ad te vèniat.}
+}
+
 \newcommand{\prayerVersicleResponseGloriaPatri}{
   \prayerVersicleResponse
   {Glória Pàtri, et Fílio, et Spirìtui Sancto.}
   {Et nunc et semper, et in sáecula saeculórum. Amen.}
+}
+
+\newcommand{\prayerVersicleResponseKyrieChristeEleison}{
+  \prayerVersicle{Kýrie eléison,}
+
+  \prayerResponse{Kýrie eléison.}
+
+  \prayerVersicle{Christe eléison,}
+
+  \prayerResponse{Christe eléison.}
+
+  \prayerVersicle{Kýrie eléison,}
+
+  \prayerResponse{Kýrie eléison.}
+}
+
+\newcommand{\prayerVersicleResponseKyrieEleisonIII}{
+  \prayerVersicle{Kýrie eléison. {\prayerRepeatFormat (iij.)}}
+
+  \prayerResponse{Amen.}
+}
+
+\newcommand{\prayerVersicleTriple}[3]{
+  \prayerVersicleResponse{#1}{Glória Patri et Fílio et Spirítui Sancto.}\vspaceSmall
+
+  \prayerVersicleResponse{#2}{Et nunc et sèmper, et in sáecula saeculórum. Amen.}\vspaceSmall
+
+  \prayerVersicle{#3}
 }
 
 % document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -96,7 +130,8 @@
 
 \newpage
 
-\input{07-vespers}
+\input{02-matins}
+%\input{07-vespers}
 
 \newpage
 
