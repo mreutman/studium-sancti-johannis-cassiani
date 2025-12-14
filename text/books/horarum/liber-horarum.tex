@@ -10,9 +10,9 @@
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\antiphonDayOfWeek}[7]{
-  \prayerTitleAndSubtitle{#1}{#2}\vspaceSmall
+  \prayerTitleDoubleAndSubtitle{#1}{#3}{#2}\vspaceSmall
 
-  \prayerVersicleResponse{#3 #4}{#4}
+  \prayerVersicleResponse{#4}{#4}
 
   \prayerVersicleResponse{#5}{#4}
   
@@ -91,6 +91,12 @@
   \prayerVersicleResponse{#1}{#2}
 }
 
+\newcommand{\prayerVersicleResponseDuesInAdjutorium}{
+  \prayerVersicleResponse
+  {Deus, in adjutórium meum intènde.}
+  {Dòmine, ad adjuvàndum me festína.}
+}
+
 \newcommand{\prayerVersicleResponseDomineExaudi}{
   \prayerVersicleResponse
   {Dòmine, exáudi oraçiónem meam.}
@@ -138,33 +144,13 @@
 
 \pagestyle{empty}
 
+\sectionTitle{Ad Matutinum}\vspaceMedium
+
 \input{00-beginning}
 
 \newpage
 
 \input{02-matins}
 %\input{07-vespers}
-
-\newpage
-
-\sectionTitle{ORAÇIONES DIEI}\vspaceLarge
-
-\prayerDominica\vspaceLarge\vspaceSmall
-
-\prayerFeriaII\vspaceLarge\vspaceSmall
-
-\prayerFeriaIII\vspaceLarge\vspaceSmall
-
-\prayerFeriaIV\vspaceLarge\vspaceSmall
-
-\newpage
-
-\prayerFeriaV\vspaceMedium\vspaceSmall
-
-\prayerFeriaVI\vspaceMedium\vspaceSmall
-
-\prayerSabbatum\vspaceMedium\vspaceSmall
-
-\input{09-ending}
 
 \end{document}
