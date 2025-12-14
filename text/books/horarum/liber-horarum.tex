@@ -9,6 +9,16 @@
 
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\antiphonDayOfWeek}[7]{
+  \prayerTitleAndSubtitle{#1}{#2}\vspaceSmall
+
+  \prayerVersicleResponse{#3 #4}{#4}
+
+  \prayerVersicleResponse{#5}{#4}
+  
+  \prayerVersicleResponse{#6}{#7}
+}
+
 \newcommand{\prayerDayOfWeek}[4]{
   \prayerTitleAndSubtitle{#1}{#2}\vspaceSmall
 
@@ -120,6 +130,8 @@
 
   \prayerVersicle{#3}
 }
+
+\newcommand{\repeatCount}[1]{\hspace{0.5em} {\prayerRepeatFormat (~#1.~)}}
 
 % document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
