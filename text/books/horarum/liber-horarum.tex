@@ -9,6 +9,20 @@
 
 % common text blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\antiphonSundayVespers}[9]{
+  \prayerTitleDoubleAndSubtitle{#1}{#3}{#2}\vspaceSmall
+
+  \prayerVersicleResponse{#4}{#4}
+
+  \prayerVersicleResponse{#5}{#4}
+  
+  \prayerVersicleResponse{#6}{#4}
+  
+  \prayerVersicleResponse{#7}{#4}
+  
+  \prayerVersicleResponse{#8}{#9}
+}
+
 \newcommand{\antiphonDayOfWeek}[7]{
   \prayerTitleDoubleAndSubtitle{#1}{#3}{#2}\vspaceSmall
 
@@ -144,13 +158,25 @@
 
 \pagestyle{empty}
 
-\sectionTitle{Ad Matutinum}\vspaceMedium
+\sectionTitle{Ad Matutínum}\vspaceMedium
 
 \input{00-beginning}
 
 \newpage
 
 \input{02-matins}
-%\input{07-vespers}
+
+\newpage
+
+\sectionTitle{Ad Vèsperas}\vspaceMedium
+
+\input{00-beginning}
+
+\newpage
+
+\input{07-vespers}
+
+
+\
 
 \end{document}
