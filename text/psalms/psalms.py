@@ -1,3 +1,7 @@
+#! /usr/bin/env python3
+
+import argparse
+
 class Psalms:
   __file_psalms = "psalms.csv"
   __dict2_psalms = {}
@@ -56,7 +60,15 @@ class Psalms:
     return chapter + "\\psalmText{" + text + "}"
 
 if __name__=='__main__':
-  psalms = Psalms()
+  parser = argparse.ArgumentParser(description="Vulgate Psalms")
+  parser.add_argument("--all", help="Print all Psalms")
+  parser.add_argument("--chapter", help="Psalm Chapter(s), range is BEGIN,END")
+  parser.add_argument("--verse", help="Psalm Verse(s), range is BEGIN,END")
+  args = parser.parse_args()
+  
+  print(args.chapter)
+  
+  #psalms = Psalms()
 
-  print(psalms.GetChapterLaTeX(50))
+  #print(psalms.GetChapterLaTeX(50))
 
