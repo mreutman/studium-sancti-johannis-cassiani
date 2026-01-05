@@ -60,15 +60,40 @@ class Psalms:
     return chapter + "\\psalmText{" + text + "}"
 
 if __name__=='__main__':
-  parser = argparse.ArgumentParser(description="Vulgate Psalms")
-  parser.add_argument("--all", help="Print all Psalms")
-  parser.add_argument("--chapter", help="Psalm Chapter(s), range is BEGIN,END")
-  parser.add_argument("--verse", help="Psalm Verse(s), range is BEGIN,END")
-  args = parser.parse_args()
-  
-  print(args.chapter)
-  
-  #psalms = Psalms()
+  range_char = ','
 
-  #print(psalms.GetChapterLaTeX(50))
+  parser = argparse.ArgumentParser(description="Vulgate Psalms")
+  parser.add_argument(
+    "--all",
+    action='store_true',
+    help="Print all Psalms")
+  parser.add_argument(
+    "--chapter",
+    type=str,
+    default="",
+    help="Psalm Chapter(s), range is BEGIN,END")
+  parser.add_argument(
+    "--verse",
+    type=str,
+    default="",
+    help="Psalm Verse(s), range is BEGIN,END")
+
+  args = parser.parse_args()
+  psalms = Psalms()
+
+  if args.all:
+    print("Make all Psalms")
+  elif range_char in args.chapter:
+    chapters = args.chapter.split(range_char)
+    print("Make Psalm chapters " + chapters[0] + " through " + chapters[1])
+  elif range_char in args.verse and args.chapter:
+    verses = args.verse.split(range_char)
+    chapter = args.chapter
+    print("Make Psalm chapter " + chapter + ":" + verses[0] + "-" + verses[1])
+  elif args.chapter:
+    chapter = args.chapter
+    print("Make Psalm chapter " + chapter)
+    print(psalms.GetChapterLaTeX(int(chapter)))
+  else:
+    print("Insufficient arguments")
 
