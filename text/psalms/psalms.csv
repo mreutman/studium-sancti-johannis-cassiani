@@ -1,3 +1,4 @@
+# chapter ^ verse ^ (i)nscription ^ text
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1^1^x^Beátus vìr qui non abívit in consìlio impiórum, et in via peccatórum non stètit, et in catédra pestilènçiae non sēdit,
 1^2^x^sed in leġe Dòmini volùntas ejus, et in leġe ejus meditábitur die ac nòcte.
@@ -260,7 +261,7 @@
 17^48^x^Deus qui das vindìctas mìhi et subdis pòpulos sub me~; liberátor meus de inimícīs meīs iracùndīs.
 17^49^x^Et ab insurgèntibus in me exaltábis me~; a vìro iníquo erìpies me.
 17^50^x^Proptèrea confitébor tìbi in naçiónibus, Dòmine, et nómini tuo psàlmum dicem,
-17^51^x^magnìficans salútes reġis ejus, et fàċiens mizericórdiam christo suo Davídi, et sémini ejus ùsque in sáeculum.{
+17^51^x^magnìficans salútes reġis ejus, et fàċiens mizericórdiam christo suo Davídi, et sémini ejus ùsque in sáeculum.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 18^1^i^In finem psàlmus Davídi
 18^2^x^Ċaeli enárrant glóriam Dei, et ópera mànuum ejus adnúnçiat firmamèntum.
@@ -1405,7 +1406,7 @@
 77^72^x^Et pávit eos in innoċènçia cordis sui, et in intelléctibus mànuum suárum dedúxit eos.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 78^1^i^Psàlmus Asáfo
-Deus, vēnérunt ġèntes in hereditátem tuam~; polluvérunt templum sanctum tuum~; posuérunt Hierozólyma in pomórum custódiam.
+78^1^x^Deus, vēnérunt ġèntes in hereditátem tuam~; polluvérunt templum sanctum tuum~; posuérunt Hierozólyma in pomórum custódiam.
 78^2^x^Posuérunt mortiċína servórum tuórum escas vulatìlibus ċaeli~; càrnes sanctórum tuórum béstiīs tèrrae.
 78^3^x^Effudérunt sàngüinem eórum tàmquam aquam in çircùmitu Hierozólyma, et non èrat qui sepelíret.
 78^4^x^Facti sùmus oppróbrium viċínīs nostrīs~; subsannáçio et illúzio hīs qui in çircùmitu nostro sunt.
@@ -1544,9 +1545,8 @@ Deus, vēnérunt ġèntes in hereditátem tuam~; polluvérunt templum sanctum tu
 86^5^x^¿~Numquid Zion dicet, «~Hòmo et hòmo natus est in ea, et ìpse fundávit eam Altìssimus~»~?
 86^6^x^Dòminus narrábit in scriptúrīs populórum et prinċìpium, horum qui fuérunt in ea.
 86^7^x^sicut laetàntium òmnium habitáçio est in te.
-psalmChapterInscription{87
-87^1^i^Cànticum psàlmi fíliīs Córachi in finem pro Mahaláto ad respondèndum intelléctus Hemáni Esrahítae
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+87^1^i^Cànticum psàlmi fíliīs Córachi in finem pro Mahaláto ad respondèndum intelléctus Hemáni Esrahítae
 87^2^x^Dòmine, Deus salútis meae, in die clamávi, et nòcte coram te.
 87^3^x^Intret in conspèctu tuo oráçio mea~; inclína aurem tuam ad prèċem meam,
 87^4^x^quia repléta est malīs ànima mea, et vita mea infèrno appropinquávit.
@@ -1565,9 +1565,8 @@ psalmChapterInscription{87
 87^17^x^In me transivérunt irae tuae, et terróres tui conturbavérunt me.
 87^18^x^Çircumdedérunt me sicut aqua tota die~; çircumdedérunt me sìmul.
 87^19^x^Elongavìsti a me amícum et pròximum, et notos meos a mizèria.
-psalmChapterInscriptionBeginDivision{88
-88^1^i^Intelléctus Etáni Ezrahítae
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+88^1^i^Intelléctus Etáni Ezrahítae
 88^2^x^Mizericórdias Dòmini in aetèrnum cantábo~; in ġeneraçiónem et ġeneraçiónem adnunçiábo veritátem tuam in ore meo,
 88^3^x^quóniam dixìsti, «~In aetèrnum mizericórdia aedificábitur in ċaelīs.~» Praeparábitur vèritas tua in eīs.
 88^4^x^«~Dispósui testamèntum eléctīs meīs, jurávi Davídi servo meo,
@@ -1620,10 +1619,9 @@ psalmChapterInscriptionBeginDivision{88
 88^51^x^Mèmor èsto, Dòmine, oppróbrii servórum tuórum, quod contìnui in sìnu meo, multárum ġèntium,
 88^52^x^quod exprobravérunt inimíci tui, Dòmine, quod exprobravérunt commutáçionem christi tui.
 88^53^x^Benedìctus Dòminus in aetèrnum. Fiat, fiat.
-psalmChapterInscriptionBeginDivision{89
-89^1^i^Oráçio Moýsis hòminis Dei
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Dòmine, refúġium fàctus es nobīs a ġeneraçióne in ġeneraçiónem.
+89^1^i^Oráçio Moýsis hòminis Dei
+89^1^x^Dòmine, refúġium fàctus es nobīs a ġeneraçióne in ġeneraçiónem.
 89^2^x^Priusquam mòntes fíerent, aut formarétur tèrra et orbis, a sáeculo et ùsque in sáeculum tu es Deus.
 89^3^x^Ne avèrtas hòminem in humilitátem. Et dixìsti, «~Convertìmini, fílii hòminum.~»
 89^4^x^Quóniam mille anni ànte òculos tuos tàmquam dies hestèrna quae praeterívit, et custódia in nòcte.
@@ -1640,11 +1638,9 @@ Dòmine, refúġium fàctus es nobīs a ġeneraçióne in ġeneraçiónem.
 89^15^x^Laetáti sùmus pro diébus quìbus nos humiliavìsti~; annīs quìbus vídimus màla.
 89^16^x^Rèspiċe in sèrvos tuos, et in ópera tua, et dírige fílios eórum.
 89^17^x^Et sit splendor Dòmini Dei nostri super nos, et ópera mànuum nostrárum dírige super nos, et opus mànuum nostrárum dírige.
-{12{3
-psalmChapterInscription{90
-90^1^i^Laus càntici Davídis
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Qui hábitat in adjutório Altìssimi, in protecçióne Dei ċaeli commorábitur.
+90^1^i^Laus càntici Davídis
+90^1^x^Qui hábitat in adjutório Altìssimi, in protecçióne Dei ċaeli commorábitur.
 90^2^x^Dicet Dòmino, «~Susċèptor meus es tu, et refúġium meum~; Deus meus, sperábo in eum.~»
 90^3^x^Quóniam ìpse liberávit me de làqueo venàntium, et a vèrbo àspero.
 90^4^x^Scápulīs suīs obumbrábit tìbi, et sub pènnīs ejus sperábis.
@@ -1660,9 +1656,8 @@ Qui hábitat in adjutório Altìssimi, in protecçióne Dei ċaeli commorábitur
 90^14^x^Quóniam in me sperávit, liberábo eum~; prótegem eum, quóniam cognóvit nomen meum.
 90^15^x^Clamábit ad me, et ego exaudiem eum~; cum ìpso sum in tribulaçióne~; erìpiem eum et glorificábo eum.
 90^16^x^Lonġitúdine diérum replébo eum, et ostèndem ìlli salutáre meum.
-psalmChapterInscriptionBeginDivision{91
-91^1^i^Psàlmus càntici in die sàbbati
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+91^1^i^Psàlmus càntici in die sàbbati
 91^2^x^Bonum est confitéri Dòmino, et psàllere nómini tuo, Altìssime,
 91^3^x^ad adnunçiàndum mane mizericórdiam tuam, et veritátem tuam per nòctem,
 91^4^x^in decachórdo, psaltèrio, cum càntico in çìtara.
@@ -1678,18 +1673,16 @@ psalmChapterInscriptionBeginDivision{91
 91^14^x^Plantáti in domu Dòmini, in átriīs domus Dei nostri florébunt.
 91^15^x^Adhūc multiplicábuntur in senècta úberi, et bène patièntes èrunt,
 91^16^x^ut adnúnçient quóniam rectus Dòminus Deus noster, et non est iníquitas in eo.
-psalmChapterInscription{92
-92^1^i^Laus càntici ìpsi Davídis in die ànte sàbbatum quando fundáta est tèrra
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Dòminus regnávit, decórem indútus est~; indútus est Dòminus fortitúdinem, et praeċínxit se. Ètenim firmávit orbem tèrrae, qui non commovébitur.
+92^1^i^Laus càntici ìpsi Davídis in die ànte sàbbatum quando fundáta est tèrra
+92^1^x^Dòminus regnávit, decórem indútus est~; indútus est Dòminus fortitúdinem, et praeċínxit se. Ètenim firmávit orbem tèrrae, qui non commovébitur.
 92^2^x^Paráta sedes tua e tunc~; a sáeculo tu es.
 92^3^x^Elevavérunt flúmina, Dòmine, elevavérunt flúmina voċem suam~; elevavérunt flúmina fluctūs suos,
 92^4^x^a vóċibus aquárum multárum. Mirábiles elaçiónes maris~; mirábilis in altīs Dòminus.
 92^5^x^Testimónia tua credibìlia fàcta sunt nìmis~; domum tuam dèċet sanctitúdo, Dòmine, in lonġitúdinem diérum.
-psalmChapterInscription{93
-93^1^i^Psàlmus ìpsi Davídis quarta sàbbati
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Deus ulçiónum Dòminus~; Deus ulçiónum líbere egit.
+93^1^i^Psàlmus ìpsi Davídis quarta sàbbati
+93^1^x^Deus ulçiónum Dòminus~; Deus ulçiónum líbere egit.
 93^2^x^Exaltáre, qui júdicas tèrram~; redde retribuçiónem supèrbīs.
 93^3^x^¿~Úsquequo peccatóres, Dòmine, úsquequo peccatóres gloriabùntur~?
 93^4^x^¿~Effabùntur et loquèntur iniquitátem~; loquèntur òmnes qui operàntur injustìçiam~?
@@ -1712,10 +1705,9 @@ Deus ulçiónum Dòminus~; Deus ulçiónum líbere egit.
 93^21^x^Captábunt in ànimam justi, et sàngüinem innoċèntem condemnábunt.
 93^22^x^Et fàctus est mìhi Dòminus in refúġium, et Deus meus in adjutórium spei meae.
 93^23^x^Et reddet ìllīs iniquitátem ipsórum, et in malìçia eórum dispèrdet eos~; dispèrdet ìllos Dòminus Deus noster.
-psalmChapterInscriptionBeginDivision{94
-94^1^i^Cànticum ìpsi Davídis quando domus aedificabátur post captivitátem
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Veníte, exsultémus Dòmino~; jubilémus Deo salutári nostro~;
+94^1^i^Cànticum ìpsi Davídis quando domus aedificabátur post captivitátem
+94^1^x^Veníte, exsultémus Dòmino~; jubilémus Deo salutári nostro~;
 94^2^x^praeoccupémus fàċiem ejus in confessióne, et in psàlmīs jubilémus ei~;
 94^3^x^quóniam Deus màgnus Dòminus, et Rex màgnus super òmnes Deos.
 94^4^x^Quia in mànu ejus sunt òmnes fines tèrrae, et altitúdines mòntium ìpsius sunt~;
@@ -1726,11 +1718,9 @@ Veníte, exsultémus Dòmino~; jubilémus Deo salutári nostro~;
 94^9^x^ubi tentavérunt me pàtres vèstri, probavérunt me, et vīdérunt ópera mea.
 94^10^x^Quadraġìnta annīs offènsus fui ġeneraçióni ìlli, et dixi, «~Semper hi errant corde.~»
 94^11^x^Et ìsti non cognovérunt vias meas~; ut jurávi in ira mea, «~Si introíbunt in rèquiem meam.~»
-{13{2
-psalmChapterInscription{95
-95^1^i^Laus càntici ìpsi Davídis
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Cantáte Dòmino cànticum novum~; cantáte Dòmino, òmnis tèrra.
+95^1^i^Laus càntici ìpsi Davídis
+95^1^x^Cantáte Dòmino cànticum novum~; cantáte Dòmino, òmnis tèrra.
 95^2^x^Cantáte Dòmino, et benedícite nómini ejus~; adnunçiáte de die in diem salutáre ejus.
 95^3^x^Adnunçiáte inter ġèntes glóriam ejus~; in òmnibus pòpulīs mirabìlia ejus.
 95^4^x^Quóniam màgnus Dòminus, et laudábilis nìmis~; terrìbilis est super òmnes Deos.
@@ -1743,10 +1733,9 @@ Cantáte Dòmino cànticum novum~; cantáte Dòmino, òmnis tèrra.
 95^11^x^Laetèntur ċaeli, et exsùltet tèrra~; commoveátur mare, et plenitúdo ejus.
 95^12^x^Gaudébunt campi, et òmnia quae in eīs sunt~; tunc exsultábunt òmnia lìgna silvárum,
 95^13^x^a fàċie Dòmini, quia vēnit, quóniam vēnit judicáre tèrram. Judicábit orbem tèrrae in aequitáte, et pòpulos in veritáte sua.
-psalmChapterInscription{96
-96^1^i^Huic Davídis quando tèrra ejus restitúta est
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Dòminus regnávit~; exsùltet tèrra~; laetèntur ìnsulae mùltae.
+96^1^i^Huic Davídis quando tèrra ejus restitúta est
+96^1^x^Dòminus regnávit~; exsùltet tèrra~; laetèntur ìnsulae mùltae.
 96^2^x^nubes et calígo in çircùmitu ejus~; justìçia et judìċium corrécçio sedis ejus.
 96^3^x^Ignis ànte ìpsum praeċédet, et inflammábit in çircùmitu inimícos ejus.
 96^4^x^Illuxérunt fùlgura ejus orbi tèrrae~; vīdit, et commóta est tèrra.
@@ -1758,10 +1747,9 @@ Dòminus regnávit~; exsùltet tèrra~; laetèntur ìnsulae mùltae.
 96^10^x^Qui dilìgitis Dòminum, odíte màlum~; custódit Dòminus ànimas sanctórum suórum~; de mànu peccatóris liberábit eos.
 96^11^x^Lux orta est justo, et rectīs corde laetìçia.
 96^12^x^Laetámini, justi, in Dòmino, et confitémini memóriae sanctificaçiónis ejus.
-psalmChapterInscriptionBeginDivision{97
-97^1^i^Psàlmus ìpsi Davídis
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Cantáte Dòmino cànticum novum, quia mirabìlia feċit. Salvávit sìbi dèxtera ejus, et bráchium sanctum ejus.
+97^1^i^Psàlmus ìpsi Davídis
+97^1^x^Cantáte Dòmino cànticum novum, quia mirabìlia feċit. Salvávit sìbi dèxtera ejus, et bráchium sanctum ejus.
 97^2^x^Notum feċit Dòminus salutáre suum~; in conspèctu ġèntium revelávit justìçiam suam.
 97^3^x^Recordátus est mizericórdiae suae et veritátis suae dómui Israélis. Vīdérunt òmnes tèrmini tèrrae salutáre Dei nostri.
 97^4^x^Jubiláte Deo òmnis tèrra~; cantáte, et exsultáte, et psàllite.
@@ -1770,11 +1758,9 @@ Cantáte Dòmino cànticum novum, quia mirabìlia feċit. Salvávit sìbi dèxte
 97^7^x^Moveátur mare et plenitúdo ejus~; orbis terrárum et qui hábitant in eo.
 97^8^x^Flúmina plaudent mànu~; sìmul mòntes exsultábunt a conspèctu Dòmini,
 97^9^x^quóniam vēnit judicáre tèrram. Judicábit orbem terrárum in justìçia, et pòpulos in aequitáte.
-{13{3
-psalmChapterInscription{98
-98^1^i^Psàlmus ìpsi Davídis
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Dòminus regnávit~; irascàntur pòpuli. Qui sèdet super ċerubíma~; moveátur tèrra.
+98^1^i^Psàlmus ìpsi Davídis
+98^1^x^Dòminus regnávit~; irascàntur pòpuli. Qui sèdet super ċerubíma~; moveátur tèrra.
 98^2^x^Dòminus in Zióne màgnus, et exċèlsus super òmnes pòpulos.
 98^3^x^Confiteàntur nómini tuo màgno, quóniam terrìbile et sanctum est.
 98^4^x^Et honor reġis judìċium díligit~; tu paravìsti direcçiónes~; judìċium et justìçiam in Jacóbe tu feċìsti.
@@ -1783,9 +1769,8 @@ Dòminus regnávit~; irascàntur pòpuli. Qui sèdet super ċerubíma~; moveátu
 98^7^x^In colùmna nubis loquebátur ad eos~; custodiébant testimónia ejus, et praeċèptum quod dèdit ìllīs.
 98^8^x^Dòmine Deus noster, tu exaudiébas eos~; Deus tu propìçius fuìsti eīs, et ulċíscens in òmnes adinvençiónes eórum.
 98^9^x^Exaltáte Dòminum Deum nostrum, et adoráte in mònte sancto ejus, quóniam sanctus Dòminus Deus noster.
-psalmChapterInscription{99
-99^1^i^Psàlmus in confessióne
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+99^1^i^Psàlmus in confessióne
 99^2^x^Jubiláte Deo, òmnis tèrra~; servíte Dòmino in laetìçia. Introíte in conspèctu ejus in exsultaçióne.
 99^3^x^Scitóte quóniam Dòminus ìpse est Deus. Ìpse feċit nos, et non ìpsi nos~; pòpulus ejus, et oves páscuae ejus.
 99^4^x^Introíte portas ejus in confessióne, átria ejus in hỳmnīs. Confitémini ìlli~; laudáte nomen ejus,
@@ -2445,7 +2430,7 @@ psalmChapterInscription{99
 124^5^x^Declinàntes autem in obligaçiónes, addúcet Dòminus cum operàntibus iniquitátem. Pax super Israélem.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 125^1^i^Cànticum gràduum
-125^In convertèndo Dòminus captivitátem Ziónis, fàcti sùmus sicut consoláti.
+125^1^x^In convertèndo Dòminus captivitátem Ziónis, fàcti sùmus sicut consoláti.
 125^2^x^Tunc replétum est gáudio os nostrum, et lìngüa nostra exsultaçióne. Tunc dicent inter ġèntes, «~Magnificávit Dòminus fàċere cum eīs.~»
 125^3^x^Magnificávit Dòminus fàċere nobíscum~; fàcti sùmus laetàntes.
 125^4^x^Convèrte, Dòmine, captivitátem nostram, sicut torrens in austro.
