@@ -344,26 +344,26 @@ class Psalms:
     f.close()
 
   def GetChapterLaTeX(self, ch):
-    chapter = "\\psalmChapter{" + str(ch) + "} "
+    chapter = "\\psalmChapter{" + str(ch) + "}"
     inscript = ""
     text = ""
     separator = " "
 
     inscript = separator.join(
-      "\\verseNumber{" + str(k) + "} " + v
+      "\\verseNumber{" + str(k) + "}~" + v
       for k,v in self.__dict2_inscripts[ch].items())
 
     text = separator.join(
-      "\\verseNumber{" + str(k) + "} " + v
+      "\\verseNumber{" + str(k) + "}~" + v
       for k,v in self.__dict2_psalms[ch].items())
 
     if inscript:
       return (
-        chapter +
-        "\\psalmInscription{" + inscript + "} " +
-        "\\psalmText{" + text + "}")
+        "[~" + chapter +
+        "~—~\\psalmInscription{" + inscript + "}~]" +
+        " \\psalmText{" + text + "}")
 
-    return chapter + "\\psalmText{" + text + "}"
+    return "[~" + chapter + "~]" + " \\psalmText{" + text + "}"
 
 def WriteDivisionBegin(f, k):
   f.write("\\PsalmDivisionBegin{" + str(k) + "}\n")
@@ -397,7 +397,7 @@ if __name__=='__main__':
   if args.all:
     print("Make all Psalms")
 
-    f = open("psalms.tex", "w")
+    f = open("psalms-all.tex", "w")
     k = 0
     s = 0
 

@@ -1,0 +1,42 @@
+\input{tex/env-printer}
+%\input{tex/env-ustrade}
+\input{tex/env-common}
+
+\newcommand{\PsalmDivisionBegin}[1]
+{
+
+  {\hfill\bfseries\small\addfontfeature{LetterSpace=20.0}\fontdimen2\font=2.0em\textsc{Divízio} \romanNumeralCaps{#1}.\romanNumeralCaps{1}.\hfill}
+
+}
+
+\newcommand{\PsalmDivisionNext}[2]
+{
+
+  {\hfill\bfseries\small\addfontfeature{LetterSpace=20.0}\fontdimen2\font=2.0em\textsc{Divízio} \romanNumeralCaps{#1}.\romanNumeralCaps{#2}.\hfill}
+
+}
+
+\newcommand{\psalmChapter}[1]
+{{\bfseries\small\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em\textsc{\romanNumeralCaps{#1}.}}}
+
+\newcommand{\psalmInscription}[1]
+{{\bfseries\small\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em\textsc{#1}}}
+
+\newcommand{\psalmText}[1]
+{~\large\textsc{#1}}
+
+\newcommand{\verseNumber}[1]
+{\textup{\footnotesize\textsuperscript{\textit{#1.}}}}
+
+\newcommand{\pageBorderEnable}{1}
+\newcommand{\pageBorderBegin}{0}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\baselinestretch}{1.5} % text line spacing
+%\renewcommand{\thepage}{\pageNumberFormat\arabic{page}}
+
+\begin{document}
+
+\input{psalms/psalms-all}
+
+\end{document}
