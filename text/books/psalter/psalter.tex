@@ -2,27 +2,45 @@
 %\input{tex/env-ustrade}
 \input{tex/env-common}
 
+\newcommand{\symbolBraceLeft}
+{{\large\textbf{[}}}
+
+\newcommand{\symbolBraceRight}
+{{\large\textbf{]}}}
+
+\newcommand{\formatTextPsalmChapter}
+{\large\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextPsalmDivision}
+{\Large\bfseries\addfontfeature{LetterSpace=20.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextPsalmInscription}
+{\small\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextVerseNumber}
+{\itshape\footnotesize}
+
 \newcommand{\PsalmDivisionBegin}[1]
 {\PsalmDivisionNext{#1}{1}}
 
 \newcommand{\PsalmDivisionNext}[2]
 {
 
-  {\hfill\bfseries\Large\addfontfeature{LetterSpace=20.0}\fontdimen2\font=1.0em\textsc{Divízio \hspace{0.5em} #1 : #2}\hfill}
+  {\hfill\formatTextPsalmDivision\textsc{Divízio \hspace{0.5em} #1 : #2}\hfill}
 
 }
 
 \newcommand{\psalmChapter}[1]
-{[~{\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em\textsc{Cap.~#1}}~]}
+{\symbolBraceLeft~{\formatTextPsalmChapter\textsc{Cap.~#1}}~\symbolBraceRight}
 
 \newcommand{\psalmChapterInscription}[2]
-{[~{\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em\textsc{Cap.~#1} — \textsc{\small#2}}~]}
+{\symbolBraceLeft~{\formatTextPsalmChapter\textsc{Cap.~#1} — {\formatTextPsalmInscription\textsc{#2}}}~\symbolBraceRight}
 
 \newcommand{\psalmText}[1]
 {~{\textsc{#1}\hspace{1em}}}
 
 \newcommand{\verseNumber}[1]
-{\textup{\footnotesize\textsuperscript{\textit{#1.}}}}
+{\textsuperscript{\formatTextVerseNumber#1.}}
 
 \newcommand{\pageBorderEnable}{1}
 \newcommand{\pageBorderBegin}{0}

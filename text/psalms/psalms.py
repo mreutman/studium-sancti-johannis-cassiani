@@ -354,17 +354,21 @@ class Psalms:
       for k,v in self.__dict2_inscripts[ch].items())
 
     text = separator.join(
-      "\\verseNumber{" + str(k) + "}~" + v
+      "\\pagebreak[3] \\nopagebreak\\verseNumber{" + str(k) + "}~" + v
       for k,v in self.__dict2_psalms[ch].items())
 
     if inscript:
       last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
-      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}~", "")
+      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}~", "~")
       return (
+        "\\pagebreak[3] " +
         "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
         "\\psalmText{" + text + "}")
 
-    return "\\psalmChapter{" + chapter + "} " + "\\psalmText{" + text + "}"
+    return (
+      "\\pagebreak[3] " +
+      "\\psalmChapter{" + chapter + "} " +
+      "\\psalmText{" + text + "}")
 
 def WriteDivisionBegin(f, k):
   f.write("\\PsalmDivisionBegin{" + str(k) + "}\n")
