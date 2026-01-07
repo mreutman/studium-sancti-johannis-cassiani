@@ -344,7 +344,7 @@ class Psalms:
     f.close()
 
   def GetChapterLaTeX(self, ch):
-    chapter = "\\psalmChapter{" + str(ch) + "}"
+    chapter = str(ch)
     inscript = ""
     text = ""
     separator = " "
@@ -358,12 +358,13 @@ class Psalms:
       for k,v in self.__dict2_psalms[ch].items())
 
     if inscript:
+      last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
+      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}~", "")
       return (
-        "[~" + chapter +
-        "~—~\\psalmInscription{" + inscript + "}~]" +
-        " \\psalmText{" + text + "}")
+        "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
+        "\\psalmText{" + text + "}")
 
-    return "[~" + chapter + "~]" + " \\psalmText{" + text + "}"
+    return "\\psalmChapter{" + chapter + "} " + "\\psalmText{" + text + "}"
 
 def WriteDivisionBegin(f, k):
   f.write("\\PsalmDivisionBegin{" + str(k) + "}\n")
