@@ -357,6 +357,14 @@ class Psalms:
       "\\pagebreak[3] \\nopagebreak\\verseNumber{" + str(k) + "}~" + v
       for k,v in self.__dict2_psalms[ch].items())
 
+    text = text.replace("¿", "¿~")
+    text = text.replace("?", "~?")
+    text = text.replace(";", "~; \\pagebreak[2]")
+    text = text.replace("«", "«~")
+    text = text.replace("»", "~»")
+    #text = text.replace(".", ". \\pagebreak[2]")
+    text = text.replace(",", ", \\pagebreak[1]")
+
     if inscript:
       last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
       text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}~", "~")
