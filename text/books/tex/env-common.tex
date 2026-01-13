@@ -1,5 +1,6 @@
 \usepackage[none]{hyphenat}
 \usepackage{changepage}
+\usepackage{everysel}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \usepackage{ifthen}
@@ -10,7 +11,7 @@
 \usepackage{titlesec}
 
 \setmainfont[
-  Path = ./fonts/dueblo/,
+  Path = ./fonts/dueblo/mod/,
   Extension = .otf,
   UprightFont = *-MED,
   BoldFont = *-BOL,
@@ -26,12 +27,12 @@
   UprightFont = *-Regular,
 ]{Liturgy}
 
-\setlength{\emergencystretch}{6em}
+%\setlength{\emergencystretch}{6em}
 \EverySelectfont{%
 %\fontdimen2\font=1em% interword space
 \fontdimen3\font=2em% interword stretch
 \fontdimen4\font=0.15em% interword shrink
-%\fontdimen7\font=0.5em% extra space
+%\fontdimen7\font=0.1em% extra space
 }
 
 \newcommand{\symbolCross}{{\liturgy +}}
