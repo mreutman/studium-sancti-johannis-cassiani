@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import argparse
+import os
 
 kathisma = {}
 stasis = {}
@@ -321,7 +322,8 @@ class Psalms:
     self.__dict2_psalms = {key: {} for key in keys}
     self.__dict2_inscripts = {key: {} for key in keys}
 
-    f = open(self.__file_psalms, 'r')
+    path = os.path.dirname(os.path.realpath(__file__))
+    f = open(path + "/" + self.__file_psalms, 'r')
 
     line = f.readline()
     while line:
@@ -363,7 +365,7 @@ class Psalms:
     text = text.replace("«", "«~")
     text = text.replace("»", "~»")
     #text = text.replace(".", ". \\pagebreak[2]")
-    text = text.replace(",", ", \\pagebreak[1]")
+    #text = text.replace(",", ", \\pagebreak[1]")
 
     if inscript:
       last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
@@ -410,6 +412,7 @@ if __name__=='__main__':
   if args.all:
     print("Make all Psalms")
 
+    newline = "\n"
     f = open("psalms-all.tex", "w")
     k = 0
     s = 0
@@ -422,18 +425,18 @@ if __name__=='__main__':
         WriteDivisionBegin(f, k)
         text = psalms.GetChapterLaTeX(n)
         text1, sep, textx = text.partition("\\verseNumber{73}")
-        f.write(text1 + "\n")
+        f.write(text1 + "}" + newline)
 
         s = s + 1
         WriteDivisionNext(f, k, s)
-        text = sep + textx
+        text = "\psalmText{" + sep + textx
         text2, sep, textx = text.partition("\\verseNumber{132}")
-        f.write(text2 + "\n")
+        f.write(text2 + "}" + newline)
 
         s = s + 1
         WriteDivisionNext(f, k, s)
-        text3 = sep + textx
-        f.write(text3 + "\n")
+        text3 = "\psalmText{" + sep + textx
+        f.write(text3 + newline)
 
         continue
 
@@ -447,7 +450,7 @@ if __name__=='__main__':
         WriteDivisionNext(f, k, s)
 
       text = psalms.GetChapterLaTeX(n)
-      f.write(text + "\n")
+      f.write(text + newline)
     f.close()
 
   elif range_char in args.chapter:
