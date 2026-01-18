@@ -309,6 +309,89 @@ stasis[148] =  3
 stasis[149] =  3
 stasis[150] =  3
 
+kathisma_stasis_pre_post = [
+  # 1
+  [("\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 2
+  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\newpage\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 3
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 4
+  [("\\newpage\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 5
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 6
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 7
+  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 8
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 9
+  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 10
+  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
+  # 11
+  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
+  # 12
+  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
+  # 13
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 14
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}")],
+  # 15
+  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 16
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 17
+  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 18
+  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+  # 19
+  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
+  # 20
+  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
+   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
+   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")]
+  ]
+
 class Psalms:
   __file_psalms = "psalms.csv"
   __dict2_psalms = {}
@@ -380,11 +463,11 @@ class Psalms:
       "\\psalmChapter{" + chapter + "} " +
       "\\psalmText{" + text + "}")
 
-def WriteDivisionBegin(f, k):
-  f.write("\\PsalmDivisionBegin{" + str(k) + "}\n")
-
-def WriteDivisionNext(f, k, s):
-  f.write("\\PsalmDivisionNext{" + str(k) + "}{" + str(s) + "}\n")
+def WriteDivision(f, k, s):
+  pre, post = kathisma_stasis_pre_post[k-1][s-1]
+  f.write(pre + "\n")
+  f.write("\\PsalmDivision{" + str(k) + "}{" + str(s) + "}\n")
+  f.write(post + "\n")
 
 if __name__=='__main__':
   zfill_len = 3
@@ -422,19 +505,19 @@ if __name__=='__main__':
         # Psalm 118 is special, being the only Psalm with internal divisions
         k = kathisma[n]
         s = stasis[n]
-        WriteDivisionBegin(f, k)
+        WriteDivision(f, k, s)
         text = psalms.GetChapterLaTeX(n)
         text1, sep, textx = text.partition("\\verseNumber{73}")
         f.write(text1 + "}" + newline)
 
         s = s + 1
-        WriteDivisionNext(f, k, s)
+        WriteDivision(f, k, s)
         text = "\psalmText{" + sep + textx
         text2, sep, textx = text.partition("\\verseNumber{132}")
         f.write(text2 + "}" + newline)
 
         s = s + 1
-        WriteDivisionNext(f, k, s)
+        WriteDivision(f, k, s)
         text3 = "\psalmText{" + sep + textx
         f.write(text3 + newline)
 
@@ -443,11 +526,11 @@ if __name__=='__main__':
       elif k != kathisma[n]:
         k = kathisma[n]
         s = stasis[n]
-        WriteDivisionBegin(f, k)
+        WriteDivision(f, k, s)
 
       elif s != stasis[n]:
         s = stasis[n]
-        WriteDivisionNext(f, k, s)
+        WriteDivision(f, k, s)
 
       text = psalms.GetChapterLaTeX(n)
       f.write(text + newline)
