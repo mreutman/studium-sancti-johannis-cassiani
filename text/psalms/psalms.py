@@ -333,7 +333,7 @@ kathisma_stasis_pre_post = [
   # 6
   [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
    ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
   # 7
   [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
    ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
@@ -348,7 +348,7 @@ kathisma_stasis_pre_post = [
    ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
   # 10
   [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
+   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
    ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
   # 11
   [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
