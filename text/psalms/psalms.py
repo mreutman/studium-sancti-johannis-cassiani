@@ -2,6 +2,7 @@
 
 import argparse
 import os
+import re
 
 kathisma = {}
 stasis = {}
@@ -466,8 +467,26 @@ class Psalms:
 def WriteDivision(f, k, s):
   pre, post = kathisma_stasis_pre_post[k-1][s-1]
   f.write(pre + "\n")
-  f.write("\\PsalmDivision{" + str(k) + "}{" + str(s) + "}\n")
+  f.write("\\psalmDivision{" + str(k) + "}{" + str(s) + "}\n")
   f.write(post + "\n")
+
+# def MarkFirstLetter(text):
+  # index = text.find("}~")
+  # if index != -1:
+    # first_letter_index = index + 2
+
+    # while not text[first_letter_index].isalpha():
+      # first_letter_index += 1
+
+    # new_text = (text[:first_letter_index] +
+                # "\\firstLetter{" +
+                # text[first_letter_index] +
+                # "}" +
+                # text[first_letter_index + 1:])
+
+    # return new_text
+  # else:
+    # return text
 
 if __name__=='__main__':
   zfill_len = 3

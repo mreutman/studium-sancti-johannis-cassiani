@@ -1,6 +1,6 @@
-\newcommand{\vspaceSmall}{\vspace{.5\baselineskip}}
-\newcommand{\vspaceMedium}{\vspace{1.0\baselineskip}}
-\newcommand{\vspaceLarge}{\vspace{1.5\baselineskip}}
+\newcommand{\vspaceSmall}{\vspace*{.5\baselineskip}}
+\newcommand{\vspaceMedium}{\vspace*{1.0\baselineskip}}
+\newcommand{\vspaceLarge}{\vspace*{1.5\baselineskip}}
 
 \newcommand{\vspacePrayerText}{\vspaceSmall}
 \newcommand{\vspacePsalmodyTitle}{\vspaceLarge}
@@ -16,6 +16,7 @@
 \newcommand{\ruleLarge}{\rule[0.5ex]{12em}{0.50pt}}
 
 \newcommand{\boldWideTextFormat}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+\newcommand{\italicWideTextFormat}{\itshape\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
 \newcommand{\pageNumberFormat}{\itshape\scriptsize\addfontfeature{LetterSpace=40.0}}
 \newcommand{\prayerTitleFormat}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
 \newcommand{\prayerRepeatFormat}{\itshape\footnotesize\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
@@ -69,9 +70,14 @@
   {\boldWideTextFormat\textsc{#1}}
 }
 
+\newcommand{\subTitleNote}[1]{%
+  \hspace{3em}
+  {\italicWideTextFormat\textsc{#1}}
+}
+
 \newcommand{\psalmodyTitle}{%
   \hspace{3em}
-  {\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Inċipit Ordo Psalmodiae}}
+  {\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{Inčipit Ordo Psalmodiae}}
   \hspace{1em}
   {\itshape\footnotesize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em\textsc{ et post hunc. . .}}
 }

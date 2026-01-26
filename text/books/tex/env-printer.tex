@@ -1,5 +1,7 @@
 \documentclass[twoside,12pt]{book}
 
+\ifnum\enablePageHeader>0
+
 \usepackage[
   papersize={8.5in,11in},
   layout=letterpaper,
@@ -10,13 +12,27 @@
   heightrounded,
 ]{geometry}
 
+\else
+
+\usepackage[
+  papersize={8.5in,11in},
+  layout=letterpaper,
+  right=1.0in,
+  left=1.0in,
+  top=5\baselineskip,
+  bottom=5\baselineskip,
+  heightrounded,
+]{geometry}
+
+\fi
+
 % Page border %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usepackage{eso-pic}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathmorphing}
 \AddToShipoutPictureBG{
-  \ifnum\pageBorderEnable>0
+  \ifnum\enablePageBorder>0
   \ifnum\value{page}>\pageBorderBegin % page to begin drawing border
   \begin{tikzpicture}[overlay,remember picture]
   \draw [line width=3pt]
@@ -31,7 +47,6 @@
   \fi
   \fi
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\sizeBodyText}{\normalsize}
-\newcommand{\sizeFirstLetter}{\huge}
+%\newcommand{\sizeBodyText}{\normalsize}
+%\newcommand{\sizeFirstLetter}{\huge}
