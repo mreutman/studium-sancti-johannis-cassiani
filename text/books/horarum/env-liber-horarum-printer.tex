@@ -71,7 +71,6 @@
 }
 
 \newcommand{\subTitleNote}[1]{%
-  \hspace{3em}
   {\italicWideTextFormat\textsc{#1}}
 }
 
@@ -128,8 +127,16 @@
   \prayerText{#1}
 }
 
-\newcommand{\sectionTitle}[1]{%
+\newcommand{\titleMajor}[1]{%
   \hfill
   {\bfseries\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em\uppercase{#1}}
   \hfill
 }
+
+\newcommand{\titleMinor}[1]{%
+  \hfill
+  {\addfontfeature{LetterSpace=10.0}\fontdimen2\font=0.8em\textsc{#1}}
+  \hfill
+}
+
+

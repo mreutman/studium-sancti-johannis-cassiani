@@ -1,6 +1,6 @@
 \subTitle{Inčipit Ordo Psalmodiae}\vspaceSmall
 
-\subTitleNote{et post hunc. . .}\vspaceMedium
+\subTitleNote{et post hunc. . .}\vspaceLarge
 
 % God is the Lord and has appeared unto us. Blessed is he who comes in the name of the Lord.
 \prayerText{\firstLetter{D}eus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceMedium
@@ -8,23 +8,76 @@
 % Give thanks unto the Lord, for he is good, for his mercy is unto the age.
 \prayerVersicleResponse
 {Confitémini Dòmino, quóniam bonus, quóniam in sáeculum mizericórdia ejus.}
-{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceSmall
+{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceMedium
 
 % All the nations surrounded me, and in the name of the Lord therefore have I conquered them.
 \prayerVersicleResponse
 {Òmnes ǧèntes çircumivérunt me, et in nómine Dòmini quia ùltus sum in eos.}
-{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceSmall
+{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceMedium
 
 % This is the Lord's doing, and it is wonderful in our eyes.
 \prayerVersicleResponse
 {A Dòmino fàctum est ìstud, et est mirábile in òculīs nostrīs.}
-{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceSmall
+{Deus Dòminus et illúxit nobīs. Benedìctus qui vènit in nómine Dòmini.}\vspaceMedium
 
 \newpage
 
-\subTitle{Tropária et Condáčia Quotidiána}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dailyTroparionKontakionTheotokion}[4]{%
+\subTitle{Tropárium et Condáčium Quotidiánum}~~\subTitleNote{—~~#1}\vspaceMedium
 
+\prayerText{#2}\vspaceMedium
 
+\prayerText{Glória Pàtri, et Fílio, et Spirìtui Sancto.}\vspaceMedium
+
+\prayerText{#3}\vspaceMedium
+
+\prayerText{Et nunc et semper, et in sáecula saeculórum. Amen.}\vspaceMedium
+
+\prayerText{#4}
+}
+
+\newcommand{\dailyAntiphon}[6]{%
+\subTitle{Antifóna ànte Evanǧèlium}~~\subTitleNote{—~~#1}\vspaceMedium
+
+\prayerText{#2}\vspaceSmall
+
+\prayerVersicleResponse{#3}{#3}\vspaceMedium
+
+\prayerVersicleResponse{#4}{#3}\vspaceMedium
+
+\prayerVersicleResponse{#5}{#6}
+}
+
+\vspaceMedium\titleMinor{Féria Secùnda}\vspaceLarge
+
+\dailyTroparionKontakionTheotokion
+{Ad Ànǧelos}
+{\input{prayers/week/monday/troparion}}
+{\input{prayers/week/monday/kontakion}}
+{\input{prayers/week/monday/theotokion}}
+
+\vfill
+
+\dailyAntiphon
+{Psàlmus CIII.}
+{in tono quarto~:}
+% He makes his angels spirits, and His ministers a flame of fire
+{Qui fàčis ànǧelos tuos spíritūs, et minìstros tuos ìgnem urèntem.}
+% Bless the Lord, O my soul! O Lord my God, You are very great!
+{Benedíce, ànima mea, Dòmino. Dòmine Deus meus, magnificátus es vehemènter.}
+{Qui fàčis ànǧelos tuos spíritūs.}
+{Et minìstros tuos ìgnem urèntem.}
+
+\vfill\vfill
+
+\newpage
+
+\dailyTroparionKontakionTheotokion
+{Féria Tèrçia}
+{\input{prayers/week/tuesday/troparion}}
+{\input{prayers/week/tuesday/kontakion}}
+{\input{prayers/week/tuesday/theotokion}}\vspaceMedium
 
 \subTitle{Antifóna ànte Evanǧèlium}\vspaceMedium
 
