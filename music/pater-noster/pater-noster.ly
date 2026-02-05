@@ -27,11 +27,13 @@ melody = \relative c' {
   \omit Staff.TimeSignature
   \omit Stem
   \override Lyrics.LyricSpace.minimum-distance = #0.7
-  \override Staff.Clef.font-size = #-5.6
+  %\override Staff.Clef.font-size = #-5.6
   \cadenzaOn
-  g a b b \bar "'" a c b a g4. \bar "'"
-  a4 g a b a( g) g( a) b a( b) a \bar ","
-  b  c b b a b
+  g a b b \bar "'" a c b a g4. \bar ","
+  a4 g a b a( g) g( a) b a( b) a \bar "|"
+  b c b b a b \bar ","
+  b b a b a a g \bar ","
+  a g a b a( g) g( a) b a( b) a \bar "|"
 }
 
 text = \smallCapsLyrics \lyricmode {
@@ -45,7 +47,9 @@ text = \smallCapsLyrics \lyricmode {
 
   ter nos- ter qui es in čae- līs,
   san- cti- fi- cé- tur no- men tu- um;
-  ad- vèn- i- at reg- num
+  ad- vèn- i- at reg- num;
+  fi- at vo- lùn- tas tu- a,
+  si- cut in čae- lo et in tèr- ra.
 
 %\firstLetter{P}àter noster, qui es in ċaelīs, sanctificétur nomen tuum. Advèniat regnum tuum. Fiat volùntas tua, sicut in ċaelo et in tèrra. Panem nostrum quotidiánum da nobīs hódie, et dimìtte nobīs débita nostra, sicut et nos dimìttimus debitóribus nostrīs, et ne nos indúcas in temptaçiónem, sed líbera nos a Màlo.}
 
