@@ -18,7 +18,7 @@ melody = \relative c' {
   \omit Staff.TimeSignature
   \omit Stem
   \override Lyrics.LyricSpace.minimum-distance = #1.5
-  \override Staff.Clef.font-size = #-2.5
+  %\override Staff.Clef.font-size = #-3.5
   \cadenzaOn
   g a b b \bar "'" a c b a g4. \bar "'"
   a4 g a b a( g) g( a) b a( b) a \bar ","
