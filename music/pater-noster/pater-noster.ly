@@ -1,72 +1,42 @@
 \version "2.24.0"
-
-% Function to wrap every lyric syllable in \smallCaps markup
-smallCapsLyrics =
-#(define-music-function (lyrics) (ly:music?)
-   (music-map
-     (lambda (m)
-       (if (music-is-of-type? m 'lyric-event)
-           (set! (ly:music-property m 'text)
-                 #{ \markup \smallCaps #(ly:music-property m 'text) #}))
-       m)
-     lyrics))
-
-#(ly:font-config-add-font "/home/anon/Git/studium-sancti-johannis-cassiani/text/books/fonts/dueblo/mod/Dueblo-SEMI-EXT-MED.otf")
-
-\paper {
-  #(define fonts
-    (set-global-fonts
-     #:roman "Dueblo SemiSerif Extended Medium"
-    ))
-}
+\include "../template-pre.ly"
 
 melody = \relative c' {
   \clef tenorvarC
-  \key c \major
-  \time 4/4
-  \omit Staff.TimeSignature
-  \omit Stem
-  \override Lyrics.LyricSpace.minimum-distance = #0.7
-  %\override Staff.Clef.font-size = #-5.6
-  \cadenzaOn
-  g a b b \bar "'" a c b a g4. \bar ","
-  a4 g a b a( g) g( a) b a( b) a \bar "|"
-  b c b b a b \bar ","
-  b b a b a a g \bar ","
-  a g a b a( g) g( a) b a( b) a \bar "|"
+  \melodyDefaults
+
+  \normal g a b b \bar "'" a c b a \soft g4. \bar ","                 % 1
+  \normal a4 g a b a( g) g( a) b a( b) \soft a4. \bar "|"             % 2
+  \normal b4 c b b a b a \soft g4. \bar ","                           % 3
+  \normal b4 b a b a a \soft g4. \bar ","                             % 4
+  \normal a4 g a b a( g) g( a) b a( b) \soft a4. \bar "|"             % 5
+  \normal g4 a b b \bar "'" b a b c b \bar "'"                        % 6
+  b a b a g \soft g4. \bar "|"                                        % 7
+  \normal a4 g a b c b b a b a \soft g4. \bar ","                     % 8
+  \normal a4 g a b a b a a g a b a g a \soft a4. \bar "|"             % 9
+  \normal e4 g a a b a a a g a a( g) \soft g4. \bar "|"               % 10
+  \normal g4 a a a a b a^\markup \sans "ret."( g) \soft g4. \fine     % 11
 }
 
-text = \smallCapsLyrics \lyricmode {
-  \markup {
-    \concat {
-      \fontsize #4 "P"
-      \tied-lyric #""
-      "à-"
-    }
-  }
+text = \lyricmode {
+  \markup { \concat { \fontsize #4 "P" \tied-lyric #"" "à-" } }
 
-  ter nos- ter qui es in čae- līs,
-  san- cti- fi- cé- tur no- men tu- um;
-  ad- vèn- i- at reg- num;
-  fi- at vo- lùn- tas tu- a,
-  si- cut in čae- lo et in tèr- ra.
-
-%\firstLetter{P}àter noster, qui es in ċaelīs, sanctificétur nomen tuum. Advèniat regnum tuum. Fiat volùntas tua, sicut in ċaelo et in tèrra. Panem nostrum quotidiánum da nobīs hódie, et dimìtte nobīs débita nostra, sicut et nos dimìttimus debitóribus nostrīs, et ne nos indúcas in temptaçiónem, sed líbera nos a Màlo.}
-
+  ter nos- ter qui es in čae- līs,                                    % 1
+  san- cti- fi- cé- tur no- men tu- um;                               % 2
+  ad- vèn- i- at reg- num tu- um;                                     % 3
+  fi- at vo- lùn- tas tu- a,                                          % 4
+  si- cut in čae- lo et in tèr- ra.                                   % 5
+  Pa- nem nos- trum quo- ti- di- á- num                               % 6
+  da no- bīs hó- di- e;                                               % 7
+  et di- mìt- te no- bīs dé- bi- ta nos- tra,                         % 8
+  si- cut et nos di- mìt- ti- mus de- bi- tó- ri- bus nos- trīs,      % 9
+  et ne nos in- dú- cas in temp- ta- çi- ó- nem,                      % 10
+  sed lí- be- ra nos a Mà- lo.                                        % 11
 }
 
-\score {
-  <<
-    \new Voice = "one" { 
-      \autoBeamOff
-      %\slurUp
-      \stemUp
-      \melody
-    }
-    \new Lyrics \lyricsto "one" \text
-  >>
-  \layout { 
-    indent = 0\mm
-  }
-  \midi { }
+\header {
+  title = "PÀTER NOSTER"
+  tagline = #f
 }
+
+\include "../template-post.ly"
