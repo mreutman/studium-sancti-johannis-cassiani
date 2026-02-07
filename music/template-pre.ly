@@ -18,19 +18,15 @@
 
 }
 
-soft = {
-  \override NoteHead.style = #'harmonic-mixed
-}
-
-normal = {
-  \override NoteHead.style = #'default
-}
-
 melodyDefaults = {
   \key c \major
   \time 4/4
   \cadenzaOn
+  \dynamicUp
   \omit Staff.TimeSignature
-  \omit Stem
+  %\omit Stem
+  %\override Stem.length = #5
+  \override Stem.thickness = #1
   \override Lyrics.LyricSpace.minimum-distance = #1.0
+  \set melismaBusyProperties = #'()
 }
