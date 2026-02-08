@@ -1,0 +1,86 @@
+\documentclass[twoside,12pt]{book}
+
+\ifnum\enablePageHeader>0
+
+\usepackage[
+  papersize={8.5in,11in},
+  layout=letterpaper,
+  right=1.0in,
+  left=1.0in,
+  top=6\baselineskip,
+  bottom=5\baselineskip,
+  heightrounded,
+]{geometry}
+
+\else
+
+\usepackage[
+  papersize={8.5in,11in},
+  layout=letterpaper,
+  right=1.0in,
+  left=1.0in,
+  top=4\baselineskip,
+  bottom=4\baselineskip,
+  heightrounded,
+]{geometry}
+
+\fi
+
+% Page border %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+\AddToShipoutPictureBG{
+  \ifnum\enablePageBorder>0
+  \ifnum\value{page}>\pageBorderBegin % page to begin drawing border
+  \begin{tikzpicture}[overlay,remember picture]
+  \draw [line width=3pt]
+    ($ (current page.north west) + (0.8in,-0.6in) $)
+    rectangle
+    ($ (current page.south east) + (-0.8in,0.6in) $);
+  \draw [line width=1pt]
+    ($ (current page.north west) + (0.85in,-0.65in) $)
+    rectangle
+    ($ (current page.south east) + (-0.85in,0.65in) $); 
+  \end{tikzpicture}%
+  \fi
+  \fi
+}
+
+% Format %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\fmtBoldWideText}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtItalicWideText}{\itshape\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtFirstLetter}{\huge}
+
+\newcommand{\fmtPrayerRepeatText}{\itshape\footnotesize\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\fmtPrayerSubtitle}{\itshape\footnotesize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtPrayerTitle}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\brPrinter}{\\\hspace*{1.5em}}
+\newcommand{\brUSTrade}{}
+
+\newcommand{\defaultFontSize}{\large}
+
+\newcommand{\vspaceSmall}{\vspace*{.5\baselineskip}}
+\newcommand{\vspaceMedium}{\vspace*{1.0\baselineskip}}
+\newcommand{\vspaceLarge}{\vspace*{1.5\baselineskip}}
+
+\newcommand{\titleMajor}[1]{%
+  \hfill
+  {\bfseries\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em\uppercase{#1}}
+  \hfill
+}
+
+\newcommand{\titleMinor}[1]{%
+  \hfill
+  {\addfontfeature{LetterSpace=10.0}\fontdimen2\font=0.8em\textsc{#1}}
+  \hfill
+}

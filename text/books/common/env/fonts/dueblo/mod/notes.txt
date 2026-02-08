@@ -1,0 +1,2 @@
+- Add Gcaron (U+01E6, U+01E7) character
+  - Used Fontforge auto compose + auto small caps

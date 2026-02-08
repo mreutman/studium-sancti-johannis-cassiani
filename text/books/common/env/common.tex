@@ -1,0 +1,121 @@
+\usepackage[none]{hyphenat}
+\usepackage{changepage}
+\usepackage{everysel}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{ifthen}
+\usepackage{multirow}
+\usepackage{needspace}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\setmainfont[
+  Path = ./common/env/fonts/dueblo/mod/,
+  Extension = .otf,
+  UprightFont = *-MED,
+  BoldFont = *-BOL,
+  ItalicFont = *-REG,
+  BoldItalicFont = *-REG,
+  Ligatures = {NoCommon, NoDiscretionary},
+  Numbers=Lining,
+]{Dueblo-SEMI-EXT}
+
+\newfontfamily{\liturgy}[
+  Path = ./common/env/fonts/liturgy/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+]{Liturgy}
+
+%\setlength{\emergencystretch}{6em}
+\EverySelectfont{%
+%\fontdimen2\font=1em% interword space
+\fontdimen3\font=2em% interword stretch
+\fontdimen4\font=0.15em% interword shrink
+%\fontdimen7\font=0.1em% extra space
+}
+
+% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\symbolCross}{{\liturgy +}}
+\newcommand{\symbolDagger}{†}
+\newcommand{\symbolResponse}{{\liturgy R}}
+\newcommand{\symbolVersicle}{{\liturgy V}}
+\newcommand{\symbolPoint}{𝄪}
+\newcommand{\symbolBreak}{~{\itshape *}~~}
+\newcommand{\symbolBreakFinal}{~{\itshape **}~~}
+
+\newcommand{\romanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+
+\newcommand{\firstLetter}[1]{{\fmtFirstLetter #1}}
+
+\newcommand{\antiphonDayOfWeek}[7]{
+  \prayerTitleDoubleAndSubtitle{#1}{#3}{#2}\vspaceSmall
+
+  \prayerVersicleResponse{#4}{#4}
+
+  \prayerVersicleResponse{#5}{#4}
+  
+  \prayerVersicleResponse{#6}{#7}
+}
+
+\newcommand{\antiphonSundayVespers}[9]{
+  \prayerTitleDoubleAndSubtitle{#1}{#3}{#2}\vspaceSmall
+
+  \prayerVersicleResponse{#4}{#4}
+
+  \prayerVersicleResponse{#5}{#4}
+  
+  \prayerVersicleResponse{#6}{#4}
+  
+  \prayerVersicleResponse{#7}{#4}
+  
+  \prayerVersicleResponse{#8}{#9}
+}
+
+\newcommand{\prayerText}[1]{%
+  \textsc{#1}
+}
+
+\newcommand{\prayerTitleDoubleAndSubtitle}[3]{%
+  \hspace{3em}
+  {\fmtPrayerTitle\textsc{#1}}
+  \hspace{0.5em}
+  {\fmtPrayerTitle\textsc{#2}}
+  \hspace{1em}
+  {\fmtPrayerSubtitle\textsc{#3}}
+}
+
+\newcommand{\prayerVersicle}[1]{%
+  {\small\symbolVersicle.}\phantom{-}\textsc{#1}
+}
+
+\newcommand{\prayerResponse}[1]{%
+  {\small\symbolResponse.}\phantom{-}\textsc{#1}
+}
+
+\newcommand{\prayerVersicleResponse}[2]{%
+  \prayerVersicle{#1}
+
+  \prayerResponse{#2}
+}
+
+\newcommand{\prayerVersicleResponseSmallSpace}[2]{%
+  \prayerVersicle{#1}\vspaceSmall
+
+  \prayerResponse{#2}
+}
+
+\newcommand{\subSubTitle}[1]{%
+  \hspace{3em}
+  \subTitleNote{#1}
+}
+
+\newcommand{\subTitle}[1]{%
+  \hspace{3em}
+  {\fmtBoldWideText\textsc{#1}}
+}
+
+\newcommand{\subTitleNote}[1]{%
+  {\fmtItalicWideText\textsc{#1}}
+}

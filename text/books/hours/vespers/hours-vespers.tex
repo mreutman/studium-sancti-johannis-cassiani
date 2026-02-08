@@ -1,0 +1,24 @@
+\newcommand{\enablePageBorder}{1}
+\newcommand{\enablePageHeader}{0}
+\newcommand{\pageBorderBegin}{0}
+
+\input{common/env/printer}
+\input{common/env/common}
+\input{common/text}
+
+%\raggedbottom
+\setlength{\parindent}{0pt}
+
+% document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\defaultFontSize
+
+\pagestyle{empty}
+
+\vspaceLarge\titleMajor{Ad Vèsperas}\vspaceLarge
+
+\input{common/usual-beginning}
+
+\input{vespers}
+
+\end{document}
