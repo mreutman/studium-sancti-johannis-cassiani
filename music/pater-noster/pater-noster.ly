@@ -7,7 +7,7 @@ melody = \relative c' {
 
   g8[ a] b[ b] \bar "'"                                             % 1
   a c b a g4\> r8\! \bar "|"                                        % 2
-  a[ g a b( a) g] g[( a) b] a[( b)] a4\> r8\! \bar "|"              % 3
+  a[ g a b a( g)] g[( a) b] a[( b)] a4\> r8\! \bar "|"              % 3
   b[ c b b] a[ b] a g4\> r8\! \bar "|"                              % 4
   b[ b] a[ b a] a g4\> r8\! \bar "|"                                % 5
   a[ g] a b[ a( g)] g[( a)] b a[( b)] a4\> r\! \bar "|"             % 6
@@ -25,7 +25,7 @@ text = \lyricmode {
 
   ter nos- ter                                                      % 1
   qui es in čae- līs,                                               % 2
-  san- cti- fi- cé- _ tur no- _ men tu- _ um;                       % 3
+  san- cti- fi- cé- tur _ no- _ men tu- _ um;                       % 3
   ad- vèn- i- at reg- num tu- um;                                   % 4
   fi- at vo- lùn- tas tu- a,                                        % 5
   si- cut in čae- lo _ et _ in tèr- _ ra.                           % 6
@@ -40,7 +40,7 @@ text = \lyricmode {
 
 \header {
   title = "PÀTER NOSTER"
-  opus = \markup { \sans \smallCaps "melódia oriǧinális" }
+  opus = \markup { \sans \smallCaps "melódia oriǧináli" }
   tagline = #f
 }
 
