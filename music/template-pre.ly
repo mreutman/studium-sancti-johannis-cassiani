@@ -16,6 +16,7 @@
 
   score-system-spacing.padding = #5
 
+  system-system-spacing = #'((basic-distance . 15))
 }
 
 melodyDefaults = {
