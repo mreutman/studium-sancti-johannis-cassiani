@@ -25,6 +25,8 @@ melodyDefaults = {
   \cadenzaOn
   \dynamicUp
   \omit Staff.TimeSignature
+  \override Staff.BarLine.hair-thickness = #3
+  \override Staff.BarLine.thick-thickness = #6
   %\omit Stem
   %\override Stem.length = #5
   \override Stem.thickness = #1
