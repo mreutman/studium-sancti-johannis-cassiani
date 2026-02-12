@@ -448,6 +448,8 @@ class Psalms:
     text = text.replace(";", "~; \\pagebreak[2]")
     text = text.replace("«", "«~")
     text = text.replace("»", "~»")
+    text = text.replace("j", "ï")
+    text = text.replace("J", "Ï")
     #text = text.replace(".", ". \\pagebreak[2]")
     #text = text.replace(",", ", \\pagebreak[1]")
 
