@@ -1,4 +1,4 @@
-PROJECT=hours-vespers
+PROJECT=vespers
 
 all:
 	xelatex -halt-on-error ./$(PROJECT).tex

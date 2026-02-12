@@ -1,11 +1,26 @@
+\newcommand{\enablePageBorder}{1}
+\newcommand{\enablePageHeader}{0}
+\newcommand{\pageBorderBegin}{0}
+
+\input{common/env/printer}
+\input{common/env/common}
+\input{common/text}
+
+\setlength{\parindent}{0pt}
+
+% document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\defaultFontSize
+
+\pagestyle{empty}
+
+\vspaceLarge\titleMajor{Ad Vèsperas}
 \vspaceLarge
 
-\subTitle{Inčipit Ordo Psalmodiae}~~\subTitleNote{—~~et post hunc. . .}
-
+\input{common/usual-beginning}
 \vfill
 
-\horizontalRule
-
+\subTitle{Inčipit Ordo Psalmodiae}~~\subTitleNote{—~~et post hunc. . .}
 \vfill
 
 \subTitle{Psàlmus 140}\vspaceMedium
@@ -22,7 +37,7 @@
 
 \prayerText{Dòmine, clamávi ad te, \symbolBreakFinal exáudi me, Dòmine.}
 
-\vspaceMedium
+\vfill
 
 \newpage
 
@@ -273,8 +288,6 @@
 
 \prayerVersicleResponseGloriaPatri\vspaceMedium
 
-\prayerText{\firstLetter{H}onèstior quam Ċerubína, et ùltra comparaçiónem gloriósior quam Serafína, sine màcula ġenuìsti Deum vèrbum; purìssima Vìrġo, magnificámus vero te.}\vspaceMedium
-
 \prayerVersicleResponse
 {Per oraçiónes sanctórum patrum nostrórum, Dómine Jesu Christe, Deus noster, mizerére nostri et salva nos.}
 {Amen.}\vspaceMedium
@@ -298,3 +311,5 @@
 \end{center}
 
 \vfill\vfill
+
+\end{document}
