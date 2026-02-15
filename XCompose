@@ -1,7 +1,7 @@
 include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
-<Multi_key>     <bracketright> : "«"
-<Multi_key>     <bracketleft>  : "»"
+<Multi_key>     <bracketright> : "»"
+<Multi_key>     <bracketleft>  : "«"
 <Multi_key>     <exclam>   : "¡"
 <Multi_key>     <question> : "¿"
 
