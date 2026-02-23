@@ -393,10 +393,12 @@ kathisma_stasis_pre_post = [
    ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")]
   ]
 
+import pdb
 class Psalms:
   __file_psalms = "psalms.csv"
   __dict2_psalms = {}
   __dict2_inscripts = {}
+  __dict2_vspace = {}
 
   def __init__(self):
     keys = []
@@ -405,6 +407,7 @@ class Psalms:
 
     self.__dict2_psalms = {key: {} for key in keys}
     self.__dict2_inscripts = {key: {} for key in keys}
+    self.__dict2_vspace = {key: "\\vspace*{2.0\\baselineskip}" for key in keys}
 
     path = os.path.dirname(os.path.realpath(__file__))
     f = open(path + "/" + self.__file_psalms, 'r')
@@ -429,42 +432,56 @@ class Psalms:
 
     f.close()
 
+    self.__dict2_vspace[1] = "\\vspace*{1.5\\baselineskip}"
+    self.__dict2_vspace[3] = "\\vspace*{2.5\\baselineskip}"
+    #self.__dict2_vspace[5] = "\\vspace*{3.0\\baselineskip}"
+    self.__dict2_vspace[6] = "\\vspace*{1.5\\baselineskip}"
+    self.__dict2_vspace[7] = "\\newpage"
+    self.__dict2_vspace[11] = "\\newpage"
+    #self.__dict2_vspace[7] = "\\vspace*{3.0\\baselineskip}"
+    #self.__dict2_vspace[8] = "\\vspace*{3.0\\baselineskip}"
+    #self.__dict2_vspace[9] = "\\newpage"
+    #self.__dict2_vspace[10] = "\\newpage"
+    #self.__dict2_vspace[13] = "\\newpage"
+
   def GetChapterLaTeX(self, ch):
     chapter = str(ch)
     inscript = ""
     text = ""
-    separator = " "
+    separator = ""
 
     inscript = separator.join(
-      "\\verseNumber{" + str(k) + "}~" + v
+      "\\verseNumber{" + str(k) + "}~" + v + "~~"
       for k,v in self.__dict2_inscripts[ch].items())
 
     text = separator.join(
-      "\\pagebreak[3] \\nopagebreak\\verseNumber{" + str(k) + "}~" + v
+      "\\psalmText{\\verseNumber{" + str(k) + "}~" + v + "}\n\n"
       for k,v in self.__dict2_psalms[ch].items())
+
+    #print(self.__dict2_psalms[ch])
+    #pdb.set_trace()
 
     text = text.replace("¿", "¿~")
     text = text.replace("?", "~?")
-    text = text.replace(";", "~; \\pagebreak[2]")
+    text = text.replace(";", "~;")
     text = text.replace("«", "«~")
     text = text.replace("»", "~»")
-    text = text.replace("j", "ï")
-    text = text.replace("J", "Ï")
-    #text = text.replace(".", ". \\pagebreak[2]")
-    #text = text.replace(",", ", \\pagebreak[1]")
 
     if inscript:
       last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
-      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}~", "~")
+      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}", 
+                          "\\verseNumberPhantom{" + str(last_inscipt_verse) + "}")
       return (
-        "\\pagebreak[3] " +
         "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
-        "\\psalmText{" + text + "}")
+        "\n\n" +
+        text +
+        self.__dict2_vspace[ch])
 
     return (
-      "\\pagebreak[3] " +
       "\\psalmChapter{" + chapter + "} " +
-      "\\psalmText{" + text + "}")
+      "\n\n" +
+      text + 
+      self.__dict2_vspace[ch])
 
 def WriteDivision(f, k, s):
   pre, post = kathisma_stasis_pre_post[k-1][s-1]
@@ -516,42 +533,42 @@ if __name__=='__main__':
   if args.all:
     print("Make all Psalms")
 
-    newline = "\n"
+    newline = "\n\n"
     f = open("psalms-all.tex", "w")
     k = 0
     s = 0
 
     for n in range(1, 151):
-      if 118 == n:
-        # Psalm 118 is special, being the only Psalm with internal divisions
-        k = kathisma[n]
-        s = stasis[n]
-        WriteDivision(f, k, s)
-        text = psalms.GetChapterLaTeX(n)
-        text1, sep, textx = text.partition("\\verseNumber{73}")
-        f.write(text1 + "}" + newline)
+      # if 118 == n:
+        # # Psalm 118 is special, being the only Psalm with internal divisions
+        # k = kathisma[n]
+        # s = stasis[n]
+        # WriteDivision(f, k, s)
+        # text = psalms.GetChapterLaTeX(n)
+        # text1, sep, textx = text.partition("\\verseNumber{73}")
+        # f.write(text1 + "}" + newline)
 
-        s = s + 1
-        WriteDivision(f, k, s)
-        text = "\psalmText{" + sep + textx
-        text2, sep, textx = text.partition("\\verseNumber{132}")
-        f.write(text2 + "}" + newline)
+        # s = s + 1
+        # WriteDivision(f, k, s)
+        # text = "\psalmText{" + sep + textx
+        # text2, sep, textx = text.partition("\\verseNumber{132}")
+        # f.write(text2 + "}" + newline)
 
-        s = s + 1
-        WriteDivision(f, k, s)
-        text3 = "\psalmText{" + sep + textx
-        f.write(text3 + newline)
+        # s = s + 1
+        # WriteDivision(f, k, s)
+        # text3 = "\psalmText{" + sep + textx
+        # f.write(text3 + newline)
 
-        continue
+        # continue
 
-      elif k != kathisma[n]:
-        k = kathisma[n]
-        s = stasis[n]
-        WriteDivision(f, k, s)
+      # elif k != kathisma[n]:
+        # k = kathisma[n]
+        # s = stasis[n]
+        # WriteDivision(f, k, s)
 
-      elif s != stasis[n]:
-        s = stasis[n]
-        WriteDivision(f, k, s)
+      # elif s != stasis[n]:
+        # s = stasis[n]
+        # WriteDivision(f, k, s)
 
       text = psalms.GetChapterLaTeX(n)
       f.write(text + newline)
