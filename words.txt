@@ -1,3 +1,3 @@
-ieiunium, ieiunii -> ïeǧúnim, ïeǧúnii
-citus, cita, citum -> chitus, chita, chitum
-cito -> chite
+ieiunium,ieiunii -> ïeǧúnim,ïeǧúnii
+acuo,acuere,acui,acutum -> àcuo,àcuere,acúvi,acútum
+ora,orae -> borda,bordam (Frankish loan, *bord)
