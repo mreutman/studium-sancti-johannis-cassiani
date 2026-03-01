@@ -1,1 +1,3 @@
-ieiunium, ieiunii -> ïeǧúnim, ïeǧúnii
+ieiunium,ieiunii -> ïeǧúnim,ïeǧúnii
+acuo,acuere,acui,acutum -> àcuo,àcuere,acúvi,acútum
+ora,orae -> borda,bordam (Frankish loan, *bord)
