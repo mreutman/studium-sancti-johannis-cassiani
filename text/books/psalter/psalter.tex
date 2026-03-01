@@ -6,7 +6,43 @@
 %\input{common/env/ustrade}
 \input{common/env/common}
 
-\newcommand{\currentDivision}{Div 0}
+\newcommand{\symbolEnd}{\huge\itshape 𝄪}
+
+\newcommand{\psalmEnd}[1]
+{~~\raisebox{-0.55ex}{\symbolEnd}
+
+  \vspace*{#1\baselineskip}
+}
+
+\newcommand{\psalmEndInter}[1]
+{
+
+  \vspace*{#1\baselineskip}
+
+  \makebox[\linewidth]{\symbolEnd}
+
+  \vspace*{#1\baselineskip}
+
+}
+
+\newcommand{\psalmEndPage}
+{~~~\raisebox{-0.55ex}{\symbolEnd}
+
+  \newpage
+}
+
+
+\newcommand{\psalmEndPageFill}
+{
+
+  \vfill\vfill
+  
+  \makebox[\linewidth]{\symbolEnd}
+
+  \vfill
+  
+  \newpage
+}
 
 \newcommand{\symbolBraceLeft}
 {{\large\textbf{[}}}
@@ -64,7 +100,7 @@
 \setlength{\parindent}{2em}
 \setlength{\parskip}{0pt}
 
-\renewcommand{\baselinestretch}{1.5} % text line spacing
+\renewcommand{\baselinestretch}{1.25} % text line spacing
 
 \interlinepenalty=10000
 \raggedbottom
@@ -75,7 +111,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyhead[LE,RO]{\thepage}
-\chead{\leftmark}
+\fancyhead[LO,RE]{\leftmark}
 
 % Optional: remove the line
 \renewcommand{\headrulewidth}{0.4pt}
@@ -84,6 +120,7 @@
 \defaultFontSize
 
 \pagestyle{fancy}
+\chead{\sc{\formatTextHeader Lìber Psalmórum}}
 
 \setlength{\headheight}{15pt}.
 \setcounter{page}{1}
@@ -102,5 +139,15 @@
 \hangindent=2em\hangafter=1
 \input{psalms-all}
 \end{flushleft}
+
+\begin{center}
+\vfill
+
+{\formatTextPsalmChapter DÉSINO}
+
+{\formatTextPsalmChapter LÌBER PSALMÓRUM DAVÍDIS}
+
+\vfill\vfill\vfill\vfill\vfill
+\end{center}
 
 \end{document}

@@ -310,89 +310,6 @@ stasis[148] =  3
 stasis[149] =  3
 stasis[150] =  3
 
-kathisma_stasis_pre_post = [
-  # 1
-  [("\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
-  # 2
-  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\newpage\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 3
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
-  # 4
-  [("\\newpage\\vspace*{0.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
-  # 5
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 6
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 7
-  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 8
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 9
-  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
-  # 10
-  [("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
-  # 11
-  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
-  # 12
-  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}")],
-  # 13
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 14
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}")],
-  # 15
-  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 16
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 17
-  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 18
-  [("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")],
-  # 19
-  [("\\vspace*{2.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
-   ("\\vspace*{1.0\\baselineskip}", "\\vspace*{1.0\\baselineskip}")],
-  # 20
-  [("\\newpage\\vspace*{1.0\\baselineskip}", "\\vspace*{2.0\\baselineskip}"),
-   ("\\newpage\\vspace*{0.25\\baselineskip}", "\\vspace*{0.75\\baselineskip}"),
-   ("\\vspace*{1.5\\baselineskip}", "\\vspace*{1.5\\baselineskip}")]
-  ]
-
 import pdb
 class Psalms:
   __file_psalms = "psalms.csv"
@@ -407,7 +324,7 @@ class Psalms:
 
     self.__dict2_psalms = {key: {} for key in keys}
     self.__dict2_inscripts = {key: {} for key in keys}
-    self.__dict2_vspace = {key: "\\vspace*{2.0\\baselineskip}" for key in keys}
+    self.__dict2_vspace = {key: "\\psalmEnd{2}" for key in keys}
 
     path = os.path.dirname(os.path.realpath(__file__))
     f = open(path + "/" + self.__file_psalms, 'r')
@@ -432,121 +349,175 @@ class Psalms:
 
     f.close()
 
-    self.__dict2_vspace[1] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[3] = "\\vspace*{2.5\\baselineskip}"
-    #self.__dict2_vspace[5] = "\\vspace*{3.0\\baselineskip}"
-    self.__dict2_vspace[6] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[7] = "\\newpage"
-    self.__dict2_vspace[10] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[11] = "\\newpage"
-    self.__dict2_vspace[12] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[13] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[14] = "\\newpage"
-    self.__dict2_vspace[15] = "\\newpage"
-    self.__dict2_vspace[18] = "\\newpage"
-    self.__dict2_vspace[19] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[20] = "\\newpage"
-    self.__dict2_vspace[21] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[25] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[26] = "\\newpage"
-    self.__dict2_vspace[27] = "\\newpage"
-    self.__dict2_vspace[28] = "\\newpage"
-    self.__dict2_vspace[29] = "\\newpage"
-    self.__dict2_vspace[33] = "\\vspace*{3.0\\baselineskip}"
-    self.__dict2_vspace[34] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[34] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[35] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[36] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[37] = "\\newpage"
-    self.__dict2_vspace[39] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[41] = "\\newpage"
-    self.__dict2_vspace[42] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[43] = "\\newpage"
-    self.__dict2_vspace[47] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[48] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[49] = "\\newpage"
-    self.__dict2_vspace[52] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[53] = "\\newpage"
-    self.__dict2_vspace[54] = "\\newpage"
-    self.__dict2_vspace[55] = "\\newpage"
-    self.__dict2_vspace[56] = "\\newpage"
-    self.__dict2_vspace[57] = "\\newpage"
-    self.__dict2_vspace[58] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[59] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[61] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[62] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[63] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[64] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[65] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[66] = "\\newpage"
-    self.__dict2_vspace[67] = "\\newpage"
-    self.__dict2_vspace[68] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[69] = "\\newpage"
-    self.__dict2_vspace[72] = "\\newpage"
-    self.__dict2_vspace[73] = "\\newpage"
-    self.__dict2_vspace[74] = "\\newpage"
-    self.__dict2_vspace[75] = "\\newpage"
-    self.__dict2_vspace[77] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[78] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[79] = "\\newpage"
-    self.__dict2_vspace[80] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[81] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[82] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[84] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[85] = "\\newpage"
-    self.__dict2_vspace[86] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[87] = "\\newpage"
-    self.__dict2_vspace[91] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[92] = "\\newpage"
-    self.__dict2_vspace[95] = "\\newpage"
-    self.__dict2_vspace[96] = "\\newpage"
-    self.__dict2_vspace[99] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[100] = "\\newpage"
-    self.__dict2_vspace[103] = "\\newpage"
-    self.__dict2_vspace[106] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[107] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[108] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[109] = "\\newpage"
-    self.__dict2_vspace[110] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[113] = "\\newpage"
-    #self.__dict2_vspace[114] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[115] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[116] = "\\vspace*{2.5\\baselineskip}"
-    #self.__dict2_vspace[117] = "\\vspace*{1.0\\baselineskip}"
-    #self.__dict2_vspace[118] = "\\vspace*{1.5\\baselineskip}"
-    #self.__dict2_vspace[119] = "\\vspace*{1.5\\baselineskip}"
-    #self.__dict2_vspace[120] = "\\vspace*{1.5\\baselineskip}"
-    #self.__dict2_vspace[121] = "\\newpage"
-    #self.__dict2_vspace[122] = "\\vspace*{1.0\\baselineskip}"
-    #self.__dict2_vspace[123] = "\\newpage"
-    #self.__dict2_vspace[55] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[123] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[124] = "\\newpage"
-    self.__dict2_vspace[128] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[129] = "\\newpage"
-    self.__dict2_vspace[130] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[132] = "\\newpage"
-    self.__dict2_vspace[134] = "\\newpage"
-    self.__dict2_vspace[136] = "\\newpage"
-    self.__dict2_vspace[137] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[138] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[139] = "\\newpage"
-    self.__dict2_vspace[140] = "\\newpage"
-    self.__dict2_vspace[141] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[142] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[143] = "\\vspace*{1.0\\baselineskip}"
-    self.__dict2_vspace[144] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[145] = "\\newpage"
-    self.__dict2_vspace[146] = "\\newpage"
-    self.__dict2_vspace[147] = "\\vspace*{2.5\\baselineskip}"
-    self.__dict2_vspace[149] = "\\vspace*{1.5\\baselineskip}"
-    self.__dict2_vspace[150] = "\\newpage"
+    def newpage():
+      return "\\newpage"
 
-    #self.__dict2_vspace[7] = "\\vspace*{3.0\\baselineskip}"
-    #self.__dict2_vspace[8] = "\\vspace*{3.0\\baselineskip}"
-    #self.__dict2_vspace[9] = "\\newpage"
-    #self.__dict2_vspace[10] = "\\newpage"
-    #self.__dict2_vspace[13] = "\\newpage"
+    def end_extra():
+      return "\\psalmEnd{3}"
+
+    def end_inter(val):
+      return "\\psalmEndInter{" + str(val) + "}"
+
+    def end_page():
+      return "\\psalmEndPage"
+
+    def end_page_fill():
+      return "\\psalmEndPageFill"
+
+    def vspace(val):
+      return "\n\n\\vspace*{" + str(val) + "\\baselineskip}"
+
+    #self.__dict2_vspace[1] =
+    #self.__dict2_vspace[2] =
+    #self.__dict2_vspace[3] =
+    #self.__dict2_vspace[4] =
+    self.__dict2_vspace[5] = end_inter(1.5)
+    self.__dict2_vspace[6] = end_page()
+    self.__dict2_vspace[7] = end_page()
+    self.__dict2_vspace[8] = end_inter(2)
+    #self.__dict2_vspace[9] =
+    self.__dict2_vspace[10] = end_page_fill()
+    self.__dict2_vspace[11] = end_inter(1.0)
+    #self.__dict2_vspace[12] = end_page()
+    #self.__dict2_vspace[13] = newpage()
+    self.__dict2_vspace[14] = end_inter(1.5)
+    #self.__dict2_vspace[15] =
+    self.__dict2_vspace[16] = end_inter(1.0)
+    self.__dict2_vspace[17] = end_inter(2)
+    self.__dict2_vspace[18] = end_inter(1.0)
+    self.__dict2_vspace[19] = end_page()
+    self.__dict2_vspace[20] = end_page_fill()
+    self.__dict2_vspace[21] = end_page_fill()
+    #self.__dict2_vspace[22] =
+    #self.__dict2_vspace[23] = vspace(1.5)
+    #self.__dict2_vspace[24] = newpage()
+    self.__dict2_vspace[25] = end_page_fill()
+    self.__dict2_vspace[26] = end_page()
+    #self.__dict2_vspace[27] =
+    #self.__dict2_vspace[28] =
+    self.__dict2_vspace[29] = end_inter(1.5)
+    self.__dict2_vspace[30] = end_page()
+    #self.__dict2_vspace[31] =
+    self.__dict2_vspace[32] = end_page_fill()
+    #self.__dict2_vspace[33] = end_inter(2.5)
+    #self.__dict2_vspace[34] = end_page()
+    #self.__dict2_vspace[35] =
+    self.__dict2_vspace[36] = end_page_fill()
+    #self.__dict2_vspace[37] =
+    self.__dict2_vspace[38] = end_inter(1.0)
+    #self.__dict2_vspace[39] =
+    self.__dict2_vspace[40] = end_inter(1.5)
+    #self.__dict2_vspace[41] =
+    self.__dict2_vspace[42] = end_inter(2.0) 
+    self.__dict2_vspace[43] = end_page_fill()
+    self.__dict2_vspace[44] = end_inter(2.0)
+    self.__dict2_vspace[45] = end_page()
+    #self.__dict2_vspace[46] =
+    #self.__dict2_vspace[47] =
+    self.__dict2_vspace[48] = end_inter(1.5)
+    self.__dict2_vspace[49] = end_page_fill()
+    self.__dict2_vspace[50] = end_inter(2.0)
+    self.__dict2_vspace[51] = end_page()
+    self.__dict2_vspace[52] = end_inter(1.5)
+    #self.__dict2_vspace[53] =
+    #self.__dict2_vspace[54] =
+    self.__dict2_vspace[55] = end_inter(1.5)
+    self.__dict2_vspace[56] = end_inter(1.5)
+    #self.__dict2_vspace[57] =
+    #self.__dict2_vspace[58] =
+    #self.__dict2_vspace[59] =
+    self.__dict2_vspace[60] = end_page_fill()
+    #self.__dict2_vspace[61] =
+    self.__dict2_vspace[62] = end_inter(1.0)
+    #self.__dict2_vspace[63] =
+    self.__dict2_vspace[64] = end_inter(2.0)
+    #self.__dict2_vspace[65] =
+    #self.__dict2_vspace[66] =
+    self.__dict2_vspace[67] = end_page()
+    self.__dict2_vspace[68] = end_page()
+    #self.__dict2_vspace[69] =
+    #self.__dict2_vspace[70] =
+    self.__dict2_vspace[71] = end_page()
+    self.__dict2_vspace[72] = end_inter(2.0)
+    self.__dict2_vspace[73] = end_page_fill()
+    #self.__dict2_vspace[74] =
+    #self.__dict2_vspace[75] =
+    self.__dict2_vspace[76] = end_inter(1.5)
+    #self.__dict2_vspace[77] =
+    self.__dict2_vspace[78] = end_inter(1.0)
+    #self.__dict2_vspace[79] =
+    #self.__dict2_vspace[80] =
+    self.__dict2_vspace[81] = end_page()
+    self.__dict2_vspace[82] = end_page_fill()
+    #self.__dict2_vspace[83] =
+    self.__dict2_vspace[84] = end_inter(1.5)
+    self.__dict2_vspace[85] = end_inter(1.5)
+    #self.__dict2_vspace[86] =
+    self.__dict2_vspace[87] = end_inter(1.0)
+    #self.__dict2_vspace[88] =
+    #self.__dict2_vspace[89] =
+    self.__dict2_vspace[90] = end_inter(2.0)
+    self.__dict2_vspace[91] = end_inter(2.0)
+    self.__dict2_vspace[92] = end_page()
+    self.__dict2_vspace[93] = end_inter(1.5)
+    self.__dict2_vspace[94] = end_page()
+    self.__dict2_vspace[95] = end_page_fill()
+    #self.__dict2_vspace[96] =
+    self.__dict2_vspace[97] = end_inter(1.5)
+    self.__dict2_vspace[98] = end_page()
+    #self.__dict2_vspace[99] =
+    self.__dict2_vspace[100] = end_page()
+    self.__dict2_vspace[101] = end_inter(2.0)
+    self.__dict2_vspace[102] = end_page_fill()
+    self.__dict2_vspace[103] = end_page_fill()
+    self.__dict2_vspace[104] = end_page()
+    #self.__dict2_vspace[105] =
+    #self.__dict2_vspace[106] =
+    self.__dict2_vspace[107] = end_inter(1.5)
+    self.__dict2_vspace[108] = end_inter(1.5)
+    self.__dict2_vspace[109] = end_page_fill()
+    self.__dict2_vspace[110] = end_inter(1.5)
+    #self.__dict2_vspace[111] =
+    #self.__dict2_vspace[112] =
+    self.__dict2_vspace[113] = end_page()
+    self.__dict2_vspace[114] = end_inter(1.5)
+    self.__dict2_vspace[115] = end_page()
+    #self.__dict2_vspace[116] =
+    #self.__dict2_vspace[117] =
+    self.__dict2_vspace[118] = end_inter(1.5)
+    #self.__dict2_vspace[119] = end_page_fill()
+    #self.__dict2_vspace[120] =
+    #self.__dict2_vspace[121] =
+    self.__dict2_vspace[122] = end_page()
+    self.__dict2_vspace[123] = end_inter(1.5)
+    self.__dict2_vspace[124] = end_page_fill()
+    #self.__dict2_vspace[125] =
+    #self.__dict2_vspace[126] = end_page()
+    self.__dict2_vspace[127] = end_inter(1.5)
+    #self.__dict2_vspace[128] =
+    self.__dict2_vspace[129] = end_inter(2.0)
+    #self.__dict2_vspace[130] = 
+    #self.__dict2_vspace[131] =
+    self.__dict2_vspace[132] = end_page_fill()
+    self.__dict2_vspace[133] =  end_inter(1.0)
+    #self.__dict2_vspace[134] =
+    self.__dict2_vspace[135] = end_inter(1.0)
+    self.__dict2_vspace[136] = end_inter(2.0)
+    self.__dict2_vspace[137] = end_page()
+    #self.__dict2_vspace[138] =
+    #self.__dict2_vspace[139] =
+    self.__dict2_vspace[140] = end_page()
+    self.__dict2_vspace[141] = end_inter(1.0)
+    #self.__dict2_vspace[142] =
+    #self.__dict2_vspace[143] =
+    #self.__dict2_vspace[144] =
+    self.__dict2_vspace[145] = end_inter(1.5)
+    self.__dict2_vspace[146] = end_inter(1.0)
+    #self.__dict2_vspace[147] =
+    self.__dict2_vspace[148] = end_inter(1.0)
+    self.__dict2_vspace[149] = end_page()
+    #self.__dict2_vspace[150] =
+
 
   def GetChapterLaTeX(self, ch):
     chapter = str(ch)
@@ -565,6 +536,7 @@ class Psalms:
     #print(self.__dict2_psalms[ch])
     #pdb.set_trace()
 
+    text = text.rstrip()
     text = text.replace("¿", "¿~")
     text = text.replace("?", "~?")
     text = text.replace(";", "~;")
@@ -586,6 +558,7 @@ class Psalms:
       "\n\n" +
       text + 
       self.__dict2_vspace[ch])
+
 
 def WriteDivision(f, k, s):
   pre, post = kathisma_stasis_pre_post[k-1][s-1]
