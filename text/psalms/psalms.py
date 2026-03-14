@@ -544,9 +544,9 @@ class Psalms:
     text = text.replace("»", "~»")
 
     if inscript:
-      last_inscipt_verse = next(reversed(self.__dict2_inscripts[ch]))
-      text = text.replace("\\verseNumber{" + str(last_inscipt_verse) + "}", 
-                          "\\verseNumberPhantom{" + str(last_inscipt_verse) + "}")
+      last_inscript_verse = next(reversed(self.__dict2_inscripts[ch]))
+      text = text.replace("\\verseNumber{" + str(last_inscript_verse) + "}", 
+                          "\\verseNumberPhantom{" + str(last_inscript_verse) + "}")
       return (
         "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
         "\n\n" +
