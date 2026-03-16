@@ -78,9 +78,14 @@
 
 \renewcommand{\thepage}{\formatTextHeader\textsc{\arabic{page}}}
 
+\newcommand{\odeChapter}[1]{%
+  \setPageHeader{#1}
+  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.}}
+}
+
 \newcommand{\psalmChapter}[1]{%
   \setPageHeader{#1}
-  {\hspace{2em}\formatTextPsalmChapter\textsc{Psalmus~~#1.}}
+  {\hspace{2em}\formatTextPsalmChapter\textsc{Psàlmus~~#1.}}
 }
 
 \newcommand{\psalmChapterInscription}[2]{%
@@ -97,7 +102,10 @@
 \newcommand{\verseNumberPhantom}[1]
 {\phantom{\textsuperscript{\formatTextVerseNumber#1.}}}
 
-\setlength{\parindent}{2em}
+\newcommand{\verseIndentOn}{\begin{flushleft}\hangindent=2em\hangafter=1}
+\newcommand{\verseIndentOff}{\end{flushleft}\hangindent=0em\hangafter=1}
+
+\setlength{\parindent}{0em}
 \setlength{\parskip}{0pt}
 
 \renewcommand{\baselinestretch}{1.25} % text line spacing
@@ -122,7 +130,7 @@
 \pagestyle{fancy}
 \chead{\sc{\formatTextHeader Lìber Psalmórum}}
 
-\setlength{\headheight}{15pt}.
+\setlength{\headheight}{16pt}.
 \setcounter{page}{1}
 
 \begin{center}
@@ -135,10 +143,9 @@
 \vspace{0.5\baselineskip}
 \end{center}
 
-\begin{flushleft}
-\hangindent=2em\hangafter=1
+\verseIndentOn
 \input{psalms-all}
-\end{flushleft}
+\verseIndentOff
 
 \begin{center}
 \vfill
@@ -149,5 +156,13 @@
 
 \vfill\vfill\vfill\vfill\vfill
 \end{center}
+
+\newpage
+
+\chead{\sc{\formatTextHeader Čàntica Sàcra}}
+
+%\begin{flushleft}
+\input{odes}
+%\end{flushleft}
 
 \end{document}
