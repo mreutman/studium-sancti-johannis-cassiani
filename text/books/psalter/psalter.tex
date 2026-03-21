@@ -70,9 +70,14 @@
 
 \renewcommand{\thepage}{\formatTextHeader\textsc{\arabic{page}}}
 
-\newcommand{\odeChapter}[1]{%
+\newcommand{\odeChapter}[2]{%
   \setPageHeader{#1}
-  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.}}
+  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.} }
+  {\formatTextPsalmInscription\textsc{#2}}
+}
+
+\newcommand{\prayerTitle}[1]{%
+  {\hspace{2em}\formatTextPsalmChapter\textsc{#1}}
 }
 
 \newcommand{\psalmChapter}[1]{%
@@ -120,12 +125,14 @@
 
 \begin{document}
 \defaultFontSize
-
 \pagestyle{fancy}
-\chead{\sc{\formatTextHeader Oraçiónes Iniçiáles}}
-
 \setlength{\headheight}{16pt}.
 \setcounter{page}{1}
+
+\chead{\sc{\formatTextHeader Divíşio Psalmórum}}
+\input{tables}
+
+\newpage
 
 \begin{center}
 \vspace*{-1.0\baselineskip}
@@ -135,6 +142,7 @@
 \vspaceSmall
 \end{center}
 
+\chead{\sc{\formatTextHeader Oraçiónes Iniçiáles}}
 \input{beginning}
 
 \newpage
@@ -166,10 +174,30 @@
 
 \newpage
 
-\chead{\sc{\formatTextHeader Čàntica Sàcra}}
+\begin{center}
+\vspace*{-1.0\baselineskip}
 
-%\begin{flushleft}
+{\formatTextPsalmChapter ČÀNTICA}
+
+\vspaceSmall
+\end{center}
+
+\chead{\sc{\formatTextHeader Čàntica}}
 \input{odes}
-%\end{flushleft}
+
+\newpage
+
+\begin{center}
+\vspace*{-1.0\baselineskip}
+
+{\formatTextPsalmChapter ORAÇIÓNES VÀRIAE}
+
+\vspaceSmall
+\end{center}
+
+\chead{\sc{\formatTextHeader Oraçiónes Vàriae}}
+\markboth{}{}
+\input{prayers}
+
 
 \end{document}
