@@ -70,9 +70,14 @@
 
 \renewcommand{\thepage}{\formatTextHeader\textsc{\arabic{page}}}
 
-\newcommand{\odeChapter}[1]{%
+\newcommand{\odeChapter}[2]{%
   \setPageHeader{#1}
-  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.}}
+  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.} }
+  {\formatTextPsalmInscription\textsc{#2}}
+}
+
+\newcommand{\prayerTitle}[1]{%
+  {\hspace{2em}\formatTextPsalmChapter\textsc{#1}}
 }
 
 \newcommand{\psalmChapter}[1]{%
@@ -120,16 +125,13 @@
 
 \begin{document}
 \defaultFontSize
-
 \pagestyle{fancy}
-\chead{\sc{\formatTextHeader Lìber Psalmórum}}
-
 \setlength{\headheight}{16pt}.
 \setcounter{page}{1}
 
-\input{beginning}
+\input{tables}
 
-\newpage
+\input{beginning}
 
 \begin{center}
 \vspace*{-1.0\baselineskip}
@@ -138,10 +140,11 @@
 
 {\formatTextPsalmChapter LÌBER PSALMÓRUM DAVÍDIS}
 
-\vspace{0.5\baselineskip}
+\vspaceSmall
 \end{center}
 
 \verseIndentOn
+\chead{\sc{\formatTextHeader Lìber Psalmórum}}
 \input{psalms-all}
 \verseIndentOff
 
@@ -157,10 +160,8 @@
 
 \newpage
 
-\chead{\sc{\formatTextHeader Čàntica Sàcra}}
-
-%\begin{flushleft}
 \input{odes}
-%\end{flushleft}
+
+\input{prayers}
 
 \end{document}
