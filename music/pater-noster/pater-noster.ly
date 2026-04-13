@@ -36,7 +36,7 @@ text = \lyricmode {
   \markup { \concat { \fontsize #4 "P" \tied-lyric #"" "à-" } }
   ter nos- ter                                                      % 1
 
-  qui es in čae- līs,                                               % 2
+  qui es in čoe- līs,                                               % 2
 
   san- cti- fi- cé- tur _ no- _ men tu- _ um;                       % 3
 
@@ -44,7 +44,7 @@ text = \lyricmode {
 
   fi- at vo- lùn- tas tu- a,                                        % 5
 
-  si- cut in čae- lo _ et _ in tèr- _ ra.                           % 6
+  si- cut in čoe- lo _ et _ in tèr- _ ra.                           % 6
 
   Pa- nem nos- trum                                                 % 7
 
