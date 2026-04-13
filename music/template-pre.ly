@@ -16,7 +16,8 @@
 
   score-system-spacing.padding = #5
 
-  system-system-spacing = #'((basic-distance . 15))
+  system-system-spacing = #'((basic-distance . 15)) % vertical spacing
+  ragged-bottom = ##t
 }
 
 melodyDefaults = {
@@ -30,6 +31,9 @@ melodyDefaults = {
   %\omit Stem
   %\override Stem.length = #5
   \override Stem.thickness = #1
-  \override Lyrics.LyricSpace.minimum-distance = #1.0
+  \override Lyrics.LyricSpace.minimum-distance = #3
   \set melismaBusyProperties = #'()
+  %\override NoteHead.style = #'neomensural
+  %\override Flag.stencil = #old-straight-flag
+  %\override Score.SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
 }
