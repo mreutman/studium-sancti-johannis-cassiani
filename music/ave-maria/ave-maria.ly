@@ -17,7 +17,7 @@ melody = \relative c' {
   % 5
   e4( f) g f( e) d c( d) d2 \bar "|"
   % 6
-  e4 c d f f e f g e g f( e) c( d) d2( g) \bar "||"
+  e4 c d f f e f g e g f( e) c( d) d2^\markup \sans "ret."( g) \bar "||"
   % 7
   a4 g a c( b) g4. g4 f g( a) a2 \bar "|"
   % 8
@@ -25,7 +25,7 @@ melody = \relative c' {
   % 9
   d4 c d( f) f4.( g4) f e f g( a) f( e4.) \bar "'"
   % 10
-  d2 d
+  d2^\markup \sans "ret." d
   \fine
 }
 

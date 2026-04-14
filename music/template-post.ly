@@ -12,7 +12,7 @@
   >>
   \layout { 
     indent = 0\mm
-    %ragged-last = ##t
+    ragged-last = ##t
     \context {
       \Score
       \override TextScript.font-shape = #'caps

@@ -31,7 +31,7 @@ melodyDefaults = {
   %\omit Stem
   %\override Stem.length = #5
   \override Stem.thickness = #1
-  \override Lyrics.LyricSpace.minimum-distance = #3
+  \override Lyrics.LyricSpace.minimum-distance = #2.0
   \set melismaBusyProperties = #'()
   %\override NoteHead.style = #'neomensural
   %\override Flag.stencil = #old-straight-flag
