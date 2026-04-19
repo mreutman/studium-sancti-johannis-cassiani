@@ -91,9 +91,11 @@
   {\formatTextPsalmInscription\textsc{#2}}
 }
 
-\newcommand{\psalmText}[1]{\textsc{#1}}
+\newcommand{\psalmText}[1]{%
+  \textsc{#1}
+}
 
-%\newcommand{\prayerText}[1]{\textsc{#1}}
+\newcommand{\prayerText}[1]{\textsc{#1}}
 
 \newcommand{\verseNumber}[1]
 {\textsuperscript{\formatTextVerseNumber#1.}}
