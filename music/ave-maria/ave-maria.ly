@@ -4,6 +4,7 @@
 melody = \relative c' {
   \clef "blackmensural-c5"
   \melodyDefaults
+  %\tempo 4 = 80
   % 1
   f,4 c d 
   \shape #'((0 . 0)(0 . 1.5)(0 . 1.75)(0 . 0)) Slur
