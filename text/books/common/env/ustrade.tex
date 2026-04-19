@@ -1,12 +1,55 @@
-\documentclass[twoside,12pt]{book}
+\documentclass[twoside,11pt]{book}
 
 \usepackage[
   papersize={6.25in,9.25in},
-  right=0.8in,
-  left=0.8in,
   top=1.0in,
-  bottom=0.65in,
+  bottom=0.70in,
+  inner=1.0in,        % Use 'inner' instead of 'left' for books
+  outer=0.9in,        % Use 'outer' instead of 'right'
+  marginparwidth=0.6in, % The width of the "box" for your verse numbers
+  marginparsep=0.18in,  % The gap between the verse number and the text
+  headsep=0.20in,
+  asymmetric            % Keeps the margin on the same side for all pages
 ]{geometry}
-
 \newcommand{\sizeBodyText}{\normalsize}
 \newcommand{\sizeFirstLetter}{\huge}
+
+% Format %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\fmtBoldWideText}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtItalicWideText}{\itshape\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtFirstLetter}{\huge}
+
+\newcommand{\fmtPrayerRepeatText}{\itshape\footnotesize\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\fmtPrayerSubtitle}{\itshape\footnotesize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\fmtPrayerTitle}{\bfseries\normalsize\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\defaultFontSize}{\normalsize}
+
+\newcommand{\vspaceSmall}{\vspace*{.5\baselineskip}}
+\newcommand{\vspaceMedium}{\vspace*{1.0\baselineskip}}
+\newcommand{\vspaceLarge}{\vspace*{1.5\baselineskip}}
+
+\newcommand{\horizontalRule}{%
+  \begin{center}
+  \rule{2in}{1pt}
+  \end{center}
+}
+
+\newcommand{\titleMajor}[1]{%
+  \hfill
+  {\bfseries\addfontfeature{LetterSpace=15.0}\fontdimen2\font=1.2em\uppercase{#1}}
+  \hfill
+}
+
+\newcommand{\titleMinor}[1]{%
+  \hfill
+  {\addfontfeature{LetterSpace=10.0}\fontdimen2\font=0.8em\textsc{#1}}
+  \hfill
+}

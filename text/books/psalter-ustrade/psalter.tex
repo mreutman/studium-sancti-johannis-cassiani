@@ -1,0 +1,157 @@
+\newcommand{\enablePageBorder}{0}
+\newcommand{\enablePageHeader}{1}
+\newcommand{\pageBorderBegin}{0}
+
+\input{common/env/ustrade}
+\input{common/env/common}
+\input{common/psalter}
+
+\newcommand{\formatTextHeader}
+{\itshape\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\formatTextPsalmChapter}
+{\defaultFontSize\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextPsalmDivision}
+{\defaultFontSize\bfseries\addfontfeature{LetterSpace=20.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextVerseNumber}
+{\itshape\tiny}
+
+\newcommand{\setPageHeader}[1]
+{\markboth{\formatTextHeader\textsc{cap. #1}}{\formatTextHeader\textsc{cap. #1}}}
+
+\renewcommand{\thepage}{\formatTextHeader\textsc{\arabic{page}}}
+
+\newcommand{\odeChapter}[2]{%
+  \setPageHeader{#1}
+  {\hspace{2em}\formatTextPsalmChapter\textsc{Čànticum~~#1.} }
+  {\formatTextPsalmInscription\textsc{#2}}
+}
+
+\newcommand{\prayerTitle}[1]{%
+  {\hspace{2em}\formatTextPsalmChapter\textsc{#1}}
+}
+
+\newcommand{\psalmChapter}[1]{%
+{\formatTextPsalmChapter\textsc{Psàlmus~~#1.}}\setPageHeader{#1}}
+
+\newcommand{\psalmChapterInscription}[2]{%
+  \setPageHeader{#1}
+
+  {\formatTextPsalmChapter\textsc{Psalmus~~#1.} }
+
+
+  {\formatTextPsalmInscription\textsc{#2}}
+}
+
+\newcommand{\psalmText}[1]{\textsc{#1}}
+
+\newcommand{\psalmInscriptionText}[1]{%
+\textsc{\scriptsize\itshape\addfontfeature{LetterSpace=2.5}\fontdimen2\font=0.25em#1}}
+
+%\newcommand{\prayerText}[1]{\textsc{#1}}
+
+\newcommand{\verseNumberPhantom}[1]
+{\phantom{\textsuperscript{\formatTextVerseNumber#1.}}}
+
+%\newcommand{\verseIndentOn}{\begin{hangparas}{2.5em}{1}}
+%\newcommand{\verseIndentOff}{\end{hangparas}}
+
+\newcommand{\verseIndentOn}{\begin{flushleft}\hangindent=2em\hangafter=1}
+\newcommand{\verseIndentOff}{\end{flushleft}\hangindent=0em\hangafter=1}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0pt}
+
+\renewcommand{\baselinestretch}{1.25} % text line spacing
+
+\interlinepenalty=10000
+\raggedbottom
+%\frenchspacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO,RE]{\leftmark}
+
+% Optional: remove the line
+\renewcommand{\headrulewidth}{0.4pt}
+
+%\newcommand{\verseNumber}[1]
+%{\textsuperscript{\formatTextVerseNumber#1.}}
+
+\newcommand{\verseNumber}[1]{%
+  \leavevmode%
+  \checkoddpage % This checks the current page number
+  \ifoddpage
+    \reversemarginpar
+    % Logic for ODD pages (usually Right-hand pages)
+    \marginnote[{\itshape\tiny#1}]{{\itshape\tiny#1}} 
+  \else
+    % Logic for EVEN pages (usually Left-hand pages)
+    \normalmarginpar
+    \marginnote[{\itshape\tiny#1}]{{\itshape\tiny#1}}
+  \fi
+}
+
+\begin{document}
+
+%\pagestyle{empty}
+
+%\vspaceSmall
+
+%\vfill
+
+%\begin{center}
+%{\huge\textsc{Lìber Psalmórum}}
+%\end{center}
+
+%\vfill\vfill
+
+%\newpage
+
+\defaultFontSize
+%\cleardoublepage
+\pagestyle{fancy}
+\setlength{\headheight}{16pt}.
+\setcounter{page}{1}
+
+%\input{tables}
+
+%\input{beginning}
+
+\begin{center}
+\vspace*{-1.0\baselineskip}
+
+{\formatTextPsalmChapter ÌNČIPIT}
+
+{\formatTextPsalmChapter LÌBER PSALMÓRUM DAVÍDIS}
+
+\vspaceSmall
+\end{center}
+
+\verseIndentOn
+\chead{\sc{\formatTextHeader Lìber Psalmórum}}
+\input{psalms-all}
+\verseIndentOff
+
+%\begin{center}
+%\vfill
+
+%{\formatTextPsalmChapter DÉSINO}
+
+%{\formatTextPsalmChapter LÌBER PSALMÓRUM DAVÍDIS}
+
+%\vfill\vfill\vfill\vfill\
+%\end{center}
+
+%\newpage
+
+%\input{odes-vetus}
+
+%\input{prayers}
+
+\end{document}

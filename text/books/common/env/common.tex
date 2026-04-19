@@ -3,12 +3,17 @@
 \usepackage{everysel}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
+\usepackage{hanging}
 \usepackage{ifthen}
+\usepackage{ifoddpage}
+\usepackage{marginnote}
 \usepackage{multirow}
 \usepackage{needspace}
 \usepackage{ragged2e}
 \usepackage{setspace}
 \usepackage{titlesec}
+
+\strictpagecheck
 
 \setmainfont[
   Path = ./common/env/fonts/dueblo/mod/,
@@ -18,7 +23,7 @@
   ItalicFont = *-REG,
   BoldItalicFont = *-REG,
   Ligatures = {NoCommon, NoDiscretionary},
-  Numbers=Lining,
+  Numbers=Tabular,
 ]{Dueblo-SEMI-EXT}
 
 \newfontfamily{\liturgy}[

@@ -526,11 +526,11 @@ class Psalms:
     separator = ""
 
     inscript = separator.join(
-      "\\verseNumber{" + str(k) + "}~" + v + "~~"
+      "\\verseNumber{" + str(k) + "}\\psalmInscriptionText{" + v + "}\n\n"
       for k,v in self.__dict2_inscripts[ch].items())
 
     text = separator.join(
-      "\\psalmText{\\verseNumber{" + str(k) + "}~" + v + "}\n\n"
+      "\\verseNumber{" + str(k) + "}\\psalmText{" + v + "}\n\n"
       for k,v in self.__dict2_psalms[ch].items())
 
     #print(self.__dict2_psalms[ch])
@@ -545,17 +545,22 @@ class Psalms:
 
     if inscript:
       last_inscript_verse = next(reversed(self.__dict2_inscripts[ch]))
-      text = text.replace("\\verseNumber{" + str(last_inscript_verse) + "}", 
-                          "\\verseNumberPhantom{" + str(last_inscript_verse) + "}")
+      text = text.replace(
+        "\\verseNumber{" + str(last_inscript_verse) + "}", 
+        "\\verseNumber{\\phantom{" + str(last_inscript_verse) + "}}")
       return (
-        "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
-        "\n\n" +
-        text +
-        self.__dict2_vspace[ch])
+          "\\psalmChapter{" + chapter + "}\n\n" +
+          inscript +
+          text + 
+          self.__dict2_vspace[ch])
+    #  return (
+    #    "\\psalmChapterInscription{" + chapter + "}{" + inscript + "} " +
+    #    "\n\n" +
+    #    text +
+    #    self.__dict2_vspace[ch])
 
     return (
-      "\\psalmChapter{" + chapter + "} " +
-      "\n\n" +
+      "\\psalmChapter{" + chapter + "}\n\n" +
       text + 
       self.__dict2_vspace[ch])
 
