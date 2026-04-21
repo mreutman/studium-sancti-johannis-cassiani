@@ -18,8 +18,10 @@
 \newcommand{\formatTextVerseNumber}
 {\itshape\tiny}
 
-\newcommand{\setPageHeader}[1]
-{\markboth{\formatTextHeader\textsc{cap. #1}}{\formatTextHeader\textsc{cap. #1}}}
+\newcommand{\setPageHeader}[1]{%
+  \markboth{\textsc{\formatTextHeader cap. {\footnotesize #1}}}%
+           {\textsc{\formatTextHeader cap. {\footnotesize #1}}}%
+}
 
 \newcommand{\odeChapter}[2]{%
   \setPageHeader{#1}
@@ -68,7 +70,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
-\fancyhead[LE,RO]{\thepage}
+\fancyhead[LE,RO]{\footnotesize\thepage}
 \fancyhead[LO,RE]{\leftmark}
 
 \setlength{\parindent}{0em}
@@ -107,11 +109,9 @@
 %\input{beginning}
 
 \begin{center}
-\vspace*{-1.75\baselineskip}
+\vspace*{-1.0\baselineskip}
 
-\textsc{\formatTextPsalmChapter ÌNČIPIT}
-
-\textsc{\formatTextPsalmChapter LÌBER PSALMÓRUM DAVÍDIS}
+\textsc{\formatTextPsalmChapter PSÀLMI DAVÍDIS}
 
 \end{center}
 
