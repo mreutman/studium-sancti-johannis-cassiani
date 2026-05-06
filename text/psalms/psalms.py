@@ -542,6 +542,14 @@ class Psalms:
     text = text.replace(";", "~;")
     text = text.replace("«", "«~")
     text = text.replace("»", "~»")
+    text = text.replace("ç", "k")
+    text = text.replace("ǧ", "ģ")
+    text = text.replace("č", "ç")
+    text = text.replace("k", "č")
+    text = text.replace("ï", "j")
+    text = text.replace("Ï", "J")
+    
+    #text = text.replace("Ç", "Z")
 
     if inscript:
       last_inscript_verse = next(reversed(self.__dict2_inscripts[ch]))
