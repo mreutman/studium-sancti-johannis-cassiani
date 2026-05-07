@@ -7,7 +7,7 @@ import pdb
 CHAPTER_VSPACE = {}
 CHAPTER_VSPACE[1] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[2] = "\\psalmEndNewPage"
-CHAPTER_VSPACE[3] = "\\psalmEndDecorate{0.5}"
+CHAPTER_VSPACE[3] = "\\psalmEndDecorate{1.0}"
 CHAPTER_VSPACE[4] = "\\psalmEndNewPage"
 CHAPTER_VSPACE[5] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[6] = "\\psalmEnd{2}"
@@ -15,21 +15,21 @@ CHAPTER_VSPACE[7] = "\\psalmEndDecorate{0.5}"
 CHAPTER_VSPACE[8] = "\\psalmEndDecorateNewPage{1.0}"
 CHAPTER_VSPACE[9] = "\\psalmEndDecorateNewPage{1.25}"
 CHAPTER_VSPACE[10] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[11] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[12] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[13] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[14] = "\\psalmEnd{1}"
+CHAPTER_VSPACE[11] = "\\psalmEndNewPage"
+CHAPTER_VSPACE[12] = "\\psalmEndDecorate{1.0}"
+CHAPTER_VSPACE[13] = "\\psalmEndNewPage"
+CHAPTER_VSPACE[14] = "\\psalmEndDecorate{1.5}"
 CHAPTER_VSPACE[15] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[16] = "\\psalmEnd{1}"
+CHAPTER_VSPACE[16] = "\\psalmEndNewPage"
 CHAPTER_VSPACE[17] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[18] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[19] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[20] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[21] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[22] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[23] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[24] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[25] = "\\psalmEnd{1}"
+CHAPTER_VSPACE[20] = "\\psalmEndDecorate{0.5}"
+CHAPTER_VSPACE[21] = "\\psalmEndNewPage"
+CHAPTER_VSPACE[22] = "\\psalmEndDecorate{0.5}"
+CHAPTER_VSPACE[23] = "\\psalmEndNewPage"
+CHAPTER_VSPACE[24] = "\\psalmEndNewPage"
+CHAPTER_VSPACE[25] = "\\psalmEnd{1}" # START HERE
 CHAPTER_VSPACE[26] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[27] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[28] = "\\psalmEnd{1}"
@@ -192,7 +192,7 @@ while line:
   text = s[3].rstrip() # removes ending whitespace and '\n'
 
   if current_chapter != chapter:
-    if current_chapter == 10:
+    if current_chapter == 25:
       break
     if current_chapter != 0:
       print_chapter(current_chapter, inscript.rstrip(), body.rstrip())
