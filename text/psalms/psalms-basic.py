@@ -30,11 +30,11 @@ CHAPTER_VSPACE[22] = "\\psalmEndDecorate{0.5}"
 CHAPTER_VSPACE[23] = "\\psalmEndNewPage"
 CHAPTER_VSPACE[24] = "\\psalmEndNewPage"
 CHAPTER_VSPACE[25] = "\\psalmEnd{1}" # START HERE
-CHAPTER_VSPACE[26] = "\\psalmEnd{1}"
+CHAPTER_VSPACE[26] = "\\psalmEndDecorate{0.5}"
 CHAPTER_VSPACE[27] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[28] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[29] = "\\psalmEnd{1}"
-CHAPTER_VSPACE[30] = "\\psalmEnd{1}"
+CHAPTER_VSPACE[29] = "\\psalmEndDecorate{1.0}"
+CHAPTER_VSPACE[30] = "\\psalmEndDecorateNewPage{1.0}"
 CHAPTER_VSPACE[31] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[32] = "\\psalmEnd{1}"
 CHAPTER_VSPACE[33] = "\\psalmEnd{1}"
@@ -192,7 +192,7 @@ while line:
   text = s[3].rstrip() # removes ending whitespace and '\n'
 
   if current_chapter != chapter:
-    if current_chapter == 25:
+    if current_chapter == 30:
       break
     if current_chapter != 0:
       print_chapter(current_chapter, inscript.rstrip(), body.rstrip())
