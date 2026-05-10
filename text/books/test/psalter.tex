@@ -1,0 +1,167 @@
+\documentclass[twoside,12pt]{book}
+%\documentclass[twoside,12pt,showframe]{book}
+\usepackage[none]{hyphenat}
+\usepackage{everysel}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{multirow}
+\usepackage{setspace}
+
+\setstretch{1.5}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+
+\usepackage[
+  papersize={8.5in,11in},
+  layout=letterpaper,
+  right=1.0in,
+  left=1.0in,
+  lines=30,
+  headheight=14.5pt,
+  includehead,
+  heightrounded,
+]{geometry}
+
+\setmainfont[
+  Path = ./common/env/fonts/dueblo/mod1/,
+  Extension = .otf,
+  UprightFont = *-MED,
+  BoldFont = *-BOL,
+  ItalicFont = *-REG,
+  BoldItalicFont = *-REG,
+  Ligatures = {NoCommon, NoDiscretionary},
+  Numbers=Tabular,
+]{Dueblo-SEMI-EXT}
+
+%\setlength{\emergencystretch}{6em}
+\EverySelectfont{%
+%\fontdimen2\font=1em% interword space
+\fontdimen3\font=4.5em% interword stretch
+\fontdimen4\font=0.2em% interword shrink
+%\fontdimen7\font=0.2em% extra space
+}
+
+\newcommand{\defaultFontSize}{\large}
+
+\newcommand{\formatTextHeader}
+{\itshape\addfontfeature{LetterSpace=5.0}\fontdimen2\font=0.5em}
+
+\newcommand{\formatTextPsalmChapter}
+{\defaultFontSize\bfseries\addfontfeature{LetterSpace=10.0}\fontdimen2\font=1.0em}
+
+\newcommand{\formatTextPsalmInscription}
+{\normalsize\itshape\addfontfeature{LetterSpace=2.5}\fontdimen2\font=0.25em}
+
+\newcommand{\formatTextVerseNumber}
+{\itshape\tiny}
+
+% 1. Define the counter in your preamble
+\newcounter{headerstartpage}
+\setcounter{headerstartpage}{3} % headers start after this page
+
+% 2. Modify the command to check the page number
+\newcommand{\setPageHeader}[1]{%
+  \ifnum\value{page}>\value{headerstartpage}%
+    \markboth{\textsc{\formatTextHeader cap. {\footnotesize #1}}}%
+             {\textsc{\formatTextHeader cap. {\footnotesize #1}}}%
+  \else
+    \markboth{}{}% Clear headers if we haven't reached the page count yet
+  \fi
+}
+
+\newcommand{\odeChapter}[2]{%
+  \setPageHeader{#1}
+  {\hspace{2em}\textsc{\formatTextPsalmChapter Čànticum~~#1.} }
+  {\textsc{\formatTextPsalmInscription #2}}
+}
+
+\newcommand{\prayerTitle}[1]{%
+  {\hspace{2em}\textsc{\formatTextPsalmChapter #1}}%
+}
+
+\newcommand{\psalmChapter}[1]{%
+  \hfill%
+  {\formatTextPsalmChapter Psalmus #1}%
+  \hfill%
+  \setPageHeader{#1}%
+}
+
+\newcommand{\psalmVerse}[1]{%
+  \textsuperscript{\formatTextVerseNumber#1. }%
+}
+
+\newcommand{\psalmInscription}[1]{%
+  {\formatTextPsalmInscription #1} {\large\itshape\phantom{.}✠}
+}
+
+\newcommand{\psalmSkip}[1]{\vspace*{#1\baselineskip}}
+
+\newcommand{\symbolEnd}{~~\raisebox{-0.25ex}{\Large 𝄪}}
+
+\newcommand{\psalmEnd}[1]{%
+  {\large\itshape\phantom{..}✠}
+
+  \vspace*{#1\baselineskip}
+}
+
+\newcommand{\psalmEndNewPage}{%
+  {\large\itshape\phantom{..}✠}
+
+  \newpage
+}
+
+\newcommand{\psalmEndDecorate}[1]{%
+
+  \vspace*{#1\baselineskip}
+  {\hfill\itshape\Huge ✠\hfill}
+  \vspace*{#1\baselineskip}
+
+}
+
+\newcommand{\psalmEndDecorateNewPage}[1]{%
+
+  \vspace*{#1\baselineskip}
+  {\hfill\itshape\Huge ✠\hfill}
+  \newpage
+
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\footnotesize\thepage}
+\fancyhead[LO,RE]{\leftmark}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0pt}
+
+\renewcommand{\thepage}{\formatTextHeader\textsc{\arabic{page}}}
+
+\begin{document}
+
+\defaultFontSize
+
+\pagestyle{empty}
+
+\vspace*{\fill}
+
+\begin{center}
+{\huge\textsc{Lìber Psalmórum}}
+\end{center}
+
+\vfill\vfill
+\newpage
+
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\scshape
+
+\chead{\scshape\formatTextHeader Distribúzio Psalmórum}
+\input{tables}
+
+\chead{\scshape\formatTextHeader Psalmi Davídi}
+\input{psalms-all}
+
+\end{document}
