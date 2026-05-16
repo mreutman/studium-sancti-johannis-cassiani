@@ -2,6 +2,7 @@ all: latex pdf
 
 latex:
 	./psalms/psalms-basic.py > psalms-all.tex
+	./psalms/odes.py > odes-all.tex
 
 pdf:
 	xelatex -halt-on-error ./psalter.tex

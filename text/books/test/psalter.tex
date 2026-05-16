@@ -69,10 +69,23 @@
   \fi
 }
 
-\newcommand{\odeChapter}[2]{%
-  \setPageHeader{#1}
-  {\hspace{2em}\textsc{\formatTextPsalmChapter Čànticum~~#1.} }
-  {\textsc{\formatTextPsalmInscription #2}}
+\newcommand{\indentOn}{%
+  \leftskip=1.5em\rightskip=1.5em
+}
+
+\newcommand{\indentOff}{%
+  \leftskip=0em\rightskip=0em
+}
+
+\newcommand{\odeChapter}[1]{%
+  \hfill%
+  {\formatTextPsalmChapter Čànticum~~#1.}%
+  \hfill%
+  \setPageHeader{#1}%
+}
+
+\newcommand{\odeCount}[1]{%
+  \textsuperscript{\formatTextVerseNumber#1. }%
 }
 
 \newcommand{\prayerTitle}[1]{%
@@ -95,8 +108,6 @@
 }
 
 \newcommand{\psalmSkip}[1]{\vspace*{#1\baselineskip}}
-
-\newcommand{\symbolEnd}{~~\raisebox{-0.25ex}{\Large 𝄪}}
 
 \newcommand{\psalmEnd}[1]{%
   {\large\itshape\phantom{..}✠}
@@ -163,5 +174,8 @@
 
 \chead{\scshape\formatTextHeader Psalmi Davídi}
 \input{psalms-all}
+
+\chead{\scshape\formatTextHeader Ċàntica Bìblica}
+\input{odes-all}
 
 \end{document}
