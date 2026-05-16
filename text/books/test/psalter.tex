@@ -55,6 +55,9 @@
 \newcommand{\formatTextVerseNumber}
 {\itshape\tiny}
 
+\newcommand{\formatOdeCountNumber}
+{\bfseries\small}
+
 % 1. Define the counter in your preamble
 \newcounter{headerstartpage}
 \setcounter{headerstartpage}{3} % headers start after this page
@@ -70,16 +73,18 @@
 }
 
 \newcommand{\indentOn}{%
-  \leftskip=1.5em\rightskip=1.5em
+  \begin{flushleft}\hangindent=2em\hangafter=1
+  \leftskip=1.75em\rightskip=1.75em
 }
 
 \newcommand{\indentOff}{%
+  \end{flushleft}\hangindent=0em\hangafter=0
   \leftskip=0em\rightskip=0em
 }
 
 \newcommand{\odeChapter}[1]{%
   \hfill%
-  {\formatTextPsalmChapter Čànticum~~#1.}%
+  {\formatTextPsalmChapter Ċànticum~~#1.}%
   \hfill%
   \setPageHeader{#1}%
 }
