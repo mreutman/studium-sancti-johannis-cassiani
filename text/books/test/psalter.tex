@@ -17,10 +17,38 @@
   right=1.0in,
   left=1.0in,
   lines=30,
+  top=0.8in,
   headheight=14.5pt,
   includehead,
   heightrounded,
 ]{geometry}
+
+
+% Page border %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\enablePageBorder}{1}
+\newcommand{\pageBorderBegin}{2}
+
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+\AddToShipoutPictureBG{
+  \ifnum\enablePageBorder>0
+  \ifnum\value{page}>\pageBorderBegin % page to begin drawing border
+  \begin{tikzpicture}[overlay,remember picture]
+  \draw [line width=3pt]
+    ($ (current page.north west) + (0.75in,-0.55in) $)
+    rectangle
+    ($ (current page.south east) + (-0.75in,0.55in) $);
+  \draw [line width=0.75pt]
+    ($ (current page.north west) + (0.8in,-0.60in) $)
+    rectangle
+    ($ (current page.south east) + (-0.8in,0.60in) $); 
+  \end{tikzpicture}%
+  \fi
+  \fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setmainfont[
   Path = ./common/env/fonts/dueblo/mod1/,
@@ -145,7 +173,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.75pt}
 \fancyhead[LE,RO]{\footnotesize\thepage}
 \fancyhead[LO,RE]{\leftmark}
 
