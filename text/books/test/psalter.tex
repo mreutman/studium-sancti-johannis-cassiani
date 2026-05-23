@@ -6,6 +6,7 @@
 \usepackage{fontspec}
 \usepackage{multirow}
 \usepackage{setspace}
+\usepackage{svg}
 
 \setstretch{1.5}
 \setlength{\emergencystretch}{3em}
@@ -156,6 +157,16 @@
 
 \newcommand{\psalmEndNewPage}{%
   {\large\itshape\phantom{..}✠}
+
+  \newpage
+}
+
+\newcommand{\psalmEndPictureNewPage}{%
+  \vfill\vfill
+
+  {\hfill\includesvg[width=0.05\textwidth]{cross}\hfill}
+
+  \vfill\vfill\vfill
 
   \newpage
 }

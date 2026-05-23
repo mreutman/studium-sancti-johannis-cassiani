@@ -5,7 +5,7 @@ latex:
 	./psalms/odes.py > odes-all.tex
 
 pdf:
-	xelatex -halt-on-error ./psalter.tex
+	xelatex -halt-on-error -shell-escape ./psalter.tex
 
 clean:
 	rm -fv psalter.aux
