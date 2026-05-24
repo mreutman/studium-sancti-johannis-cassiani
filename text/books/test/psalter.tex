@@ -164,7 +164,7 @@
 \newcommand{\psalmEndPictureNewPage}{%
   \vfill\vfill
 
-  {\hfill\includesvg[width=0.05\textwidth]{cross}\hfill}
+  {\hfill\itshape\fontsize{70}{60}\selectfont \raisebox{-0.15ex}{✠} \hfill}
 
   \vfill\vfill\vfill
 
@@ -174,15 +174,16 @@
 \newcommand{\psalmEndDecorate}[1]{%
 
   \vspace*{#1\baselineskip}
-  {\hfill\itshape\Huge\raisebox{-0.15ex}{✠}\hfill}
+  {\hfill\itshape\Huge —~~\raisebox{-0.15ex}{✠}~~— \hfill}
   \vspace*{#1\baselineskip}
 
 }
 
-\newcommand{\psalmEndDecorateNewPage}[1]{%
+\newcommand{\psalmEndDecorateNewPage}{%
 
-  \vspace*{#1\baselineskip}
-  {\hfill\itshape\Huge\raisebox{-0.15ex}{✠}\hfill}
+  \vfill\vfill
+  {\hfill\itshape\Huge —~~\raisebox{-0.15ex}{✠}~~— \hfill}
+  \vfill\vfill
   \newpage
 
 }
@@ -208,7 +209,12 @@
 \vspace*{\fill}
 
 \begin{center}
-{\huge\textsc{Lìber Psalmórum}}
+{\bfseries\fontsize{40}{60}\textsc{Lìber Psalmórum}}
+
+\vspace*{3\baselineskip}
+
+{\itshape\fontsize{100}{60}\selectfont\raisebox{-0.15ex}{✠}}
+
 \end{center}
 
 \vfill\vfill
