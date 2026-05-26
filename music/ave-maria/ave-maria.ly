@@ -36,7 +36,7 @@ text = \lyricmode {
   % 1
   -- ve  Ma -- rí _ _ -- a
   % 2
-  grá -- çi -- a ple _ -- na
+  grá -- zi -- a ple _ -- na
   % 3
   Dò -- mi -- nus te -- cum;
   % 4
@@ -44,9 +44,9 @@ text = \lyricmode {
   % 5
   in __ _ mu -- li _ -- è -- ri _ -- bus,
   % 6
-  et be -- ne -- dìc -- tus fruc -- tus vèn -- tris tu -- i, __ _ Ïe _ -- sus __ _
+  et be -- ne -- dìc -- tus frûc -- tus ven -- tris tu -- i, __ _ Įe _ -- sus __ _
   % 7
-  Sanc -- ta Ma -- rí _ -- a, Ma -- ter De _ -- i,
+  Sânc -- ta Ma -- rí _ -- a, Ma -- ter De _ -- i,
   % 8
   o -- ra pro no _ -- bīs pec -- ca _ -- tó _ -- ri -- bus
   % 9
@@ -57,7 +57,7 @@ text = \lyricmode {
 
 \header {
   title = "AVE MARÍA"
-  opus = \markup { \sans \smallCaps "melódia oriǧináli" }
+  opus = \markup { \sans \smallCaps "melódia oriġináli" }
   tagline = #f
 }
 

@@ -33,18 +33,18 @@ melody = \relative c' {
 }
 
 text = \lyricmode {
-  \markup { \concat { \fontsize #4 "P" \tied-lyric #"" "à" } }
+  \markup { \concat { \fontsize #4 "P" \tied-lyric #"" "a" } }
   -- ter nos -- ter                                                      % 1
 
-  qui es in čoe -- līs,                                               % 2
+  qui es in ċoe -- līs,                                               % 2
 
   san -- cti -- fi -- cé -- tur __ _ no _ -- men tu _ -- um;                       % 3
 
-  ad -- vèn -- i -- at reg -- num tu -- um;                                   % 4
+  ad -- vèn -- i -- at rêg -- num tu -- um;                                   % 4
 
   fi -- at vo -- lùn -- tas tu -- a,                                        % 5
 
-  si -- cut in čoe -- lo __ _ et __ _ in tèr _ -- ra.                           % 6
+  si -- cut in ċoe -- lo __ _ et __ _ in ter _ -- ra.                           % 6
 
   Pa -- nem nos -- trum                                                 % 7
 
@@ -56,14 +56,14 @@ text = \lyricmode {
 
   si -- cut et nos di -- mìt -- ti -- mus de -- bi -- tó -- ri -- bus nos -- trīs,    % 11
 
-  et ne nos in -- dú -- cas in temp -- ta -- çi -- ó _ -- nem,                  % 12
+  et ne nos in -- dú -- cas in temp -- ta -- zi -- ó _ -- nem,                  % 12
 
   sed lí -- be -- ra nos a Mà _ -- lo.                                    % 13
 }
 
 \header {
   title = "PÀTER NOSTER"
-  opus = \markup { \sans \smallCaps "melódia oriǧináli" }
+  opus = \markup { \sans \smallCaps "melódia oriġináli" }
   tagline = #f
 }
 

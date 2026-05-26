@@ -1,6 +1,6 @@
-#(ly:font-config-add-font "/home/anon/Git/studium-sancti-johannis-cassiani/text/books/fonts/dueblo/mod/Dueblo-SEMI-EXT-MED.otf")
+#(ly:font-config-add-font "/home/anon/Git/studium-sancti-johannis-cassiani/text/books/common/env/fonts/dueblo/mod1/Dueblo-SEMI-EXT-MED.otf")
 
-#(ly:font-config-add-font "/home/anon/Git/studium-sancti-johannis-cassiani/text/books/fonts/dueblo/mod/Dueblo-SEMI-EXT-REG.otf")
+#(ly:font-config-add-font "/home/anon/Git/studium-sancti-johannis-cassiani/text/books/common/env/fonts/dueblo/mod1/Dueblo-SEMI-EXT-REG.otf")
 
 \paper {
   #(define fonts
@@ -29,7 +29,7 @@ melodyDefaults = {
   \omit Staff.TimeSignature
   \override Staff.BarLine.hair-thickness = #3
   \override Staff.BarLine.thick-thickness = #6
-  %\omit Stem
+  \omit Stem
   %\override Stem.length = #5
   \override Stem.thickness = #1
   \override Lyrics.LyricSpace.minimum-distance = #3.0
